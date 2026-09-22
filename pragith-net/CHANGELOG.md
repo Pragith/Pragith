@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-09-22 — Golf Swing Analyzer listing
+
+- Publish Fairway in the existing project sections with a direct link to the live application.
+- Describe local 2D tracking, saved summaries and skeleton replay; label analysis Experimental and state its validation limits.
+
 ## Unreleased
 
 - Repositioned pragith.net as the personal authority website of Pragith Prakash, using the canonical title “AI Forward Deployed Engineer.”

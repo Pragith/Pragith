@@ -96,3 +96,9 @@ docker run -p 8000:8000 --env-file .env pragith-net:latest
 ## License
 
 Proprietary. All rights reserved.
+
+## Golf listing verification — 2026-09-22
+
+`docker exec pragith-web uv run pytest -q`: 19 passed. The public homepage and Projects page passed browser checks at 390px and 1440px widths: Experimental status, live app links, successful app navigation and horizontal overflow. Zero console errors or page exceptions. Published through the existing bind mount and `docker restart pragith-web`.
+
+Repeatable cross-site check: `node /srv/docker/labs/agent-fleet/scripts/verification/verify_golf_listings.cjs`.

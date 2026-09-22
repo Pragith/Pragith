@@ -122,6 +122,15 @@ CASE_STUDIES = [
 
 PROJECTS = [
     {
+        "slug": "golf-swing-analyzer",
+        "title": "Fairway — Golf Swing Analyzer",
+        "status": "Experimental",
+        "summary": "Continuous face-on camera practice with live 2D body tracking, saved swing summaries and skeleton replay. Supports left- and right-handed golfers; pose inference runs locally in the browser.",
+        "version": "Live app · Swing detection and timing estimates remain under real-world evaluation. Session summaries and skeleton clips are saved on a self-hosted server.",
+        "href": "https://golf.lab.pragith.net",
+        "link_label": "Open Golf Swing Analyzer",
+    },
+    {
         "slug": "velvet",
         "title": "Velvet IPTV Player",
         "status": "Production",

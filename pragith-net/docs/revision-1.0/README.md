@@ -41,3 +41,7 @@ Before: before-1440.png and before-390.png. After: 1440/390-0.png (home), -5.png
 ## Remaining source questions
 
 An enterprise case needs publishable source/destination types, a concrete failure, the chosen design and tradeoff, and observed operational behavior. Credentials need issuer URLs/IDs and earned/expiry dates. Caffeinate-d needs a genuine macOS capture and signed binary release before advertising downloads. These gaps are kept out of public review commentary.
+
+## Production verification
+
+Deployed application revision d45ab49, release 1.0.0, at https://pragith.net on 22 September 2026. Sixteen public route/viewport checks at 390 and 1440 passed with zero page exceptions. Google Analytics is present on every checked route; reCAPTCHA is present on the checked contact contexts. Source candidates, intrinsic image sizes and results are retained in production-results.json. live-390.png and live-1440.png show the served homepage. Production environment and mailer configuration were unchanged.

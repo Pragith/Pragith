@@ -5,7 +5,6 @@ Unverified metrics belong in editorial notes, never in rendered page data.
 
 import json
 from pathlib import Path
-from app.content.records import ENGINEERING_RECORDS
 
 CANONICAL_TITLE = "AI Forward Deployed Engineer"
 EXPERIENCE_LABEL = "14+ years"
@@ -301,7 +300,6 @@ INDEXABLE_PATHS = [
     "/privacy",
     "/legal",
 ]
-INDEXABLE_PATHS.extend(f"/case-studies/{item['slug']}" for item in CASE_STUDIES)
 
 # Synchronized publication record; the company site consumes the same JSON.
 PRODUCT_FACTS = json.loads(Path(__file__).with_name("product-facts.json").read_text())
@@ -325,5 +323,3 @@ PROJECTS.sort(
         p["slug"], 3
     )
 )
-
-INDEXABLE_PATHS.extend(f"/case-studies/{item['slug']}" for item in ENGINEERING_RECORDS)

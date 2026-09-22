@@ -1,6 +1,6 @@
 [project]
 name = "pragith-net"
-version = "1.0.0"
+version = "1.0.1"
 description = "Pragith.net Personal Monolith"
 readme = "README.md"
 requires-python = ">=3.11"

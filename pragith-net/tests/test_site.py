@@ -126,8 +126,8 @@ def test_homepage_uses_personal_editorial_language():
     assert "What I can do for you" not in html
     assert 'aria-roledescription="carousel"' not in html
     assert (
-        "/case-studies/fairway-frame-pipeline" in html
-        and "/case-studies/callrenard-call-states" in html
+        "/case-studies/ai-mlops-automation" in html
+        and "/case-studies/enterprise-data-platform" in html
     )
 
 

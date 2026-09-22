@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1 — 2026-09-22
+
+- Validation: 28 application tests, Ruff, ten live responsive page checks, teaching enquiry, retired-route redirects and removed-download check passed; zero browser runtime errors.
+
+- Remove the product engineering-record sections and their service-page references; redirect their URLs to Projects.
+- Remove the generic CSV exercise, rubric and downloads from Teaching.
+- Keep dated teaching appointments, named programs, the official event link and contextual inquiry actions.
+
+
 ## 1.0.0 — 2026-09-22
 
 - Restore dated career history, promotion, assistant ownership and teaching programs from the supplied resume.

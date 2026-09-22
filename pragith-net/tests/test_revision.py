@@ -1,7 +1,4 @@
-import importlib.util
-import json
 import re
-from pathlib import Path
 from unittest.mock import patch
 import pytest
 from fastapi.testclient import TestClient
@@ -126,23 +123,3 @@ def test_analytics_and_recaptcha_bindings():
             assert "gtag/js?id=G-TEST" in html and "clarity-test" in html
     with patch("app.main.settings.RECAPTCHA_SITE_KEY", "site-key"):
         assert "recaptcha/api.js?render=site-key" in client.get("/contact").text
-
-
-def test_reference_exercise_matches_published_output(tmp_path):
-    source = Path("app/static/teaching")
-    spec = importlib.util.spec_from_file_location(
-        "exercise", source / "check_orders.py"
-    )
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    expected = json.loads((source / "expected.json").read_text())
-    assert module.inspect_orders(source / "orders.csv") == expected
-    assert expected["accepted"] == 3 and expected["total"] == "56.25"
-    other = tmp_path / "orders.csv"
-    other.write_text("order_id,amount\n,12\nA,NaN\nB,Infinity\nC,0\nD,1.25\nD,2.50\n")
-    result = module.inspect_orders(other)
-    assert (
-        result["accepted"] == 1
-        and result["total"] == "1.25"
-        and len(result["rejected"]) == 5
-    )

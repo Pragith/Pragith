@@ -1,3 +1,6 @@
+- [x] Remove engineering-record sections from Home and Work, with redirects for the retired detail pages.
+- [x] 1.0.1: Remove the generic sample exercise and its downloads; verify the public teaching page and enquiry path.
+
 ## 1.0.0 revision
 
 - [x] Restore chronology, visible work, teaching programs and official event.

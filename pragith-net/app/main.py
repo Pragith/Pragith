@@ -11,7 +11,6 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 from starlette.middleware.base import BaseHTTPMiddleware
 
-from app.content.records import ENGINEERING_RECORDS
 from app.content.media import MEDIA
 from app.config import settings
 from app.content.site import (
@@ -30,7 +29,7 @@ from app.services.sitemap import generate_sitemap
 from app.themes import ThemeService
 
 app = FastAPI(
-    title=settings.PROJECT_NAME, version="1.0.0", docs_url=None, redoc_url=None
+    title=settings.PROJECT_NAME, version="1.0.1", docs_url=None, redoc_url=None
 )
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
@@ -93,7 +92,7 @@ templates.env.globals.update(
         "experience_label": EXPERIENCE_LABEL,
         "certifications": CERTIFICATIONS,
         "media": MEDIA,
-        "site_version": "1.0.0",
+        "site_version": "1.0.1",
     }
 )
 
@@ -157,7 +156,6 @@ async def home(request: Request):
         canonical_path="/",
         capabilities=CAPABILITIES,
         case_studies=CASE_STUDIES[:3],
-        records=ENGINEERING_RECORDS,
         projects=PROJECTS,
         cloud_platforms=CLOUD_PLATFORMS,
     )
@@ -207,26 +205,27 @@ async def case_studies(request: Request):
         description="Anonymized examples of enterprise data platforms, AI delivery, cloud integrations, analytics and engineering enablement.",
         canonical_path="/case-studies",
         case_studies=CASE_STUDIES,
-        records=ENGINEERING_RECORDS,
     )
 
 
 @app.get("/case-studies/{slug}", response_class=HTMLResponse)
 async def case_study(request: Request, slug: str):
+    retired = {
+        "fairway-frame-pipeline": "/projects#project-golf-swing-analyzer",
+        "callrenard-call-states": "/projects#project-callrenard",
+    }
+    if slug in retired:
+        return RedirectResponse(retired[slug], status_code=301)
     item = next(
-        (
-            item
-            for item in [*ENGINEERING_RECORDS, *CASE_STUDIES]
-            if item["slug"] == slug
-        ),
+        (item for item in CASE_STUDIES if item["slug"] == slug),
         None,
     )
     if not item:
         raise HTTPException(status_code=404)
     return render(
         request,
-        "engineering_record.html" if item in ENGINEERING_RECORDS else "case_study.html",
-        title=f"{item['title']} | {'Engineering record' if item in ENGINEERING_RECORDS else 'Experience summary'}",
+        "case_study.html",
+        title=f"{item['title']} | Experience summary",
         description=item["preview"],
         canonical_path=f"/case-studies/{slug}",
         item=item,

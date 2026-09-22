@@ -9,3 +9,9 @@
 
 - [x] Add the experimental Fairway listing and live app link.
 - [x] Verify and publish the updated pages: application tests passed; desktop/mobile public routes and live app links passed with zero browser errors.
+
+## Main product order
+- [x] Place Velvet first, Golf second and Renard third.
+- [x] Implement compact product selectors across home and catalogue pages.
+- [x] Verify and deploy product order, keyboard navigation and mobile layouts.
+- [x] Inspect actual screenshots and improve density, typography and copy.

@@ -122,6 +122,15 @@ CASE_STUDIES = [
 
 PROJECTS = [
     {
+        "slug": "velvet",
+        "title": "Velvet IPTV Player",
+        "status": "Production",
+        "summary": "A cross-platform IPTV and STB media player with native support for Stalker Portals and Ministra.",
+        "version": "Velvet 5.3.12",
+        "href": "https://velvet.plus",
+        "link_label": "Visit Velvet",
+    },
+    {
         "slug": "golf-swing-analyzer",
         "title": "Fairway — Golf Swing Analyzer",
         "status": "Experimental",
@@ -131,13 +140,13 @@ PROJECTS = [
         "link_label": "Open Golf Swing Analyzer",
     },
     {
-        "slug": "velvet",
-        "title": "Velvet IPTV Player",
+        "slug": "callrenard",
+        "title": "CallRenard.ai",
         "status": "Production",
-        "summary": "A cross-platform IPTV and STB media player with native support for Stalker Portals and Ministra.",
-        "version": "Velvet 5.3.12",
-        "href": "https://velvet.plus",
-        "link_label": "Visit Velvet",
+        "summary": "AI call handling that answers missed business calls, captures intent and passes the next steps to the team.",
+        "version": "Live service · Phone workflows, lead capture and human escalation.",
+        "href": "https://callrenard.ai",
+        "link_label": "Visit CallRenard",
     },
     {
         "slug": "caffeinate-d",

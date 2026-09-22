@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-09-22 — Main product order
+
+- Order the main portfolio as Velvet, Fairway Golf Swing Analyzer, then CallRenard.
+- Promote Golf to the main product placement while retaining its Experimental status.
+- Review rendered desktop/mobile pages, tighten spacing and hierarchy, and simplify product copy.
+- Replace long product lists with accessible tab selectors: all names remain visible, one detail panel opens at a time, arrow/Home/End keys work, and JavaScript-free pages retain all details.
+
+
 ## 2026-09-22 — Golf Swing Analyzer listing
 
 - Publish Fairway in the existing project sections with a direct link to the live application.

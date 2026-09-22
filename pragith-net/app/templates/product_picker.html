@@ -1,0 +1,10 @@
+{% set names = {'velvet':'Velvet','golf-swing-analyzer':'Golf Swing Analyzer','callrenard':'CallRenard'} %}
+<div class="product-picker" data-product-picker>
+  <div class="product-tabs" data-product-tabs role="tablist" aria-label="Projects" hidden>
+    {% for item in projects %}<button class="product-tab" data-product-tab id="project-tab-{{ item.slug }}" type="button" role="tab" aria-controls="project-panel-{{ item.slug }}">{{ names.get(item.slug, item.title) }}</button>{% endfor %}
+  </div>
+  {% for item in projects %}<article class="product-panel" data-product-panel id="project-panel-{{ item.slug }}">
+    <span class="status">{{ item.status }}</span><h3>{{ item.title }}</h3><p>{{ item.summary }}</p>
+    <p class="proof-detail">{{ item.version }}</p><div class="product-links"><a href="{{ item.href }}">{{ item.link_label }}</a></div>
+  </article>{% endfor %}
+</div>

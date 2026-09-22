@@ -11,6 +11,8 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.util import get_remote_address
 from starlette.middleware.base import BaseHTTPMiddleware
 
+from app.content.records import ENGINEERING_RECORDS
+from app.content.media import MEDIA
 from app.config import settings
 from app.content.site import (
     CANONICAL_TITLE,
@@ -27,7 +29,9 @@ from app.services.mailer import mailer_service
 from app.services.sitemap import generate_sitemap
 from app.themes import ThemeService
 
-app = FastAPI(title=settings.PROJECT_NAME, docs_url=None, redoc_url=None)
+app = FastAPI(
+    title=settings.PROJECT_NAME, version="1.0.0", docs_url=None, redoc_url=None
+)
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
@@ -37,23 +41,25 @@ app.add_middleware(TrustedHostMiddleware, allowed_hosts=settings.ALLOWED_HOSTS)
 class SecurityHeadersMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         response = await call_next(request)
-        response.headers.update({
-            "X-Content-Type-Options": "nosniff",
-            "X-Frame-Options": "DENY",
-            "Referrer-Policy": "strict-origin-when-cross-origin",
-            "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
-            "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
-            "Content-Security-Policy": (
-                "default-src 'self'; script-src 'self' 'unsafe-inline' "
-                "https://www.googletagmanager.com https://www.google.com https://www.gstatic.com "
-                "https://www.clarity.ms https://scripts.clarity.ms; style-src 'self' 'unsafe-inline' "
-                "https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; "
-                "img-src 'self' data: https:; frame-src https://www.google.com; "
-                "connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com "
-                "https://*.analytics.google.com https://*.clarity.ms https://www.google.com "
-                "https://www.gstatic.com; worker-src 'self' blob:"
-            ),
-        })
+        response.headers.update(
+            {
+                "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "DENY",
+                "Referrer-Policy": "strict-origin-when-cross-origin",
+                "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+                "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+                "Content-Security-Policy": (
+                    "default-src 'self'; script-src 'self' 'unsafe-inline' "
+                    "https://www.googletagmanager.com https://www.google.com https://www.gstatic.com "
+                    "https://www.clarity.ms https://scripts.clarity.ms; style-src 'self' 'unsafe-inline' "
+                    "https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; "
+                    "img-src 'self' data: https:; frame-src https://www.google.com; "
+                    "connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com "
+                    "https://*.analytics.google.com https://*.clarity.ms https://www.google.com "
+                    "https://www.gstatic.com; worker-src 'self' blob:"
+                ),
+            }
+        )
         return response
 
 
@@ -61,6 +67,15 @@ app.add_middleware(SecurityHeadersMiddleware)
 
 _APP_DIR = Path(__file__).parent
 app.mount("/static", StaticFiles(directory=str(_APP_DIR / "static")), name="static")
+
+
+@app.get("/projects/agent-keyboard/", response_class=HTMLResponse)
+async def keyboard_entry():
+    html = (_APP_DIR / "static" / "agent-keyboard" / "index.html").read_text()
+    navigation = '<nav aria-label="Portfolio" style="position:relative;z-index:100;padding:16px;background:#fff;color:#17212b;font:16px system-ui"><a href="/projects" style="color:#0055a6">← All projects</a><span style="margin-left:20px">Browser interaction prototype · CLI bridge is not implemented.</span></nav>'
+    return HTMLResponse(html.replace("<body>", "<body>" + navigation, 1))
+
+
 app.mount(
     "/projects/agent-keyboard",
     StaticFiles(directory=str(_APP_DIR / "static" / "agent-keyboard"), html=True),
@@ -68,15 +83,19 @@ app.mount(
 )
 templates = Jinja2Templates(directory=str(_APP_DIR / "templates"))
 theme_service = ThemeService(settings.THEME)
-templates.env.globals.update({
-    "now": datetime.now,
-    "theme": theme_service,
-    "ga_tag": settings.GA_TAG,
-    "clarity_project_id": settings.CLARITY_PROJECT_ID,
-    "canonical_title": CANONICAL_TITLE,
-    "experience_label": EXPERIENCE_LABEL,
-    "certifications": CERTIFICATIONS,
-})
+templates.env.globals.update(
+    {
+        "now": datetime.now,
+        "theme": theme_service,
+        "ga_tag": settings.GA_TAG,
+        "clarity_project_id": settings.CLARITY_PROJECT_ID,
+        "canonical_title": CANONICAL_TITLE,
+        "experience_label": EXPERIENCE_LABEL,
+        "certifications": CERTIFICATIONS,
+        "media": MEDIA,
+        "site_version": "1.0.0",
+    }
+)
 
 
 def render(
@@ -90,14 +109,19 @@ def render(
     status_code: int = 200,
     **context,
 ):
-    return templates.TemplateResponse(request=request, name=template, context={
-        "request": request,
-        "page_title": title,
-        "page_description": description,
-        "canonical_url": f"https://pragith.net{canonical_path}",
-        "robots": robots,
-        **context,
-    }, status_code=status_code)
+    return templates.TemplateResponse(
+        request=request,
+        name=template,
+        context={
+            "request": request,
+            "page_title": title,
+            "page_description": description,
+            "canonical_url": f"https://pragith.net{canonical_path}",
+            "robots": robots,
+            **context,
+        },
+        status_code=status_code,
+    )
 
 
 @app.get("/theme.css", include_in_schema=False)
@@ -133,6 +157,7 @@ async def home(request: Request):
         canonical_path="/",
         capabilities=CAPABILITIES,
         case_studies=CASE_STUDIES[:3],
+        records=ENGINEERING_RECORDS,
         projects=PROJECTS,
         cloud_platforms=CLOUD_PLATFORMS,
     )
@@ -141,7 +166,8 @@ async def home(request: Request):
 @app.get("/about", response_class=HTMLResponse)
 async def about(request: Request):
     return render(
-        request, "about.html",
+        request,
+        "about.html",
         title="About Pragith Prakash | AI Forward Deployed Engineer",
         description="Professional background, teaching, certifications and engineering approach of Pragith Prakash.",
         canonical_path="/about",
@@ -151,59 +177,79 @@ async def about(request: Request):
 @app.get("/experience", response_class=HTMLResponse)
 async def experience(request: Request):
     return render(
-        request, "experience.html",
+        request,
+        "experience.html",
         title="Experience | Pragith Prakash",
-        description="An anonymized career timeline spanning enterprise AI, data platforms, cloud delivery, analytics and technical education.",
-        canonical_path="/experience", experience=EXPERIENCE,
+        description="Dated roles at Vriksh, Sofvie, Dentsu / Merkle Cardinal Path, EY and Wipro, with grouped early-career experience.",
+        canonical_path="/experience",
+        experience=EXPERIENCE,
     )
 
 
 @app.get("/resume", response_class=HTMLResponse)
 async def resume(request: Request):
     return render(
-        request, "resume.html",
+        request,
+        "resume.html",
         title="Resume | Pragith Prakash",
         description="Printable professional resume for Pragith Prakash, AI Forward Deployed Engineer, consultant and educator.",
-        canonical_path="/resume", experience=EXPERIENCE,
+        canonical_path="/resume",
+        experience=EXPERIENCE,
     )
 
 
 @app.get("/case-studies", response_class=HTMLResponse)
 async def case_studies(request: Request):
     return render(
-        request, "case_studies.html",
+        request,
+        "case_studies.html",
         title="Case Studies | Pragith Prakash",
         description="Anonymized examples of enterprise data platforms, AI delivery, cloud integrations, analytics and engineering enablement.",
-        canonical_path="/case-studies", case_studies=CASE_STUDIES,
+        canonical_path="/case-studies",
+        case_studies=CASE_STUDIES,
+        records=ENGINEERING_RECORDS,
     )
 
 
 @app.get("/case-studies/{slug}", response_class=HTMLResponse)
 async def case_study(request: Request, slug: str):
-    item = next((item for item in CASE_STUDIES if item["slug"] == slug), None)
+    item = next(
+        (
+            item
+            for item in [*ENGINEERING_RECORDS, *CASE_STUDIES]
+            if item["slug"] == slug
+        ),
+        None,
+    )
     if not item:
         raise HTTPException(status_code=404)
     return render(
-        request, "case_study.html",
-        title=f"{item['title']} | Case Study",
-        description=item["preview"], canonical_path=f"/case-studies/{slug}", item=item,
+        request,
+        "engineering_record.html" if item in ENGINEERING_RECORDS else "case_study.html",
+        title=f"{item['title']} | {'Engineering record' if item in ENGINEERING_RECORDS else 'Experience summary'}",
+        description=item["preview"],
+        canonical_path=f"/case-studies/{slug}",
+        item=item,
     )
 
 
 @app.get("/services", response_class=HTMLResponse)
 async def services(request: Request):
     return render(
-        request, "services.html",
+        request,
+        "services.html",
         title="Services | Pragith Prakash",
         description="Hands-on AI, data platform, cloud, MLOps, analytics and engineering enablement services.",
-        canonical_path="/services", services=SERVICES,
+        canonical_path="/services",
+        services=SERVICES,
     )
 
 
 @app.get("/services/ai-systems", response_class=HTMLResponse)
 async def ai_systems(request: Request):
     return render(
-        request, "ai_systems.html",
+        request,
+        "ai_systems.html",
         title="AI Systems and Automation | Pragith Prakash",
         description="Controlled AI orchestration, evaluation, observability, access, approval gates, failure handling and cost management.",
         canonical_path="/services/ai-systems",
@@ -213,7 +259,8 @@ async def ai_systems(request: Request):
 @app.get("/services/executive-bi", response_class=HTMLResponse)
 async def executive_bi(request: Request):
     return render(
-        request, "executive_bi.html",
+        request,
+        "executive_bi.html",
         title="Analytics and Executive BI | Pragith Prakash",
         description="Vendor-neutral source integration, semantic modelling, governance, dashboards, access control and reporting operations.",
         canonical_path="/services/executive-bi",
@@ -223,7 +270,8 @@ async def executive_bi(request: Request):
 @app.get("/teaching", response_class=HTMLResponse)
 async def teaching(request: Request):
     return render(
-        request, "teaching.html",
+        request,
+        "teaching.html",
         title="Teaching and Enablement | Pragith Prakash",
         description="Graduate instruction, workforce programs, workshops and team enablement across AI, data, cloud and software engineering.",
         canonical_path="/teaching",
@@ -233,27 +281,32 @@ async def teaching(request: Request):
 @app.get("/projects", response_class=HTMLResponse)
 async def projects(request: Request):
     return render(
-        request, "projects.html",
+        request,
+        "projects.html",
         title="Projects and Labs | Pragith Prakash",
         description="Open-source tools and clearly labelled experiments by Pragith Prakash.",
-        canonical_path="/projects", projects=PROJECTS,
+        canonical_path="/projects",
+        projects=PROJECTS,
     )
 
 
 @app.get("/projects/caffeinate-d", response_class=HTMLResponse)
 async def caffeinate_d(request: Request):
     return render(
-        request, "caffeinate_d.html",
+        request,
+        "caffeinate_d.html",
         title="Caffeinate-d | Pragith Prakash",
         description="A small native macOS menu-bar wrapper for the system caffeinate command.",
-        canonical_path="/projects/caffeinate-d", robots="noindex,follow",
+        canonical_path="/projects/caffeinate-d",
+        robots="noindex,follow",
     )
 
 
 @app.get("/writing", response_class=HTMLResponse)
 async def writing(request: Request):
     return render(
-        request, "writing.html",
+        request,
+        "writing.html",
         title="Writing and Appearances | Pragith Prakash",
         description="Selected technical writing, talks and appearances by Pragith Prakash.",
         canonical_path="/writing",
@@ -263,7 +316,8 @@ async def writing(request: Request):
 @app.get("/business", response_class=HTMLResponse)
 async def business(request: Request):
     return render(
-        request, "business.html",
+        request,
+        "business.html",
         title="Business Services | Vriksh Consulting Services Inc.",
         description="Packaged analytics, automation and technical enablement services delivered through Vriksh Consulting Services Inc.",
         canonical_path="/business",
@@ -274,15 +328,23 @@ async def business(request: Request):
 async def contact(request: Request):
     query = request.query_params
     tracking_fields = (
-        "ref_page", "cta_id", "utm_source", "utm_medium",
-        "utm_campaign", "utm_content", "tag1", "tag2",
+        "ref_page",
+        "cta_id",
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_content",
+        "tag1",
+        "tag2",
     )
     tracking = {field: query.get(field, "").strip() for field in tracking_fields}
     signal = " ".join(
-        tracking[field] for field in ("ref_page", "cta_id", "utm_content", "tag1", "tag2")
+        tracking[field]
+        for field in ("ref_page", "cta_id", "utm_content", "tag1", "tag2")
     ).lower()
 
     engagement_type = query.get("engagement_type", "").strip()
+    signal += " " + engagement_type.lower()
     message = query.get("message", "").strip()
     if any(term in signal for term in ("speaking", "speaker", "keynote", "talk")):
         engagement_type = engagement_type or "Speaking engagement"
@@ -290,14 +352,19 @@ async def contact(request: Request):
             "I’d like to discuss a speaking engagement.\n\n"
             "Event and audience:\nPreferred format and date:\nDesired outcome:"
         )
-    elif any(term in signal for term in ("teaching", "training", "workshop", "enablement")):
+    elif any(
+        term in signal for term in ("teaching", "training", "workshop", "enablement")
+    ):
         engagement_type = engagement_type or "Teaching / workshop"
         message = message or (
             "I’d like to discuss technical training or a workshop.\n\n"
             "Audience and current experience:\nTopics or systems involved:\n"
             "Preferred timing and outcome:"
         )
-    elif any(term in signal for term in ("architecture", "ai-system", "analytics", "dashboard", "platform")):
+    elif any(
+        term in signal
+        for term in ("architecture", "ai-system", "analytics", "dashboard", "platform")
+    ):
         engagement_type = engagement_type or "Paid architecture / discovery session"
         message = message or (
             "I’d like to discuss an architecture or implementation challenge.\n\n"
@@ -313,10 +380,13 @@ async def contact(request: Request):
         "message": message,
     }
     return render(
-        request, "contact.html",
+        request,
+        "contact.html",
         title="Contact Pragith Prakash",
         description="Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash.",
-        canonical_path="/contact", form=form, tracking=tracking,
+        canonical_path="/contact",
+        form=form,
+        tracking=tracking,
         recaptcha_site_key=settings.RECAPTCHA_SITE_KEY,
     )
 
@@ -345,12 +415,18 @@ async def contact_submit(
     if website:
         return RedirectResponse("/contact", status_code=303)
     form_data = await request.form()
-    if settings.RECAPTCHA_SECRET_KEY and not mailer_service.verify_recaptcha(recaptcha_response):
+    if settings.RECAPTCHA_SECRET_KEY and not mailer_service.verify_recaptcha(
+        recaptcha_response
+    ):
         return render(
-            request, "contact.html", title="Contact Pragith Prakash",
-            description="Contact Pragith Prakash.", canonical_path="/contact",
+            request,
+            "contact.html",
+            title="Contact Pragith Prakash",
+            description="Contact Pragith Prakash.",
+            canonical_path="/contact",
             error="reCAPTCHA verification failed. Please try again.",
-            form=form_data, tracking=form_data,
+            form=form_data,
+            tracking=form_data,
             recaptcha_site_key=settings.RECAPTCHA_SITE_KEY,
         )
     attribution = (
@@ -369,26 +445,46 @@ async def contact_submit(
     )
     if mailer_service.send_contact_email(name, email, "Website enquiry", body):
         return render(
-            request, "contact_success.html", title="Message received | Pragith Prakash",
-            description="Your message has been received.", canonical_path="/contact", robots="noindex,follow",
+            request,
+            "contact_success.html",
+            title="Message received | Pragith Prakash",
+            description="Your message has been received.",
+            canonical_path="/contact",
+            robots="noindex,follow",
         )
     return render(
-        request, "contact.html", title="Contact Pragith Prakash",
-        description="Contact Pragith Prakash.", canonical_path="/contact",
+        request,
+        "contact.html",
+        title="Contact Pragith Prakash",
+        description="Contact Pragith Prakash.",
+        canonical_path="/contact",
         error="The message could not be sent. Please try again.",
-        form=form_data, tracking=form_data,
+        form=form_data,
+        tracking=form_data,
         recaptcha_site_key=settings.RECAPTCHA_SITE_KEY,
     )
 
 
 @app.get("/privacy", response_class=HTMLResponse)
 async def privacy(request: Request):
-    return render(request, "privacy.html", title="Privacy | Pragith Prakash", description="Privacy information for pragith.net.", canonical_path="/privacy")
+    return render(
+        request,
+        "privacy.html",
+        title="Privacy | Pragith Prakash",
+        description="Privacy information for pragith.net.",
+        canonical_path="/privacy",
+    )
 
 
 @app.get("/legal", response_class=HTMLResponse)
 async def legal(request: Request):
-    return render(request, "legal.html", title="Legal | Pragith Prakash", description="Legal information for pragith.net.", canonical_path="/legal")
+    return render(
+        request,
+        "legal.html",
+        title="Legal | Pragith Prakash",
+        description="Legal information for pragith.net.",
+        canonical_path="/legal",
+    )
 
 
 REDIRECTS = {
@@ -419,7 +515,11 @@ async def legacy_or_404(request: Request, legacy_path: str):
 @app.exception_handler(404)
 async def not_found(request: Request, exc: HTTPException):
     return render(
-        request, "404.html", title="Page not found | Pragith Prakash",
-        description="The requested page could not be found.", canonical_path=request.url.path,
-        robots="noindex,follow", status_code=404,
+        request,
+        "404.html",
+        title="Page not found | Pragith Prakash",
+        description="The requested page could not be found.",
+        canonical_path=request.url.path,
+        robots="noindex,follow",
+        status_code=404,
     )

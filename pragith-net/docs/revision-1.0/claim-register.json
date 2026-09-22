@@ -1,0 +1,41 @@
+{
+  "source": "User-supplied resume in 22 September 2026 brief",
+  "verified_on": "2026-09-22",
+  "credentials": [
+    {
+      "name": "Google Cloud Professional Data Engineer",
+      "earned": null,
+      "expiry": null,
+      "issuer_url": null,
+      "decision": "Omit public credential claim pending issuer record; neither active nor expired inferred."
+    },
+    {
+      "name": "Google Cloud Professional Cloud Architect",
+      "earned": null,
+      "expiry": null,
+      "issuer_url": null,
+      "decision": "Omit public credential claim pending issuer record; neither active nor expired inferred."
+    },
+    {
+      "name": "Databricks Certified Data Engineer Associate",
+      "earned": null,
+      "expiry": null,
+      "issuer_url": null,
+      "decision": "Omit public credential claim pending issuer record; neither active nor expired inferred."
+    },
+    {
+      "name": "Databricks Certified Generative AI Engineer Associate",
+      "earned": null,
+      "expiry": null,
+      "issuer_url": null,
+      "decision": "Omit public credential claim pending issuer record; neither active nor expired inferred."
+    },
+    {
+      "name": "AWS Certified Cloud Practitioner",
+      "earned": null,
+      "expiry": null,
+      "issuer_url": null,
+      "decision": "Omit public credential claim pending issuer record; neither active nor expired inferred."
+    }
+  ]
+}

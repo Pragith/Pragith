@@ -83,7 +83,7 @@ def test_legacy_routes_redirect_to_canonical_pages():
 def test_canonical_title_experience_and_certifications():
     combined = "\n".join(client.get(path).text for path in ["/", "/about", "/resume"])
     assert "AI Forward Deployed Engineer" in combined
-    assert "14+ years" in combined
+    assert "since 2012" in combined
     assert "13+ years" not in combined
     assert "15+ years" not in combined
     for certification in CERTIFICATIONS:
@@ -93,11 +93,19 @@ def test_canonical_title_experience_and_certifications():
 
 def test_published_pages_exclude_banned_marketing_language():
     banned = [
-        "extreme velocity", "massive objectives within hours",
-        "zero-hallucination execution", "agent-native systems",
-        "silent automation", "absolute focus", "complete source truth",
-        "bloated teams", "intelligence deployed", "architecture that executes",
-        "systems that ship", "sovereign GPU infrastructure", "Pragith AI Inc.",
+        "extreme velocity",
+        "massive objectives within hours",
+        "zero-hallucination execution",
+        "agent-native systems",
+        "silent automation",
+        "absolute focus",
+        "complete source truth",
+        "bloated teams",
+        "intelligence deployed",
+        "architecture that executes",
+        "systems that ship",
+        "sovereign GPU infrastructure",
+        "Pragith AI Inc.",
     ]
     published = "\n".join(client.get(path).text.lower() for path in INDEXABLE_PATHS)
     for phrase in banned:
@@ -114,10 +122,13 @@ def test_homepage_uses_personal_editorial_language():
     html = client.get("/").text
     assert "Hello, I’m Pragith." in html
     assert "I take AI and data systems from architecture into production." in html
-    assert "Work I can describe in public." in html
+    assert "Professional experience" in html
     assert "What I can do for you" not in html
-    assert 'aria-roledescription="carousel"' in html
-    assert 'data-previous' in html and 'data-next' in html
+    assert 'aria-roledescription="carousel"' not in html
+    assert (
+        "/case-studies/fairway-frame-pipeline" in html
+        and "/case-studies/callrenard-call-states" in html
+    )
 
 
 def test_mobile_navigation_has_an_accessible_toggle():
@@ -137,7 +148,7 @@ def test_personal_pages_do_not_use_first_person_plural():
 
 def test_projects_are_honest_about_maturity():
     projects = client.get("/projects").text
-    assert "Velvet IPTV Player" in projects and "Production" in projects
+    assert "Velvet IPTV Player" in projects and "Active development" in projects
     assert "https://velvet.plus" in projects
     assert "Headmaster" not in projects
     assert "Caffeinate-d" in projects and "Source version 0.2.0" in projects
@@ -151,8 +162,11 @@ def test_projects_are_honest_about_maturity():
 def test_contact_form_uses_approved_engagement_models():
     html = client.get("/contact").text
     for label in [
-        "Initial fit assessment", "Paid architecture / discovery session",
-        "Hourly engineering", "Milestone delivery", "Other",
+        "Initial fit assessment",
+        "Paid architecture / discovery session",
+        "Hourly engineering",
+        "Milestone delivery",
+        "Other",
     ]:
         assert label in html
     assert "Others" not in html
@@ -215,22 +229,25 @@ def test_contact_submission_uses_selected_engagement(monkeypatch):
 
     monkeypatch.setattr("app.main.mailer_service.send_contact_email", fake_send)
     monkeypatch.setattr("app.main.mailer_service.verify_recaptcha", lambda _: True)
-    response = client.post("/contact", data={
-        "name": "Site visitor",
-        "email": "visitor@example.com",
-        "company": "Example organization",
-        "engagement_type": "Paid architecture / discovery session",
-        "timeline": "This quarter",
-        "message": "We need to review a data platform architecture.",
-        "ref_page": "speaking",
-        "cta_id": "discuss-training",
-        "utm_source": "pragith_net",
-        "utm_medium": "internal_cta",
-        "utm_campaign": "contact",
-        "utm_content": "discuss-training",
-        "tag1": "speaking",
-        "tag2": "discuss-training",
-    })
+    response = client.post(
+        "/contact",
+        data={
+            "name": "Site visitor",
+            "email": "visitor@example.com",
+            "company": "Example organization",
+            "engagement_type": "Paid architecture / discovery session",
+            "timeline": "This quarter",
+            "message": "We need to review a data platform architecture.",
+            "ref_page": "speaking",
+            "cta_id": "discuss-training",
+            "utm_source": "pragith_net",
+            "utm_medium": "internal_cta",
+            "utm_campaign": "contact",
+            "utm_content": "discuss-training",
+            "tag1": "speaking",
+            "tag2": "discuss-training",
+        },
+    )
     assert response.status_code == 200
     assert "Message received" in response.text
     assert "Paid architecture / discovery session" in captured["body"]
@@ -260,7 +277,9 @@ def test_recaptcha_v3_requires_score_and_expected_action(monkeypatch):
         assert timeout == 5
         return Response(payload)
 
-    monkeypatch.setattr("app.services.mailer.settings.RECAPTCHA_SECRET_KEY", "test-secret")
+    monkeypatch.setattr(
+        "app.services.mailer.settings.RECAPTCHA_SECRET_KEY", "test-secret"
+    )
     monkeypatch.setattr("app.services.mailer.requests.post", fake_post)
     assert mailer_service.verify_recaptcha("browser-token") is True
 
@@ -281,7 +300,9 @@ def test_internal_links_resolve_and_json_ld_is_valid():
     checked = set()
     for path in INDEXABLE_PATHS:
         html = client.get(path).text
-        for payload in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.DOTALL):
+        for payload in re.findall(
+            r'<script type="application/ld\+json">(.*?)</script>', html, re.DOTALL
+        ):
             json.loads(payload)
         parser = LinkParser()
         parser.feed(html)

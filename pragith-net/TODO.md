@@ -1,3 +1,11 @@
+## 1.0.0 revision
+
+- [x] Restore chronology, visible work, teaching programs and official event.
+- [x] Reconcile CallRenard across both sites.
+- [x] Validate form intent, keyboard navigation, print and responsive accessibility.
+- [ ] Obtain issuer links and earned/expiry dates for five recorded credentials.
+- [ ] Obtain an approved enterprise incident, design decision, tradeoff and operational outcome.
+
 # Verification and publication follow-up
 
 - [ ] `TODO_VERIFY`: Capture genuine screenshots from a macOS build of Caffeinate-d source version 0.2.0; keep its detail page noindexed until complete.

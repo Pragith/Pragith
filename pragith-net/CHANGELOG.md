@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.0 — 2026-09-22
+
+- Restore dated career history, promotion, assistant ownership and teaching programs from the supplied resume.
+- Add visible project entries, genuine responsive media and two source-backed product engineering records.
+- Synchronize CallRenard scope with Vriksh; retain professional work as bounded experience summaries.
+- Simplify navigation and adapt teaching/speaking enquiries while preserving entered text and attribution.
+- Preserve Google Analytics, Clarity, reCAPTCHA and delivery configuration.
+- Add a real GDG event and illustrative teaching exercise; document credential and enterprise evidence gaps internally.
+- Validate 29 application tests, 90 responsive checks and 18 accessibility scans.
+
+
 ## 2026-09-22 — Main product order
 
 - Order the main portfolio as Velvet, Fairway Golf Swing Analyzer, then CallRenard.

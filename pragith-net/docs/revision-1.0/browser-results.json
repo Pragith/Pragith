@@ -1,0 +1,87 @@
+{
+  "checks": 90,
+  "scans": [
+    {
+      "path": "/",
+      "violations": []
+    },
+    {
+      "path": "/about",
+      "violations": []
+    },
+    {
+      "path": "/experience",
+      "violations": []
+    },
+    {
+      "path": "/resume",
+      "violations": []
+    },
+    {
+      "path": "/teaching",
+      "violations": []
+    },
+    {
+      "path": "/projects",
+      "violations": []
+    },
+    {
+      "path": "/case-studies",
+      "violations": []
+    },
+    {
+      "path": "/case-studies/fairway-frame-pipeline",
+      "violations": []
+    },
+    {
+      "path": "/case-studies/callrenard-call-states",
+      "violations": []
+    },
+    {
+      "path": "/case-studies/ai-mlops-automation",
+      "violations": []
+    },
+    {
+      "path": "/services",
+      "violations": []
+    },
+    {
+      "path": "/services/ai-systems",
+      "violations": []
+    },
+    {
+      "path": "/services/executive-bi",
+      "violations": []
+    },
+    {
+      "path": "/writing",
+      "violations": []
+    },
+    {
+      "path": "/contact",
+      "violations": []
+    },
+    {
+      "path": "/contact?engagement_type=Teaching%20%2F%20workshop",
+      "violations": []
+    },
+    {
+      "path": "/contact?engagement_type=Speaking%20engagement",
+      "violations": []
+    },
+    {
+      "path": "/projects/caffeinate-d",
+      "violations": []
+    }
+  ],
+  "errors": [],
+  "flows": [
+    "teaching-to-inquiry",
+    "intent-change-preserves-message",
+    "required-field-validation",
+    "menu-escape-focus",
+    "prototype-return",
+    "resume-print",
+    "200%-text"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "accepted": 3,
+  "rejected": [
+    {
+      "row": 4,
+      "reason": "duplicate order id"
+    },
+    {
+      "row": 5,
+      "reason": "amount must be positive"
+    },
+    {
+      "row": 6,
+      "reason": "invalid amount"
+    }
+  ],
+  "total": "56.25"
+}

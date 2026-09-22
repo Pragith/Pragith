@@ -1,0 +1,1 @@
+<div class="timeline">{% for item in experience %}<article class="timeline-item"><p class="timeline-period">{{ item.period }}</p><h{{ level|default(2) }}>{{ item.title }}</h{{ level|default(2) }}><p class="timeline-context">{{ item.context }}</p><p class="copy">{{ item.body }}</p></article>{% endfor %}</div>

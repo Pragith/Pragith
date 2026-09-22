@@ -69,14 +69,13 @@
     @media(max-width:680px){.container{width:min(var(--max),calc(100% - 32px))}.nav-links{padding-inline:16px}.hero,.home-hero{padding:44px 0}.hero.compact{padding:44px 0 34px}h1{font-size:43px}.home-hero-grid,.grid-2,.grid-3,.grid-4,.field-grid,.proof-grid,.home-story-grid,.editorial-entry,.section-split{grid-template-columns:1fr}.home-portrait{width:58%;max-height:320px;margin:4px 0 8px}.proof-item{padding:22px 0;border-right:0;border-bottom:1px solid #49433b}.timeline-item{grid-template-columns:1fr;gap:5px;padding:27px 0}.timeline-period{grid-row:auto;margin-bottom:7px}.detail-list{grid-template-columns:1fr}.detail-list dt{padding-bottom:2px}.detail-list dd{padding-top:5px}.section{padding:46px 0}.home-chapter{padding:50px 0}.home-story-grid{gap:28px}.home-prose>p,.home-story p{font-size:17px}.chapter-heading{margin-bottom:28px}.home-stories{margin-left:0}.carousel-controls{margin-top:22px}.home-afterword{margin-top:20px}.home-signoff{padding:50px 0 58px}.editorial-entry,.section-split{gap:12px}.editorial-entry{padding:23px 0}.footer-grid{display:block}.footer-links{margin-top:22px}}
     @media print{.global-nav,.global-footer,.no-print,.actions{display:none!important}.hero,.section{padding:20px 0}.print-only{display:block}body{font-size:11pt;background:#fff}.container{width:100%}h1{font-size:30pt}.timeline-item{break-inside:avoid}}
   </style>
-  <link rel="stylesheet" href="/static/product-picker.css?v=2">
-  <script defer src="/static/product-picker.js?v=1"></script>
+  <link rel="stylesheet" href="/static/revision.css?v={{ site_version }}">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="global-nav"><nav class="container nav-content" aria-label="Primary navigation"><a class="nav-brand" href="/">Pragith Prakash</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button><div class="nav-links" id="nav-links">{% set current = request.url.path %}<a class="nav-link" href="/" {% if current == '/' %}aria-current="page"{% endif %}>Home</a><a class="nav-link" href="/about" {% if current == '/about' %}aria-current="page"{% endif %}>About</a><a class="nav-link" href="/experience" {% if current == '/experience' %}aria-current="page"{% endif %}>Experience</a><a class="nav-link" href="/case-studies" {% if current.startswith('/case-studies') %}aria-current="page"{% endif %}>Case Studies</a><a class="nav-link" href="/services" {% if current.startswith('/services') %}aria-current="page"{% endif %}>Services</a><a class="nav-link" href="/teaching" {% if current == '/teaching' %}aria-current="page"{% endif %}>Teaching</a><a class="nav-link" href="/projects" {% if current.startswith('/projects') %}aria-current="page"{% endif %}>Projects / Labs</a><a class="nav-link" href="/writing" {% if current == '/writing' %}aria-current="page"{% endif %}>Writing</a><a class="nav-link" href="/contact" {% if current == '/contact' %}aria-current="page"{% endif %}>Contact</a><a class="nav-link nav-resume" href="/resume">Resume</a></div></nav></header>
+  <header class="global-nav"><nav class="container nav-content" aria-label="Primary navigation"><a class="nav-brand" href="/">Pragith Prakash</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button><div class="nav-links" id="nav-links">{% set current = request.url.path %}{% for href,label in [('/case-studies','Work'),('/experience','Experience'),('/teaching','Teaching'),('/about','About'),('/contact','Contact'),('/resume','Resume')] %}<a class="nav-link{{ ' nav-resume' if href == '/resume' else '' }}" href="{{ href }}" {% if current == href %}aria-current="page"{% elif href == '/case-studies' and (current.startswith('/case-studies/') or current.startswith('/projects') or current.startswith('/services')) %}data-section-current="true"{% endif %}>{{ label }}</a>{% endfor %}</div></nav></header>
   <main id="main">{% block content %}{% endblock %}</main>
-  <footer class="global-footer"><div class="container footer-grid"><div><strong>Pragith Prakash</strong><p class="footer-note">AI Forward Deployed Engineer, consultant and educator.</p></div><div class="footer-links"><a href="https://www.linkedin.com/in/pragith/" rel="me">LinkedIn</a><a href="https://github.com/Pragith" rel="me">GitHub</a><a href="/privacy">Privacy</a><a href="/legal">Legal</a></div></div></footer>
+  <footer class="global-footer"><div class="container footer-grid"><div><strong>Pragith Prakash</strong><p class="footer-note">AI Forward Deployed Engineer, consultant and educator. <span class="release-version">v{{ site_version }}</span></p></div><div class="footer-links"><a href="https://www.linkedin.com/in/pragith/" rel="me">LinkedIn</a><a href="https://github.com/Pragith" rel="me">GitHub</a><a href="/projects">Projects</a><a href="/services">Services</a><a href="/writing">Writing & events</a><a href="/privacy">Privacy</a><a href="/legal">Legal</a></div></div></footer>
   <script>
     (() => {
       const navToggle = document.querySelector('.nav-toggle');
@@ -95,33 +94,10 @@
         }
       });
 
-      document.querySelectorAll('[data-carousel]').forEach((carousel) => {
-        const slides = [...carousel.querySelectorAll('[data-slide]')];
-        const previous = carousel.querySelector('[data-previous]');
-        const next = carousel.querySelector('[data-next]');
-        const position = carousel.querySelector('[data-position]');
-        let active = 0;
-        let touchStart = 0;
-        const show = (index) => {
-          active = (index + slides.length) % slides.length;
-          slides.forEach((slide, slideIndex) => {
-            slide.hidden = slideIndex !== active;
-            slide.setAttribute('aria-hidden', String(slideIndex !== active));
-          });
-          position.textContent = `${active + 1} of ${slides.length}`;
-        };
-        previous.addEventListener('click', () => show(active - 1));
-        next.addEventListener('click', () => show(active + 1));
-        carousel.addEventListener('keydown', (event) => {
-          if (event.key === 'ArrowLeft') { event.preventDefault(); show(active - 1); }
-          if (event.key === 'ArrowRight') { event.preventDefault(); show(active + 1); }
-        });
-        carousel.addEventListener('touchstart', (event) => { touchStart = event.changedTouches[0].clientX; }, {passive:true});
-        carousel.addEventListener('touchend', (event) => {
-          const distance = event.changedTouches[0].clientX - touchStart;
-          if (Math.abs(distance) > 45) show(active + (distance < 0 ? 1 : -1));
-        }, {passive:true});
-        show(0);
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
+          navToggle.setAttribute('aria-expanded','false'); navToggle.textContent='Menu'; navLinks.dataset.open='false'; navToggle.focus();
+        }
       });
 
       if (window.location.pathname === '/contact') return;

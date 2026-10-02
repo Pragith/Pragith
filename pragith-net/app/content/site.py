@@ -293,6 +293,7 @@ INDEXABLE_PATHS = [
     "/services/executive-bi",
     "/teaching",
     "/projects",
+    "/apps/rajadharma",
     "/resume",
     "/writing",
     "/contact",

@@ -1,9 +1,11 @@
 from datetime import datetime
 from pathlib import Path
 
+import httpx
+
 from fastapi import FastAPI, Form, HTTPException, Request
 from fastapi.middleware.trustedhost import TrustedHostMiddleware
-from fastapi.responses import HTMLResponse, RedirectResponse, Response
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from slowapi import Limiter, _rate_limit_exceeded_handler
@@ -29,7 +31,7 @@ from app.services.sitemap import generate_sitemap
 from app.themes import ThemeService
 
 app = FastAPI(
-    title=settings.PROJECT_NAME, version="1.0.1", docs_url=None, redoc_url=None
+    title=settings.PROJECT_NAME, version="1.1.0", docs_url=None, redoc_url=None
 )
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
@@ -92,7 +94,7 @@ templates.env.globals.update(
         "experience_label": EXPERIENCE_LABEL,
         "certifications": CERTIFICATIONS,
         "media": MEDIA,
-        "site_version": "1.0.1",
+        "site_version": "1.1.0",
     }
 )
 
@@ -484,6 +486,52 @@ async def legal(request: Request):
         description="Legal information for pragith.net.",
         canonical_path="/legal",
     )
+
+
+@app.get("/apps/rajadharma", response_class=HTMLResponse)
+async def rajadharma(request: Request):
+    return render(
+        request,
+        "apps/rajadharma.html",
+        title="Rajadharma | Pragith Prakash",
+        description="A mythic court strategy game by Pragith Prakash. Balance duty, wealth, strength and your people's welfare through consequential choices.",
+        canonical_path="/apps/rajadharma",
+    )
+
+
+@app.post("/api/rajadharma/feedback")
+async def rajadharma_feedback(request: Request):
+    if request.headers.get("content-type", "").split(";")[0] != "application/json":
+        return JSONResponse({"error": "invalid_request"}, status_code=415)
+    body = bytearray()
+    async for chunk in request.stream():
+        body.extend(chunk)
+        if len(body) > 16384:
+            return JSONResponse({"error": "request_too_large"}, status_code=413)
+    try:
+        async with httpx.AsyncClient(timeout=20.0) as client:
+            result = await client.post(
+                "http://rajadharma-feedback:8000/api/feedback",
+                content=bytes(body),
+                headers={
+                    "Content-Type": "application/json",
+                    "X-Real-IP": request.client.host if request.client else "unknown",
+                },
+            )
+        if len(result.content) > 4096:
+            raise ValueError("Unexpected feedback response")
+        payload = result.json()
+        if not isinstance(payload, dict):
+            raise ValueError("Unexpected feedback response")
+        retry_after = result.headers.get("Retry-After", "")
+        headers = (
+            {"Retry-After": retry_after}
+            if retry_after.isdigit() and len(retry_after) <= 6
+            else {}
+        )
+        return JSONResponse(payload, status_code=result.status_code, headers=headers)
+    except (httpx.HTTPError, ValueError):
+        return JSONResponse({"error": "temporarily_unavailable"}, status_code=503)
 
 
 REDIRECTS = {

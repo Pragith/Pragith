@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 — 2026-10-02
+
+- Add the missing Rajadharma product page with developer credit, accurate game descriptions and feedback/privacy information. Keep the canonical URL stable when app visits carry UTM attribution.
+- Add a bounded JSON-only public HTTPS feedback proxy for native Rajadharma clients; forward to the fixed internal feedback service, preserve meaningful failure statuses and withhold internal connection details.
+- Include the product page in the sitemap and add route, forwarding, body-limit and failure-path regression coverage.
+
 ## 1.0.1 — 2026-09-22
 
 - Validation: 28 application tests, Ruff, ten live responsive page checks, teaching enquiry, retired-route redirects and removed-download check passed; zero browser runtime errors.

@@ -4,7 +4,7 @@
 - [x] Add the native feedback proxy to the fixed game feedback service.
 - [x] 38 application tests and Ruff pass; four public browser viewports pass with zero overflow/runtime errors. Public invalid feedback returns422 through the live backend without mail dispatch.
 - [x] Publish website1.1.0; product page returns200 with stable canonical URL and SMTP feedback proxy reachable.
-- [ ] Commit and push verified source.
+- [x] Commit and push verified source: 5b6068c.
 
 - [x] Remove engineering-record sections from Home and Work, with redirects for the retired detail pages.
 - [x] 1.0.1: Remove the generic sample exercise and its downloads; verify the public teaching page and enquiry path.

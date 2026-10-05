@@ -70,18 +70,6 @@ _APP_DIR = Path(__file__).parent
 app.mount("/static", StaticFiles(directory=str(_APP_DIR / "static")), name="static")
 
 
-@app.get("/projects/agent-keyboard/", response_class=HTMLResponse)
-async def keyboard_entry():
-    html = (_APP_DIR / "static" / "agent-keyboard" / "index.html").read_text()
-    navigation = '<nav aria-label="Portfolio" style="position:relative;z-index:100;padding:16px;background:#fff;color:#17212b;font:16px system-ui"><a href="/projects" style="color:#0055a6">← All projects</a><span style="margin-left:20px">Browser interaction prototype · CLI bridge is not implemented.</span></nav>'
-    return HTMLResponse(html.replace("<body>", "<body>" + navigation, 1))
-
-
-app.mount(
-    "/projects/agent-keyboard",
-    StaticFiles(directory=str(_APP_DIR / "static" / "agent-keyboard"), html=True),
-    name="agent-keyboard",
-)
 templates = Jinja2Templates(directory=str(_APP_DIR / "templates"))
 theme_service = ThemeService(settings.THEME)
 templates.env.globals.update(
@@ -538,7 +526,6 @@ REDIRECTS = {
     "/ai": "/services/ai-systems",
     "/apps": "/projects",
     "/apps/caffeinated": "/projects/caffeinate-d",
-    "/apps/agent-keyboard": "/projects/agent-keyboard/",
     "/business/dashboards": "/services/executive-bi",
     "/work": "/case-studies",
     "/notes": "/writing",

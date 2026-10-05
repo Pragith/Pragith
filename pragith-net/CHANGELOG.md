@@ -1,3 +1,7 @@
+# Retirement — 2026-10-05
+
+- Remove retired Agent Keyboard demo route, project listing and source symlink. Remove host deployment mount and verify home 200/demo 404.
+
 # Changelog
 
 ## 1.1.0 — 2026-10-02

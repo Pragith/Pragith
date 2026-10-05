@@ -200,15 +200,6 @@ PROJECTS = [
         "href": "/projects/caffeinate-d",
         "link_label": "Project details",
     },
-    {
-        "slug": "agent-keyboard",
-        "title": "Agent Keyboard",
-        "status": "Prototype",
-        "summary": "A browser interaction prototype for a tactile coding-agent control deck. The CLI bridge is not implemented.",
-        "version": "Browser prototype",
-        "href": "/projects/agent-keyboard/",
-        "link_label": "Open prototype",
-    },
 ]
 
 EXPERIENCE = [

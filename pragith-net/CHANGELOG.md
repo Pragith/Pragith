@@ -4,6 +4,13 @@
 
 # Changelog
 
+## Copy review — 2026-10-12
+
+- Review all 16 sitemap pages, six linked work summaries, the noindexed Caffeinate-d page, three additional contact intents and the 404 page: 27 live pages/states, 384 main text blocks and 3,717 captured main-text words including repeated sections.
+- Review titles, search/social descriptions, link labels, image descriptions, form options/placeholders/prefills, shared navigation/footer and source-only success/failure/500 copy. Distinguish unused content fields and the 96 unrouted blog files from current published pages.
+- Record 93 editorial findings with reasons, proposed wording, source references and page associations, including seven high-priority problems. Preserve verified career dates/titles, named teaching programs, meaningful technical terms, product limitations and artwork attribution; request evidence instead of inventing outcomes.
+- Save the complete annotated capture and a searchable page-by-page HTML review under `docs/copy-review-2026-10-12/`. Validate all captured fragments have review decisions; check report filtering and rendering with zero browser exceptions. No public copy was rewritten or published as part of this audit.
+
 ## 1.1.2 — 2026-10-12
 
 - Restore the portrait's original effective 20px rounded frame, soft shadow, subtle saturation/contrast treatment and 340px height limit at the owner's explicit request. This photograph is an intentional exception to square component styling.

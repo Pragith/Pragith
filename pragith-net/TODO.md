@@ -2,7 +2,7 @@
 
 - [x] Restore the original effective portrait styling as explicitly requested.
 - [x] Verify desktop/mobile rendering, 39 application tests and live version metadata; commit and push the restoration.
-- [ ] Review every public page and its complete text for weak, generic or unsupported copy; report concrete revisions before changing copy.
+- [x] Review all 27 public pages/states, 384 main-copy blocks, metadata, links, image labels and source-only form messages. Record 93 findings (7 high priority, 54 medium, 32 optional refinements) with proposed wording in docs/copy-review-2026-10-12/. Public text is unchanged.
 
 ## 2026-10-12 — Visual polish 1.1.1
 

@@ -4,6 +4,20 @@
 
 # Changelog
 
+## Copy and visual cleanup — 2026-10-12
+
+- Rewrite the public portfolio copy and metadata around named tasks and responsibilities. Remove repeated career qualifications, contract-like phrasing and unsupported healthcare-adjacent positioning; keep official roles, dates, teaching programs and product limitations.
+- Correct stale search descriptions that promised certifications, open-source status across commercial products and packaged services. Replace the removed sample-exercise link promise with an accurate teaching label.
+- Simplify form questions, placeholders and response copy; preserve teaching/speaking intent, entered messages and attribution. Keep the restored portrait styling unchanged.
+- Layer ASD-STE100 Issue 9 writing principles: short active sentences, fewer contractions and nominalizations, explicit installation/feedback steps and consistent terms. Keep proper names and necessary technical nouns. This is STE-informed editing, not certification of full approved-dictionary conformity.
+- Express date ranges with “to” and use a colon in the Fairway descriptor, preserving dates and product identity while avoiding the detector’s dash-density false positives.
+- Remove dormant contradictory CallRenard launch claims; populate its public record from the shared product facts. Keep its development/demo limitations accurate.
+- Add repeatable browser-copy capture, raw 61-rule matcher and STE-derived checks, including source-only success/failure fixtures that never send mail. Pin the reference detector to ba39ed51c951d4e743c6b3318aae8c7ceb386c7f without modifying rules or thresholds.
+- Add the six owner-supplied certification names to Resume, including Claude Certified Architect – Foundations. Preserve exact names without inventing expiry dates or active-status claims.
+- Remove duplicate section/first-row separators throughout the shared layouts. Remove footer-link underlines and visible website version labels. Review all 23 public page screenshots at desktop/mobile sizes plus the menu and both Resume print pages.
+- Preview: 39 application tests and Ruff passed. Detector core/default-rule validation passed 267 tests. The initial 27-page capture had 36 raw matches. The revised 31-page/state capture has zero scored matches and zero unresolved raw matches across 962 text surfaces; its one raw match is the literal separator in the owner-supplied Claude credential, retained and reported as a proper-name false positive. All 280 checked sentences pass the STE-derived checks (maximum instruction 15 words; maximum description 23 words). 161 responsive checks and 23 accessibility scans passed, with zero overflow, accessibility violations, console errors or page exceptions in the isolated preview.
+- Keep existing internal Python package metadata unchanged. Remove visible website version labels at the owner’s request and derive stylesheet cache keys from source hashes. Record this website update by date and source commit. Live public analysis is recorded after publication.
+
 ## Copy review — 2026-10-12
 
 - Review all 16 sitemap pages, six linked work summaries, the noindexed Caffeinate-d page, three additional contact intents and the 404 page: 27 live pages/states, 384 main text blocks and 3,717 captured main-text words including repeated sections.

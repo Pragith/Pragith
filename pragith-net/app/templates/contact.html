@@ -6,14 +6,14 @@
 <section class="hero compact">
   <div class="container">
     <h1 data-contact-heading>{{ "Plan a course or workshop." if teaching else "Invite me to speak." if speaking else "Tell me about the system and where it is stuck." }}</h1>
-    <p class="lede" data-contact-intro>{{ "Describe the audience, their experience and the topics they need." if teaching else "Tell me about the event, audience, format and timing." if speaking else "Share the current architecture, the constraint and the outcome your team needs." }} I will reply about fit and the next conversation.</p>
+    <p class="lede" data-contact-intro>{{ "Describe the audience, their experience and the topics they need." if teaching else "Tell me about the event, audience, format and timing." if speaking else "Tell me what you have, what is not working and what you want to change." }} I will tell you if I can help and what to do next.</p>
   </div>
 </section>
 <section class="section">
   <div class="container grid grid-2">
     <div>
       <h2>Starting the conversation</h2>
-      <div class="copy"><p data-contact-helper>{{ "Include cohort size, prerequisites and the work learners should practise." if teaching else "Include the event theme, intended audience and whether the session is online or in person." if speaking else "I can help with a focused architecture review, implementation, debugging or a defined delivery milestone." }}</p><p>I use the details you send to assess the request and suggest a next step.</p></div>
+      <div class="copy"><p data-contact-helper>{{ "Include cohort size, prerequisites and the work learners should practise." if teaching else "Include the event theme, intended audience and whether the session is online or in person." if speaking else "I can examine an architecture, build a feature or help fix a production problem." }}</p></div>
       <div class="actions">
         <a href="https://www.linkedin.com/in/pragith/">LinkedIn</a>
         <a href="https://github.com/Pragith">GitHub</a>
@@ -41,9 +41,9 @@
           <input id="company" name="company" value="{{ form.get('company','') }}">
         </div>
         <div class="field">
-          <label for="engagement_type">What kind of conversation?</label>
+          <label for="engagement_type">What do you need?</label>
           <select id="engagement_type" name="engagement_type">
-            {% for option in ("Initial fit assessment", "Paid architecture / discovery session", "Hourly engineering", "Milestone delivery", "Teaching / workshop", "Speaking engagement", "Other") %}
+            {% for option in ("Project enquiry", "Paid architecture / discovery session", "Hourly engineering", "Milestone delivery", "Teaching / workshop", "Speaking engagement", "Other") %}
             <option{% if form.get('engagement_type') == option %} selected{% endif %}>{{ option }}</option>
             {% endfor %}
           </select>
@@ -53,8 +53,8 @@
           <input id="timeline" name="timeline" value="{{ form.get('timeline','') }}">
         </div>
         <div class="field">
-          <label for="message" data-contact-label>{{ "Audience, topics and learning goals" if teaching else "Event, audience and session format" if speaking else "Context, constraints and desired outcome" }}</label>
-          <textarea id="message" name="message" required placeholder="{{ 'Audience experience, topics, format and preferred timing.' if teaching else 'Event theme, audience, format and date.' if speaking else 'Current system, primary constraint and intended outcome.' }}">{{ form.get('message','') }}</textarea>
+          <label for="message" data-contact-label>{{ "Audience, topics and learning goals" if teaching else "Event, audience and session format" if speaking else "What do you need to build or fix?" }}</label>
+          <textarea id="message" name="message" required placeholder="{{ 'Audience experience, topics, format and preferred timing.' if teaching else 'Event theme, audience, format and date.' if speaking else 'Tell me what you have, what is not working and what you want to change.' }}">{{ form.get('message','') }}</textarea>
         </div>
         <div class="honeypot" aria-hidden="true">
           <label for="website">Website</label>
@@ -72,11 +72,11 @@
   const variants = {
     'Teaching / workshop': ['Plan a course or workshop.', 'Describe the audience, their experience and the topics they need.', 'Include cohort size, prerequisites and the work learners should practise.', 'Teaching enquiry', 'Audience, topics and learning goals', 'Audience experience, topics, format and preferred timing.'],
     'Speaking engagement': ['Invite me to speak.', 'Tell me about the event, audience, format and timing.', 'Include the event theme, intended audience and whether the session is online or in person.', 'Speaking enquiry', 'Event, audience and session format', 'Event theme, audience, format and date.'],
-    'default': ['Tell me about the system and where it is stuck.', 'Share the current architecture, the constraint and the outcome your team needs.', 'I can help with a focused architecture review, implementation, debugging or a defined delivery milestone.', 'Project enquiry', 'Context, constraints and desired outcome', 'Current system, primary constraint and intended outcome.']
+    'default': ['Tell me about the system and where it is stuck.', 'Tell me what you have, what is not working and what you want to change.', 'I can examine an architecture, build a feature or help fix a production problem.', 'Project enquiry', 'What do you need to build or fix?', 'Tell me what you have, what is not working and what you want to change.']
   };
   document.getElementById('engagement_type').addEventListener('change', event => {
     const v=variants[event.target.value] || variants.default;
-    ['heading','intro','helper','form-heading','label'].forEach((key,i) => document.querySelector('[data-contact-'+key+']').textContent=v[i]+(key==='intro'?' I will reply about fit and the next conversation.':''));
+    ['heading','intro','helper','form-heading','label'].forEach((key,i) => document.querySelector('[data-contact-'+key+']').textContent=v[i]+(key==='intro'?' I will tell you if I can help and what to do next.':''));
     document.getElementById('message').placeholder=v[5];
   });
 })();

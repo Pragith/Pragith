@@ -22,7 +22,7 @@ def test_resume_chronology(path):
         assert entry["period"] in html
         assert entry["context"].replace("&", "&amp;") in html
     assert "eighteen months" in html
-    assert "January 2020–January 2021" in html
+    assert "January 2020 to January 2021" in html
     assert "SMART FBO, Hibu and Sigmoid" in html
 
 
@@ -42,7 +42,7 @@ def test_resume_chronology(path):
         (
             "Hourly engineering",
             "Tell me about the system and where it is stuck.",
-            "Context, constraints and desired outcome",
+            "What do you need to build or fix?",
         ),
     ],
 )
@@ -95,9 +95,20 @@ def test_callrenard_matches_fact_record():
     assert "Live service" not in html
 
 
-def test_missing_credentials_and_editorial_notes_are_not_claims():
-    for path in ["/about", "/resume"]:
-        assert "Certified" not in client.get(path).text
+def test_owner_supplied_credentials_and_editorial_notes():
+    assert "Certified" not in client.get("/about").text
+    resume = client.get("/resume").text
+    for name in [
+        "Claude Certified Architect – Foundations",
+        "Google Cloud Professional Data Engineer",
+        "Google Cloud Professional Cloud Architect",
+        "Databricks Certified Data Engineer Associate",
+        "Databricks Certified Generative AI Associate",
+        "AWS Certified Cloud Practitioner",
+    ]:
+        assert name in resume
+    assert "Valid until" not in resume
+    assert "Active certification" not in resume
     assert (
         "excluded from search indexing until"
         not in client.get("/projects/caffeinate-d").text
@@ -127,14 +138,16 @@ def test_analytics_and_recaptcha_bindings():
         assert "recaptcha/api.js?render=site-key" in client.get("/contact").text
 
 
-def test_release_metadata_comes_from_manifest():
+def test_internal_package_and_public_asset_metadata():
     root = Path(__file__).resolve().parents[1]
     with (root / "pyproject.toml").open("rb") as manifest:
         version = tomllib.load(manifest)["project"]["version"]
     assert app.version == version == (root / "VERSION").read_text().strip()
-    assert templates.env.globals["site_version"] == version
+    revision = templates.env.globals["asset_revision"]
+    assert re.fullmatch(r"[0-9a-f]{12}", revision)
     html = client.get("/").text
-    assert f"/static/site.css?v={version}" in html
-    assert f"/theme.css?v={version}" in html
-    assert f"v{version}</span>" in html
+    assert f"/static/site.css?rev={revision}" in html
+    assert f"/theme.css?rev={revision}" in html
+    assert "release-version" not in html
+    assert f"v{version}</span>" not in html
     assert "revision.css" not in html

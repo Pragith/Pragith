@@ -1,3 +1,15 @@
+## 2026-10-12 — Copy cleanup and STE pass
+
+- [x] Clone and read the actual 61-signal detector; validate its core and shipped rules (267 tests).
+- [x] Apply the copy review across public pages, metadata, labels and source-only messages without inventing evidence.
+- [x] Apply ASD-STE100 Issue 9 writing guidance and inspect the relevant dictionary entries.
+- [x] Scan all 61 unchanged rules across 962 surfaces: zero scored/unresolved matches; retain and report the one Claude credential separator false positive. Pass 280 STE-derived sentence checks; preserve the portrait treatment.
+- [x] Pass 39 application tests, Ruff, 161 responsive checks and 23 accessibility scans; inspect every public page at desktop/mobile widths, plus menu and Resume print pages.
+- [x] Add all six supplied certifications; remove duplicate dividers, footer underlines and visible website version labels.
+- [ ] Publish the dated website update; verify asset hashes and rerun both copy analyses on public text.
+- [ ] Commit and push final release evidence and tracking.
+- [ ] Obtain publishable concrete examples for the preserved Sofvie, Dentsu and Wipro responsibility summaries; keep existing factual summaries until then.
+
 ## 2026-10-12 — Portrait restoration 1.1.2
 
 - [x] Restore the original effective portrait styling as explicitly requested.

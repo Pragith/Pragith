@@ -88,7 +88,7 @@ def test_canonical_title_experience_and_certifications():
     assert "15+ years" not in combined
     for certification in CERTIFICATIONS:
         assert certification in combined
-    assert "Databricks Certified Generative AI Associate" not in combined
+    assert "Databricks Certified Generative AI Associate" in combined
 
 
 def test_published_pages_exclude_banned_marketing_language():
@@ -120,7 +120,7 @@ def test_public_pages_do_not_render_repeated_label_components():
 
 def test_homepage_uses_personal_editorial_language():
     html = client.get("/").text
-    assert "Hello, I’m Pragith." in html
+    assert "Hello, I am Pragith." in html
     assert "I take AI and data systems from architecture into production." in html
     assert "Professional experience" in html
     assert "What I can do for you" not in html
@@ -165,7 +165,7 @@ def test_projects_are_honest_about_maturity():
 def test_contact_form_uses_approved_engagement_models():
     html = client.get("/contact").text
     for label in [
-        "Initial fit assessment",
+        "Project enquiry",
         "Paid architecture / discovery session",
         "Hourly engineering",
         "Milestone delivery",
@@ -206,7 +206,7 @@ def test_contact_page_smartly_prefills_from_source_tags():
         "tag1=speaking&tag2=invite-pragith-to-speak"
     ).text
     assert "<option selected>Speaking engagement</option>" in html
-    assert "I’d like to discuss a speaking engagement." in html
+    assert "I would like to discuss a speaking engagement." in html
     assert "Event and audience:" in html
     assert 'name="tag1" value="speaking"' in html
     assert 'name="tag2" value="invite-pragith-to-speak"' in html

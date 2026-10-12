@@ -1,4 +1,5 @@
 from datetime import datetime
+from hashlib import sha256
 from pathlib import Path
 from importlib.metadata import version
 
@@ -31,10 +32,10 @@ from app.services.mailer import mailer_service
 from app.services.sitemap import generate_sitemap
 from app.themes import ThemeService
 
-SITE_VERSION = version("pragith-net")
+PACKAGE_VERSION = version("pragith-net")
 
 app = FastAPI(
-    title=settings.PROJECT_NAME, version=SITE_VERSION, docs_url=None, redoc_url=None
+    title=settings.PROJECT_NAME, version=PACKAGE_VERSION, docs_url=None, redoc_url=None
 )
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
@@ -85,7 +86,9 @@ templates.env.globals.update(
         "experience_label": EXPERIENCE_LABEL,
         "certifications": CERTIFICATIONS,
         "media": MEDIA,
-        "site_version": SITE_VERSION,
+        "asset_revision": sha256(
+            (_APP_DIR / "static" / "site.css").read_bytes() + theme_service.css.encode()
+        ).hexdigest()[:12],
     }
 )
 
@@ -160,7 +163,7 @@ async def about(request: Request):
         request,
         "about.html",
         title="About Pragith Prakash | AI Forward Deployed Engineer",
-        description="Professional background, teaching, certifications and engineering approach of Pragith Prakash.",
+        description="Pragith Prakash’s background in AI and data engineering, teaching and consulting.",
         canonical_path="/about",
     )
 
@@ -194,8 +197,8 @@ async def case_studies(request: Request):
     return render(
         request,
         "case_studies.html",
-        title="Case Studies | Pragith Prakash",
-        description="Anonymized examples of enterprise data platforms, AI delivery, cloud integrations, analytics and engineering enablement.",
+        title="Work and experience | Pragith Prakash",
+        description="Work summaries covering enterprise AI assistants, data platforms, reporting and technical teaching.",
         canonical_path="/case-studies",
         case_studies=CASE_STUDIES,
     )
@@ -231,7 +234,7 @@ async def services(request: Request):
         request,
         "services.html",
         title="Services | Pragith Prakash",
-        description="Hands-on AI, data platform, cloud, MLOps, analytics and engineering enablement services.",
+        description="AI integrations, data-pipeline troubleshooting, reporting and technical teaching from Pragith Prakash.",
         canonical_path="/services",
         services=SERVICES,
     )
@@ -243,7 +246,7 @@ async def ai_systems(request: Request):
         request,
         "ai_systems.html",
         title="AI Systems and Automation | Pragith Prakash",
-        description="Controlled AI orchestration, evaluation, observability, access, approval gates, failure handling and cost management.",
+        description="Connect an AI assistant to existing records and tools, with agreed access, testing and review.",
         canonical_path="/services/ai-systems",
     )
 
@@ -254,7 +257,7 @@ async def executive_bi(request: Request):
         request,
         "executive_bi.html",
         title="Analytics and Executive BI | Pragith Prakash",
-        description="Vendor-neutral source integration, semantic modelling, governance, dashboards, access control and reporting operations.",
+        description="Resolve conflicting reports, agree metric definitions and build dashboards your team can maintain.",
         canonical_path="/services/executive-bi",
     )
 
@@ -264,8 +267,8 @@ async def teaching(request: Request):
     return render(
         request,
         "teaching.html",
-        title="Teaching and Enablement | Pragith Prakash",
-        description="Graduate instruction, workforce programs, workshops and team enablement across AI, data, cloud and software engineering.",
+        title="Teaching | Pragith Prakash",
+        description="Teaching experience at Cambrian College and Correlation One, plus cloud and data workshops through Google Developer Groups.",
         canonical_path="/teaching",
     )
 
@@ -275,8 +278,8 @@ async def projects(request: Request):
     return render(
         request,
         "projects.html",
-        title="Projects and Labs | Pragith Prakash",
-        description="Open-source tools and clearly labelled experiments by Pragith Prakash.",
+        title="Products and experiments | Pragith Prakash",
+        description="Products and experiments by Pragith Prakash, including Fairway, Velvet, CallRenard and Caffeinate-d.",
         canonical_path="/projects",
         projects=PROJECTS,
     )
@@ -288,7 +291,7 @@ async def caffeinate_d(request: Request):
         request,
         "caffeinate_d.html",
         title="Caffeinate-d | Pragith Prakash",
-        description="A small native macOS menu-bar wrapper for the system caffeinate command.",
+        description="A macOS menu-bar app that keeps your display awake.",
         canonical_path="/projects/caffeinate-d",
         robots="noindex,follow",
     )
@@ -299,8 +302,8 @@ async def writing(request: Request):
     return render(
         request,
         "writing.html",
-        title="Writing and Appearances | Pragith Prakash",
-        description="Selected technical writing, talks and appearances by Pragith Prakash.",
+        title="Writing and speaking | Pragith Prakash",
+        description="A cloud-certification talk from GDG Cloud Edmonton and links to Pragith Prakash’s LinkedIn posts.",
         canonical_path="/writing",
     )
 
@@ -311,7 +314,7 @@ async def business(request: Request):
         request,
         "business.html",
         title="Business Services | Vriksh Consulting Services Inc.",
-        description="Packaged analytics, automation and technical enablement services delivered through Vriksh Consulting Services Inc.",
+        description="Reporting, workflow automation and technical training through Vriksh Consulting Services Inc.",
         canonical_path="/business",
     )
 
@@ -341,17 +344,17 @@ async def contact(request: Request):
     if any(term in signal for term in ("speaking", "speaker", "keynote", "talk")):
         engagement_type = engagement_type or "Speaking engagement"
         message = message or (
-            "I’d like to discuss a speaking engagement.\n\n"
-            "Event and audience:\nPreferred format and date:\nDesired outcome:"
+            "I would like to discuss a speaking engagement.\n\n"
+            "Event and audience:\nPreferred format and date:\nWhat would you like to change:"
         )
     elif any(
         term in signal for term in ("teaching", "training", "workshop", "enablement")
     ):
         engagement_type = engagement_type or "Teaching / workshop"
         message = message or (
-            "I’d like to discuss technical training or a workshop.\n\n"
+            "I would like to discuss technical training or a workshop.\n\n"
             "Audience and current experience:\nTopics or systems involved:\n"
-            "Preferred timing and outcome:"
+            "Preferred timing and learning goals:"
         )
     elif any(
         term in signal
@@ -359,8 +362,8 @@ async def contact(request: Request):
     ):
         engagement_type = engagement_type or "Paid architecture / discovery session"
         message = message or (
-            "I’d like to discuss an architecture or implementation challenge.\n\n"
-            "Current system:\nPrimary constraint:\nDesired outcome:"
+            "I would like to discuss an architecture or implementation challenge.\n\n"
+            "Current system:\nPrimary constraint:\nWhat would you like to change:"
         )
 
     form = {
@@ -368,7 +371,7 @@ async def contact(request: Request):
         "email": query.get("email", ""),
         "company": query.get("company", ""),
         "timeline": query.get("timeline", ""),
-        "engagement_type": engagement_type or "Initial fit assessment",
+        "engagement_type": engagement_type or "Project enquiry",
         "message": message,
     }
     return render(
@@ -390,7 +393,7 @@ async def contact_submit(
     name: str = Form(...),
     email: str = Form(...),
     company: str = Form(""),
-    engagement_type: str = Form("Initial fit assessment"),
+    engagement_type: str = Form("Project enquiry"),
     timeline: str = Form(""),
     message: str = Form(""),
     website: str = Form(""),
@@ -485,7 +488,7 @@ async def rajadharma(request: Request):
         request,
         "apps/rajadharma.html",
         title="Rajadharma | Pragith Prakash",
-        description="A mythic court strategy game by Pragith Prakash. Balance duty, wealth, strength and your people's welfare through consequential choices.",
+        description="A strategy game set in a mythic royal court, by Pragith Prakash. Balance duty, treasury, strength and public welfare as you respond to requests at court.",
         canonical_path="/apps/rajadharma",
     )
 

@@ -9,7 +9,7 @@
 - [x] Deploy through the existing bind mount and verify public rendering, asset version and installed package/API/UI metadata (1.1.1; application revision ce0299b).
 - [x] Inspect live screenshots; pass 126 responsive checks, 18 accessibility scans and interaction flows. No horizontal overflow, page exceptions or accessibility violations.
 - [ ] External console gate: Google reCAPTCHA's iframe logs storage-access denials in Chromium. The strict public browser test reports these and fails its console gate; retain anti-spam verification and track the external issue without suppressing it.
-- [ ] Commit and push the verified release to the existing remote branch.
+- [x] Commit the styling release (ce0299b) and publish the source and verification record to origin/pragith_2026.
 
 ## 2026-10-02 — Rajadharma support
 

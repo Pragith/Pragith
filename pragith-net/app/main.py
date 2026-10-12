@@ -1,0 +1,565 @@
+from datetime import datetime
+from hashlib import sha256
+from pathlib import Path
+from importlib.metadata import version
+
+import httpx
+
+from fastapi import FastAPI, Form, HTTPException, Request
+from fastapi.middleware.trustedhost import TrustedHostMiddleware
+from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse, Response
+from fastapi.staticfiles import StaticFiles
+from fastapi.templating import Jinja2Templates
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.errors import RateLimitExceeded
+from slowapi.util import get_remote_address
+from starlette.middleware.base import BaseHTTPMiddleware
+
+from app.content.media import MEDIA
+from app.config import settings
+from app.content.site import (
+    CANONICAL_TITLE,
+    CAPABILITIES,
+    CASE_STUDIES,
+    CERTIFICATIONS,
+    CLOUD_PLATFORMS,
+    EXPERIENCE,
+    EXPERIENCE_LABEL,
+    PROJECTS,
+    SERVICES,
+)
+from app.services.mailer import mailer_service
+from app.services.sitemap import generate_sitemap
+from app.themes import ThemeService
+
+PACKAGE_VERSION = version("pragith-net")
+
+app = FastAPI(
+    title=settings.PROJECT_NAME, version=PACKAGE_VERSION, docs_url=None, redoc_url=None
+)
+limiter = Limiter(key_func=get_remote_address)
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+app.add_middleware(TrustedHostMiddleware, allowed_hosts=settings.ALLOWED_HOSTS)
+
+
+class SecurityHeadersMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        response = await call_next(request)
+        response.headers.update(
+            {
+                "X-Content-Type-Options": "nosniff",
+                "X-Frame-Options": "DENY",
+                "Referrer-Policy": "strict-origin-when-cross-origin",
+                "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+                "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+                "Content-Security-Policy": (
+                    "default-src 'self'; script-src 'self' 'unsafe-inline' "
+                    "https://www.googletagmanager.com https://www.google.com https://www.gstatic.com "
+                    "https://www.clarity.ms https://scripts.clarity.ms; style-src 'self' 'unsafe-inline' "
+                    "https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; "
+                    "img-src 'self' data: https:; frame-src https://www.google.com; "
+                    "connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com "
+                    "https://*.analytics.google.com https://*.clarity.ms https://www.google.com "
+                    "https://www.gstatic.com; worker-src 'self' blob:"
+                ),
+            }
+        )
+        return response
+
+
+app.add_middleware(SecurityHeadersMiddleware)
+
+_APP_DIR = Path(__file__).parent
+app.mount("/static", StaticFiles(directory=str(_APP_DIR / "static")), name="static")
+
+
+templates = Jinja2Templates(directory=str(_APP_DIR / "templates"))
+theme_service = ThemeService(settings.THEME)
+templates.env.globals.update(
+    {
+        "now": datetime.now,
+        "theme": theme_service,
+        "ga_tag": settings.GA_TAG,
+        "clarity_project_id": settings.CLARITY_PROJECT_ID,
+        "canonical_title": CANONICAL_TITLE,
+        "experience_label": EXPERIENCE_LABEL,
+        "certifications": CERTIFICATIONS,
+        "media": MEDIA,
+        "asset_revision": sha256(
+            (_APP_DIR / "static" / "site.css").read_bytes() + theme_service.css.encode()
+        ).hexdigest()[:12],
+    }
+)
+
+
+def render(
+    request: Request,
+    template: str,
+    *,
+    title: str,
+    description: str,
+    canonical_path: str,
+    robots: str = "index,follow",
+    status_code: int = 200,
+    **context,
+):
+    return templates.TemplateResponse(
+        request=request,
+        name=template,
+        context={
+            "request": request,
+            "page_title": title,
+            "page_description": description,
+            "canonical_url": f"https://pragith.net{canonical_path}",
+            "robots": robots,
+            **context,
+        },
+        status_code=status_code,
+    )
+
+
+@app.get("/theme.css", include_in_schema=False)
+async def theme_css():
+    return Response(content=theme_service.css, media_type="text/css")
+
+
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    return RedirectResponse("/static/favicon.ico", status_code=301)
+
+
+@app.get("/robots.txt", include_in_schema=False)
+async def robots():
+    return Response(
+        "User-agent: *\nAllow: /\nDisallow: /projects/agent-keyboard\nSitemap: https://pragith.net/sitemap.xml\n",
+        media_type="text/plain",
+    )
+
+
+@app.get("/sitemap.xml", include_in_schema=False)
+async def sitemap():
+    return Response(generate_sitemap(), media_type="application/xml")
+
+
+@app.get("/", response_class=HTMLResponse)
+async def home(request: Request):
+    return render(
+        request,
+        "index.html",
+        title="Pragith Prakash | AI Forward Deployed Engineer",
+        description="Pragith Prakash designs and delivers AI systems, data platforms and cloud automation across AWS, Google Cloud, Azure and Databricks.",
+        canonical_path="/",
+        capabilities=CAPABILITIES,
+        case_studies=CASE_STUDIES[:3],
+        projects=PROJECTS,
+        cloud_platforms=CLOUD_PLATFORMS,
+    )
+
+
+@app.get("/about", response_class=HTMLResponse)
+async def about(request: Request):
+    return render(
+        request,
+        "about.html",
+        title="About Pragith Prakash | AI Forward Deployed Engineer",
+        description="Pragith Prakash’s background in AI and data engineering, teaching and consulting.",
+        canonical_path="/about",
+    )
+
+
+@app.get("/experience", response_class=HTMLResponse)
+async def experience(request: Request):
+    return render(
+        request,
+        "experience.html",
+        title="Experience | Pragith Prakash",
+        description="Dated roles at Vriksh, Sofvie, Dentsu / Merkle Cardinal Path, EY and Wipro, with grouped early-career experience.",
+        canonical_path="/experience",
+        experience=EXPERIENCE,
+    )
+
+
+@app.get("/resume", response_class=HTMLResponse)
+async def resume(request: Request):
+    return render(
+        request,
+        "resume.html",
+        title="Resume | Pragith Prakash",
+        description="Printable professional resume for Pragith Prakash, AI Forward Deployed Engineer, consultant and educator.",
+        canonical_path="/resume",
+        experience=EXPERIENCE,
+    )
+
+
+@app.get("/case-studies", response_class=HTMLResponse)
+async def case_studies(request: Request):
+    return render(
+        request,
+        "case_studies.html",
+        title="Work and experience | Pragith Prakash",
+        description="Work summaries covering enterprise AI assistants, data platforms, reporting and technical teaching.",
+        canonical_path="/case-studies",
+        case_studies=CASE_STUDIES,
+    )
+
+
+@app.get("/case-studies/{slug}", response_class=HTMLResponse)
+async def case_study(request: Request, slug: str):
+    retired = {
+        "fairway-frame-pipeline": "/projects#project-golf-swing-analyzer",
+        "callrenard-call-states": "/projects#project-callrenard",
+    }
+    if slug in retired:
+        return RedirectResponse(retired[slug], status_code=301)
+    item = next(
+        (item for item in CASE_STUDIES if item["slug"] == slug),
+        None,
+    )
+    if not item:
+        raise HTTPException(status_code=404)
+    return render(
+        request,
+        "case_study.html",
+        title=f"{item['title']} | Experience summary",
+        description=item["preview"],
+        canonical_path=f"/case-studies/{slug}",
+        item=item,
+    )
+
+
+@app.get("/services", response_class=HTMLResponse)
+async def services(request: Request):
+    return render(
+        request,
+        "services.html",
+        title="Services | Pragith Prakash",
+        description="AI integrations, data-pipeline troubleshooting, reporting and technical teaching from Pragith Prakash.",
+        canonical_path="/services",
+        services=SERVICES,
+    )
+
+
+@app.get("/services/ai-systems", response_class=HTMLResponse)
+async def ai_systems(request: Request):
+    return render(
+        request,
+        "ai_systems.html",
+        title="AI Systems and Automation | Pragith Prakash",
+        description="Connect an AI assistant to existing records and tools, with agreed access, testing and review.",
+        canonical_path="/services/ai-systems",
+    )
+
+
+@app.get("/services/executive-bi", response_class=HTMLResponse)
+async def executive_bi(request: Request):
+    return render(
+        request,
+        "executive_bi.html",
+        title="Analytics and Executive BI | Pragith Prakash",
+        description="Resolve conflicting reports, agree metric definitions and build dashboards your team can maintain.",
+        canonical_path="/services/executive-bi",
+    )
+
+
+@app.get("/teaching", response_class=HTMLResponse)
+async def teaching(request: Request):
+    return render(
+        request,
+        "teaching.html",
+        title="Teaching | Pragith Prakash",
+        description="Teaching experience at Cambrian College and Correlation One, plus cloud and data workshops through Google Developer Groups.",
+        canonical_path="/teaching",
+    )
+
+
+@app.get("/projects", response_class=HTMLResponse)
+async def projects(request: Request):
+    return render(
+        request,
+        "projects.html",
+        title="Products and experiments | Pragith Prakash",
+        description="Products and experiments by Pragith Prakash, including Fairway, Velvet, CallRenard and Caffeinate-d.",
+        canonical_path="/projects",
+        projects=PROJECTS,
+    )
+
+
+@app.get("/projects/caffeinate-d", response_class=HTMLResponse)
+async def caffeinate_d(request: Request):
+    return render(
+        request,
+        "caffeinate_d.html",
+        title="Caffeinate-d | Pragith Prakash",
+        description="A macOS menu-bar app that keeps your display awake.",
+        canonical_path="/projects/caffeinate-d",
+        robots="noindex,follow",
+    )
+
+
+@app.get("/writing", response_class=HTMLResponse)
+async def writing(request: Request):
+    return render(
+        request,
+        "writing.html",
+        title="Writing and speaking | Pragith Prakash",
+        description="A cloud-certification talk from GDG Cloud Edmonton and links to Pragith Prakash’s LinkedIn posts.",
+        canonical_path="/writing",
+    )
+
+
+@app.get("/business", response_class=HTMLResponse)
+async def business(request: Request):
+    return render(
+        request,
+        "business.html",
+        title="Business Services | Vriksh Consulting Services Inc.",
+        description="Reporting, workflow automation and technical training through Vriksh Consulting Services Inc.",
+        canonical_path="/business",
+    )
+
+
+@app.get("/contact", response_class=HTMLResponse)
+async def contact(request: Request):
+    query = request.query_params
+    tracking_fields = (
+        "ref_page",
+        "cta_id",
+        "utm_source",
+        "utm_medium",
+        "utm_campaign",
+        "utm_content",
+        "tag1",
+        "tag2",
+    )
+    tracking = {field: query.get(field, "").strip() for field in tracking_fields}
+    signal = " ".join(
+        tracking[field]
+        for field in ("ref_page", "cta_id", "utm_content", "tag1", "tag2")
+    ).lower()
+
+    engagement_type = query.get("engagement_type", "").strip()
+    signal += " " + engagement_type.lower()
+    message = query.get("message", "").strip()
+    if any(term in signal for term in ("speaking", "speaker", "keynote", "talk")):
+        engagement_type = engagement_type or "Speaking engagement"
+        message = message or (
+            "I would like to discuss a speaking engagement.\n\n"
+            "Event and audience:\nPreferred format and date:\nWhat would you like to change:"
+        )
+    elif any(
+        term in signal for term in ("teaching", "training", "workshop", "enablement")
+    ):
+        engagement_type = engagement_type or "Teaching / workshop"
+        message = message or (
+            "I would like to discuss technical training or a workshop.\n\n"
+            "Audience and current experience:\nTopics or systems involved:\n"
+            "Preferred timing and learning goals:"
+        )
+    elif any(
+        term in signal
+        for term in ("architecture", "ai-system", "analytics", "dashboard", "platform")
+    ):
+        engagement_type = engagement_type or "Paid architecture / discovery session"
+        message = message or (
+            "I would like to discuss an architecture or implementation challenge.\n\n"
+            "Current system:\nPrimary constraint:\nWhat would you like to change:"
+        )
+
+    form = {
+        "name": query.get("name", ""),
+        "email": query.get("email", ""),
+        "company": query.get("company", ""),
+        "timeline": query.get("timeline", ""),
+        "engagement_type": engagement_type or "Project enquiry",
+        "message": message,
+    }
+    return render(
+        request,
+        "contact.html",
+        title="Contact Pragith Prakash",
+        description="Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash.",
+        canonical_path="/contact",
+        form=form,
+        tracking=tracking,
+        recaptcha_site_key=settings.RECAPTCHA_SITE_KEY,
+    )
+
+
+@app.post("/contact", response_class=HTMLResponse)
+@limiter.limit("5/minute")
+async def contact_submit(
+    request: Request,
+    name: str = Form(...),
+    email: str = Form(...),
+    company: str = Form(""),
+    engagement_type: str = Form("Project enquiry"),
+    timeline: str = Form(""),
+    message: str = Form(""),
+    website: str = Form(""),
+    ref_page: str = Form(""),
+    cta_id: str = Form(""),
+    utm_source: str = Form(""),
+    utm_medium: str = Form(""),
+    utm_campaign: str = Form(""),
+    utm_content: str = Form(""),
+    tag1: str = Form(""),
+    tag2: str = Form(""),
+    recaptcha_response: str = Form(alias="g-recaptcha-response", default=""),
+):
+    if website:
+        return RedirectResponse("/contact", status_code=303)
+    form_data = await request.form()
+    if settings.RECAPTCHA_SECRET_KEY and not mailer_service.verify_recaptcha(
+        recaptcha_response
+    ):
+        return render(
+            request,
+            "contact.html",
+            title="Contact Pragith Prakash",
+            description="Contact Pragith Prakash.",
+            canonical_path="/contact",
+            error="reCAPTCHA verification failed. Please try again.",
+            form=form_data,
+            tracking=form_data,
+            recaptcha_site_key=settings.RECAPTCHA_SITE_KEY,
+        )
+    attribution = (
+        f"Source page: {ref_page or 'direct'}\n"
+        f"CTA: {cta_id or 'direct'}\n"
+        f"UTM source: {utm_source}\n"
+        f"UTM medium: {utm_medium}\n"
+        f"UTM campaign: {utm_campaign}\n"
+        f"UTM content: {utm_content}\n"
+        f"Tag 1: {tag1}\n"
+        f"Tag 2: {tag2}"
+    )
+    body = (
+        f"Engagement: {engagement_type}\nCompany: {company}\nTimeline: {timeline}\n\n"
+        f"{message}\n\nAttribution\n{attribution}"
+    )
+    if mailer_service.send_contact_email(name, email, "Website enquiry", body):
+        return render(
+            request,
+            "contact_success.html",
+            title="Message received | Pragith Prakash",
+            description="Your message has been received.",
+            canonical_path="/contact",
+            robots="noindex,follow",
+        )
+    return render(
+        request,
+        "contact.html",
+        title="Contact Pragith Prakash",
+        description="Contact Pragith Prakash.",
+        canonical_path="/contact",
+        error="The message could not be sent. Please try again.",
+        form=form_data,
+        tracking=form_data,
+        recaptcha_site_key=settings.RECAPTCHA_SITE_KEY,
+    )
+
+
+@app.get("/privacy", response_class=HTMLResponse)
+async def privacy(request: Request):
+    return render(
+        request,
+        "privacy.html",
+        title="Privacy | Pragith Prakash",
+        description="Privacy information for pragith.net.",
+        canonical_path="/privacy",
+    )
+
+
+@app.get("/legal", response_class=HTMLResponse)
+async def legal(request: Request):
+    return render(
+        request,
+        "legal.html",
+        title="Legal | Pragith Prakash",
+        description="Legal information for pragith.net.",
+        canonical_path="/legal",
+    )
+
+
+@app.get("/apps/rajadharma", response_class=HTMLResponse)
+async def rajadharma(request: Request):
+    return render(
+        request,
+        "apps/rajadharma.html",
+        title="Rajadharma | Pragith Prakash",
+        description="A strategy game set in a mythic royal court, by Pragith Prakash. Balance duty, treasury, strength and public welfare as you respond to requests at court.",
+        canonical_path="/apps/rajadharma",
+    )
+
+
+@app.post("/api/rajadharma/feedback")
+async def rajadharma_feedback(request: Request):
+    if request.headers.get("content-type", "").split(";")[0] != "application/json":
+        return JSONResponse({"error": "invalid_request"}, status_code=415)
+    body = bytearray()
+    async for chunk in request.stream():
+        body.extend(chunk)
+        if len(body) > 16384:
+            return JSONResponse({"error": "request_too_large"}, status_code=413)
+    try:
+        async with httpx.AsyncClient(timeout=20.0) as client:
+            result = await client.post(
+                "http://rajadharma-feedback:8000/api/feedback",
+                content=bytes(body),
+                headers={
+                    "Content-Type": "application/json",
+                    "X-Real-IP": request.client.host if request.client else "unknown",
+                },
+            )
+        if len(result.content) > 4096:
+            raise ValueError("Unexpected feedback response")
+        payload = result.json()
+        if not isinstance(payload, dict):
+            raise ValueError("Unexpected feedback response")
+        retry_after = result.headers.get("Retry-After", "")
+        headers = (
+            {"Retry-After": retry_after}
+            if retry_after.isdigit() and len(retry_after) <= 6
+            else {}
+        )
+        return JSONResponse(payload, status_code=result.status_code, headers=headers)
+    except (httpx.HTTPError, ValueError):
+        return JSONResponse({"error": "temporarily_unavailable"}, status_code=503)
+
+
+REDIRECTS = {
+    "/ai": "/services/ai-systems",
+    "/apps": "/projects",
+    "/apps/caffeinated": "/projects/caffeinate-d",
+    "/business/dashboards": "/services/executive-bi",
+    "/work": "/case-studies",
+    "/notes": "/writing",
+    "/training": "/teaching",
+    "/speaking": (
+        "/teaching?ref=speaking&utm_source=pragith_net&"
+        "utm_medium=legacy_redirect&utm_campaign=speaking"
+    ),
+    "/packages": "/services",
+}
+
+
+@app.get("/{legacy_path:path}", include_in_schema=False)
+async def legacy_or_404(request: Request, legacy_path: str):
+    path = f"/{legacy_path}"
+    if path in REDIRECTS:
+        return RedirectResponse(REDIRECTS[path], status_code=301)
+    raise HTTPException(status_code=404)
+
+
+@app.exception_handler(404)
+async def not_found(request: Request, exc: HTTPException):
+    return render(
+        request,
+        "404.html",
+        title="Page not found | Pragith Prakash",
+        description="The requested page could not be found.",
+        canonical_path=request.url.path,
+        robots="noindex,follow",
+        status_code=404,
+    )

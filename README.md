@@ -1,3 +1,5 @@
+The current pragith.net application is in [pragith-net/](pragith-net/README.md). That directory contains the reviewed site, runtime source, tests and deployment notes. The root Jekyll files are retained from the legacy site and are not the current production entry point.
+
 <table>
   <tr>
     <td valign="top">

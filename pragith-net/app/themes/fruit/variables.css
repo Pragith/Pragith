@@ -1,0 +1,12 @@
+/* Portfolio palette. Layout and components live in site.css. */
+:root {
+  --paper: #ffffff;
+  --paper-deep: #f3f6f6;
+  --ink: #1d1d1f;
+  --body-ink: #444545;
+  --muted: #616464;
+  --rule: #cccfcf;
+  --field-border: #858989;
+  --accent: #005ebd;
+  --accent-hover: #00458a;
+}

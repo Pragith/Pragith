@@ -1,0 +1,39 @@
+:root {
+    /* 
+   * Dubai Theme - Light Mode
+   * Softer, more professional palette
+   */
+    --color-ink: 68 78 80;
+    /* #444e50 - Charcoal text */
+    --color-page: 252 251 249;
+    /* #fcfbf9 - Warm off-white */
+    --color-surface: 255 255 255;
+    /* #FFFFFF - Pure white cards */
+    --color-line: 212 212 212;
+    /* #d4d4d4 - Soft gray borders */
+    --color-accent: 1 174 191;
+    /* #01aebf - Teal accent */
+
+    /* Increase base font size for better readability */
+    font-size: 18px;
+}
+
+.dark {
+    /* 
+   * Dubai Theme - Dark Mode
+   * Deep, sophisticated dark palette
+   */
+    --color-ink: 249 218 164;
+    /* #f9daa4 - Warm sand text */
+    --color-page: 26 26 26;
+    /* #1a1a1a - Deep charcoal */
+    --color-surface: 40 40 40;
+    /* #282828 - Elevated surfaces */
+    --color-line: 79 60 46;
+    /* #4f3c2e - Brown accent lines */
+    --color-accent: 1 174 191;
+    /* #01aebf - Teal accent */
+
+    /* Increase base font size for better readability */
+    font-size: 18px;
+}

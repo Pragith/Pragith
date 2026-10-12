@@ -1,0 +1,1972 @@
+{
+  "standard": "ASD-STE100 Issue 9 (2025-01-15)",
+  "source": "https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf",
+  "scope": "STE-derived structural and selected-word checks; whitespace counts conservatively include all names. Manual editing handles voice, meaning, steps and terminology. This is not complete dictionary/part-of-speech conformity certification.",
+  "pages": 31,
+  "sentences": 280,
+  "longestInstruction": 15,
+  "longestDescription": 23,
+  "issues": [],
+  "sentenceChecks": [
+    {
+      "route": "/",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Hello, I am Pragith."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I connect AI tools to existing systems, build data pipelines and help fix production problems."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 20,
+      "limit": 25,
+      "text": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months through my consulting work at Vriksh."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 18,
+      "limit": 25,
+      "text": "I examined pipeline failures, automated releases and supported data platforms with multi-terabyte datasets and hundreds of automated pipelines."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Career timeline →"
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "I can connect applications, build a workflow or join your team for development and production support."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "Saved skeleton replay from a test clip."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 2,
+      "limit": 25,
+      "text": "Timing disabled."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Practise your golf swing with live 2D body tracking, saved swing summaries and skeleton replay."
+    },
+    {
+      "route": "/",
+      "type": "instruction",
+      "words": 10,
+      "limit": 20,
+      "text": "Use a face-on camera; left- and right-handed golfers are supported."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "Body tracking runs in your browser."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "Live app · Swing detection and timing estimates are experimental."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "The app saves summaries and skeleton clips on a self-hosted server."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "I develop this product through Vriksh."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "Film selection with demonstration content."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "Artwork: Big Buck Bunny, © Blender Foundation, CC BY 3.0; cropped in the player."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "A cross-platform IPTV player for Stalker and Ministra portals, with set-top-box support."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Product website & setup"
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "I develop this product through Vriksh."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "I taught at Cambrian College from 2020 to 2024 and with Correlation One from 2021 to 2024."
+    },
+    {
+      "route": "/",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "These included the Walmart Data Science Bootcamp and DS4A programs."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "I am an AI Forward Deployed Engineer, consultant and educator with data and software experience since 2012."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "I build data platforms, integrate AI tools and support systems in production."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "I began in data analysis and backend development in 2012."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "My later roles covered data science, analytics and cloud operations, followed by enterprise AI delivery."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I work in Python and SQL, trace failing pipelines and repair release workflows."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "I also review data access and explain technical decisions to the people responsible for the system."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 8,
+      "limit": 25,
+      "text": "I work independently or alongside a client team."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "I involve security and domain specialists when their decisions affect the system."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Read the career timeline"
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "I taught graduate statistics, data visualization, dashboards and real-time Python APIs."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 19,
+      "limit": 25,
+      "text": "I also led workforce programs in data science and data engineering, and organized developer workshops through Google Developer Groups."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Teaching made me more careful about explaining decisions and leaving documentation another engineer can use."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "See my teaching work"
+    },
+    {
+      "route": "/about",
+      "type": "instruction",
+      "words": 13,
+      "limit": 20,
+      "text": "Start with the operational problem and the team that will own the result."
+    },
+    {
+      "route": "/about",
+      "type": "instruction",
+      "words": 9,
+      "limit": 20,
+      "text": "Choose the simplest architecture that meets the actual constraints."
+    },
+    {
+      "route": "/about",
+      "type": "instruction",
+      "words": 11,
+      "limit": 20,
+      "text": "Design access control, monitoring and failure handling with the main workflow."
+    },
+    {
+      "route": "/about",
+      "type": "instruction",
+      "words": 10,
+      "limit": 20,
+      "text": "Evaluate model output against representative tasks and known failure cases."
+    },
+    {
+      "route": "/about",
+      "type": "instruction",
+      "words": 9,
+      "limit": 20,
+      "text": "Document decisions so another engineer can operate the system."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "I started experimenting with software and web technology in 2004."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I now study self-hosted models and developer tools, along with distributed systems and cloud costs."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "I also explore which automated actions need human approval."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 8,
+      "limit": 25,
+      "text": "I provide consulting through Vriksh Consulting Services Inc."
+    },
+    {
+      "route": "/about",
+      "type": "description",
+      "words": 2,
+      "limit": 25,
+      "text": "Contact me"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "14+ years in data and software, beginning in 2012."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "My work has progressed through analytics, consulting and cloud operations into enterprise AI delivery."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "November 2021 to present"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Vriksh Consulting Services Inc."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 2,
+      "limit": 25,
+      "text": "· Consulting"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I design and build AI and data systems and support them in production."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "My work includes eighteen months owning architecture and production delivery for an enterprise AI assistant."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "The data platforms I supported handled multi-terabyte datasets and hundreds of automated pipelines."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "January to November 2021"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Sofvie · Employment"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I led technical quality and applied data research, including cloud data workflows and delivery automation."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "June 2018 to January 2021"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "Dentsu / Merkle Cardinal Path · Employment"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "Staff Consultant, June 2018 to January 2020; promoted to Senior Consultant, January 2020 to January 2021."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "My work covered enterprise analytics and cloud data consulting."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "March 2017 to June 2018"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "EY · Employment"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 20,
+      "limit": 25,
+      "text": "I worked on data science and analytical processing for forensic and regulatory work, with client and dataset details kept confidential."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "November 2015 to March 2017"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Wipro · Employment"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "I built analytical systems over operational and log data, working on modelling, implementation and performance investigation."
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "June 2012 to November 2015"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "SMART FBO, Hibu and Sigmoid"
+    },
+    {
+      "route": "/experience",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "My early work spanned reporting, backend development and real-time analytics using Python, SQL, R and distributed processing."
+    },
+    {
+      "route": "/case-studies",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "My work spans enterprise AI assistants, data platforms, analytics and technical teaching."
+    },
+    {
+      "route": "/case-studies",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "I examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines."
+    },
+    {
+      "route": "/case-studies",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "I designed data flows between operational applications and cloud services."
+    },
+    {
+      "route": "/case-studies",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months."
+    },
+    {
+      "route": "/case-studies",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "I built data pipelines for forensic and regulatory work."
+    },
+    {
+      "route": "/case-studies",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "I connected source data to shared metric definitions and dashboards."
+    },
+    {
+      "route": "/case-studies",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "I taught data science and cloud engineering through courses and workshops."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "I work on AI integrations, data pipelines and reporting when a team needs implementation or production support."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "Your team has an assistant prototype and needs it to work with existing records and tools."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 20,
+      "limit": 25,
+      "text": "I connect the assistant to the agreed records and tools, and test it against the task it needs to perform."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Failed jobs or upstream changes leave consumers waiting for data and engineers tracing the failure."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I trace the failure, fix it and add checks for the affected pipeline."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "Two reports disagree because they count different events, time periods or records."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I reconcile the reports, document what each metric counts and configure refresh and access."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "Your learners need practice with Python, data analysis or cloud systems."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "A course or workshop with exercises and assessment criteria."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "An architecture session can establish the problem and the work needed."
+    },
+    {
+      "route": "/services",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "I agree access and deliverables with you, work hourly or against agreed milestones, and document the handover."
+    },
+    {
+      "route": "/services/ai-systems",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I connect an assistant to the tools and data it needs for an agreed task."
+    },
+    {
+      "route": "/services/ai-systems",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "Access controls and review points limit what it can do."
+    },
+    {
+      "route": "/services/ai-systems",
+      "type": "description",
+      "words": 23,
+      "limit": 25,
+      "text": "Your team has a prototype but still copies records into it, checks its answers by hand or avoids letting it use business tools."
+    },
+    {
+      "route": "/services/ai-systems",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I add data access and tool inputs and outputs, with review points and failure handling."
+    },
+    {
+      "route": "/services/ai-systems",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I test the integration against the tasks your team needs the assistant to perform."
+    },
+    {
+      "route": "/services/ai-systems",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "My consulting work includes eighteen months owning architecture and production delivery for an enterprise AI assistant."
+    },
+    {
+      "route": "/services/executive-bi",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I trace the source data, agree metric definitions and build reports your team can maintain."
+    },
+    {
+      "route": "/services/executive-bi",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "Leadership reports and operational reports disagree, or a dashboard’s totals change without a clear source explanation."
+    },
+    {
+      "route": "/services/executive-bi",
+      "type": "description",
+      "words": 18,
+      "limit": 25,
+      "text": "I trace how the source records become report totals, document what each metric counts and build the report."
+    },
+    {
+      "route": "/services/executive-bi",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "I also agree refresh schedules, access and who maintains it."
+    },
+    {
+      "route": "/services/executive-bi",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "I integrate source data and build reporting models and dashboards, then help teams use the reports."
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "I teach statistics, Python, machine learning, data engineering and cloud architecture to college and professional cohorts."
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "2020 to 2024 · Adjunct / Partial Load Professor"
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "Graduate-level statistical analysis, data visualization, dashboard development and real-time API development with Python."
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "2021 to 2024 · Lead instructor"
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "Walmart Data Science Bootcamp and DS4A."
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "I delivered instruction in data science and data engineering, reviewed projects and supported learners through technical problems."
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "2020 to present · Chapter Lead"
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "Developer-community leadership and workshops on cloud, AI, machine learning and software engineering."
+    },
+    {
+      "route": "/teaching",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "Associate Cloud Engineer session · GDG Cloud Edmonton · 1 October 2022 ↗"
+    },
+    {
+      "route": "/teaching",
+      "type": "instruction",
+      "words": 15,
+      "limit": 20,
+      "text": "Tell me who will attend, their current experience, the topics they need and the format."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "Camera tracking, media playback, telephone intake and small tools."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "Each entry shows what is available today."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "Saved skeleton replay from a test clip."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 2,
+      "limit": 25,
+      "text": "Timing disabled."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Practise your golf swing with live 2D body tracking, saved swing summaries and skeleton replay."
+    },
+    {
+      "route": "/projects",
+      "type": "instruction",
+      "words": 10,
+      "limit": 20,
+      "text": "Use a face-on camera; left- and right-handed golfers are supported."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "Body tracking runs in your browser."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "Live app · Swing detection and timing estimates are experimental."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "The app saves summaries and skeleton clips on a self-hosted server."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "I develop this product through Vriksh."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "Film selection with demonstration content."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "Artwork: Big Buck Bunny, © Blender Foundation, CC BY 3.0; cropped in the player."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "A cross-platform IPTV player for Stalker and Ministra portals, with set-top-box support."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Product website & setup"
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "I develop this product through Vriksh."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "Summary formatter output from demonstration answers."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "Collect caller responses and prepare a summary for the person following up."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Demo by arrangement"
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "I develop this product through Vriksh."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 8,
+      "limit": 25,
+      "text": "Disclose the automated assistant and request recording consent"
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "Collect keypad responses to a configured sequence of questions"
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "Format the captured answers for follow-up"
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "This example shows the summary formatter."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "Contact Vriksh to see the calling and integration workflow."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "macOS command controlled by the menu-bar app."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "A macOS menu-bar app that keeps your display awake."
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Source version 0.2.0"
+    },
+    {
+      "route": "/projects",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "I develop this application."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "You rule a kingdom where every choice has a cost."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Each choice affects Dharma, Artha, Shakti and Praja: your duty, treasury, strength and people's welfare."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Created by Pragith Prakash."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "You hear requests from sages, royal advisers and mythic visitors."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "Your answers change the kingdom's resources and the time that passes."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Pressure grows throughout your reign; neglect and excess can both bring it to an end."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 8,
+      "limit": 25,
+      "text": "You discover characters, earn deeds and collect relics."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "Your local dynasty records let you compare your reigns."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "English, Hindi, Tamil, Telugu, Kannada and Sanskrit"
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Saved on your device"
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 2,
+      "limit": 25,
+      "text": "Pragith Prakash"
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 1,
+      "limit": 25,
+      "text": "rajadharma@vriksh.ca"
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "instruction",
+      "words": 5,
+      "limit": 20,
+      "text": "Open Settings in the game."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "instruction",
+      "words": 7,
+      "limit": 20,
+      "text": "Open About to see the game version."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "instruction",
+      "words": 12,
+      "limit": 20,
+      "text": "Use the feedback form to report a bug or suggest a change."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "You can send feedback about balance, artwork, accessibility, translations and future features."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "The feedback form sends your message, its category, the app version and device platform to the developer."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "A reply email is optional."
+    },
+    {
+      "route": "/apps/rajadharma",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "Gameplay progress stays on your device."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "AI Forward Deployed Engineer, consultant and educator"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "Data and software experience since 2012."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Recent work includes eighteen months owning architecture and production delivery for an enterprise AI assistant."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "November 2021 to present"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Vriksh Consulting Services Inc."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 2,
+      "limit": 25,
+      "text": "· Consulting"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I design and build AI and data systems and support them in production."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "My work includes eighteen months owning architecture and production delivery for an enterprise AI assistant."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "The data platforms I supported handled multi-terabyte datasets and hundreds of automated pipelines."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "January to November 2021"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Sofvie · Employment"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I led technical quality and applied data research, including cloud data workflows and delivery automation."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "June 2018 to January 2021"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "Dentsu / Merkle Cardinal Path · Employment"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "Staff Consultant, June 2018 to January 2020; promoted to Senior Consultant, January 2020 to January 2021."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "My work covered enterprise analytics and cloud data consulting."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "March 2017 to June 2018"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "EY · Employment"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 20,
+      "limit": 25,
+      "text": "I worked on data science and analytical processing for forensic and regulatory work, with client and dataset details kept confidential."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "November 2015 to March 2017"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Wipro · Employment"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "I built analytical systems over operational and log data, working on modelling, implementation and performance investigation."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "June 2012 to November 2015"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "SMART FBO, Hibu and Sigmoid"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "My early work spanned reporting, backend development and real-time analytics using Python, SQL, R and distributed processing."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Correlation One · 2021 to 2024 · Lead instructor, Walmart Data Science Bootcamp and DS4A."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "Cambrian College · 2020 to 2024 · Adjunct / Partial Load Professor."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "Google Developer Groups · 2020 to present · Chapter Lead."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 22,
+      "limit": 25,
+      "text": "Python, SQL and R; data pipelines and cloud analytics; AWS, Google Cloud, Azure and Databricks; AI integration, release automation and production support."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "Claude Certified Architect – Foundations"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "Google Cloud Professional Data Engineer"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "Google Cloud Professional Cloud Architect"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "Databricks Certified Data Engineer Associate"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "Databricks Certified Generative AI Associate"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "AWS Certified Cloud Practitioner"
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "MBA, International Business · ICFAI, Bangalore · 2013 to 2015."
+    },
+    {
+      "route": "/resume",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "BE, Information Technology · CMR Institute of Technology, Bangalore · 2007 to 2012."
+    },
+    {
+      "route": "/writing",
+      "type": "description",
+      "words": 5,
+      "limit": 25,
+      "text": "Public events and technical posts."
+    },
+    {
+      "route": "/writing",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "1 October 2022 · GDG Cloud Edmonton · Speaker"
+    },
+    {
+      "route": "/writing",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "A session in a six-part series covering Associate Cloud Engineer certification content and exam questions."
+    },
+    {
+      "route": "/contact",
+      "type": "instruction",
+      "words": 15,
+      "limit": 20,
+      "text": "Tell me what you have, what is not working and what you want to change."
+    },
+    {
+      "route": "/contact",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I will tell you if I can help and what to do next."
+    },
+    {
+      "route": "/contact",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I can examine an architecture, build a feature or help fix a production problem."
+    },
+    {
+      "route": "/business",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Vriksh Consulting Services Inc."
+    },
+    {
+      "route": "/business",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "builds reporting and automation systems and provides technical training."
+    },
+    {
+      "route": "/business",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "We agree the systems involved and deliverables before starting, including ownership and handover."
+    },
+    {
+      "route": "/business",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "We connect the agreed data sources, define the metrics and build reports for your team."
+    },
+    {
+      "route": "/business",
+      "type": "description",
+      "words": 19,
+      "limit": 25,
+      "text": "We connect the systems involved in your workflow, add approvals and error handling, and document how to run it."
+    },
+    {
+      "route": "/business",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "We prepare a workshop around the systems your team uses and the skills they need."
+    },
+    {
+      "route": "/privacy",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "This site uses contact details to respond to enquiries and analytics to understand site traffic."
+    },
+    {
+      "route": "/privacy",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "When you submit the contact form, I receive the name, email, organization and message you provide."
+    },
+    {
+      "route": "/privacy",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "Do not submit credentials, regulated records or other sensitive personal data."
+    },
+    {
+      "route": "/privacy",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "This site uses Google Analytics and Microsoft Clarity for traffic and interaction analytics."
+    },
+    {
+      "route": "/privacy",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "The contact form uses rate limiting and Google reCAPTCHA."
+    },
+    {
+      "route": "/privacy",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "The site does not sell personal information."
+    },
+    {
+      "route": "/privacy",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "GitHub, LinkedIn and other external sites apply their own privacy practices after you follow a link."
+    },
+    {
+      "route": "/legal",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "Pragith.net is the personal professional website of Pragith Prakash."
+    },
+    {
+      "route": "/legal",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "The content describes professional experience, projects and opinions for general information."
+    },
+    {
+      "route": "/legal",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "Vriksh Consulting Services Inc."
+    },
+    {
+      "route": "/legal",
+      "type": "description",
+      "words": 8,
+      "limit": 25,
+      "text": "provides the company services described on this website."
+    },
+    {
+      "route": "/legal",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "Third-party names and trademarks belong to their respective owners."
+    },
+    {
+      "route": "/case-studies/enterprise-data-platform",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "I examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines."
+    },
+    {
+      "route": "/case-studies/enterprise-data-platform",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "The data platform supplied reports and analytical models through hundreds of automated pipelines."
+    },
+    {
+      "route": "/case-studies/enterprise-data-platform",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "I supported platform operations and data engineering, including releases and production incidents."
+    },
+    {
+      "route": "/case-studies/enterprise-data-platform",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "I automated deployments, examined pipeline failures and improved monitoring for data processing."
+    },
+    {
+      "route": "/case-studies/enterprise-data-platform",
+      "type": "description",
+      "words": 8,
+      "limit": 25,
+      "text": "I also supported the teams using the data."
+    },
+    {
+      "route": "/case-studies/event-driven-data-systems",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "I designed data flows between operational applications and cloud services."
+    },
+    {
+      "route": "/case-studies/event-driven-data-systems",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "Operational applications needed to send data from source systems to cloud services and the teams using it."
+    },
+    {
+      "route": "/case-studies/event-driven-data-systems",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I led the work on data ingestion and processing, including deployment and failure handling."
+    },
+    {
+      "route": "/case-studies/event-driven-data-systems",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "I defined retries, automated deployments and added checks for data delivery."
+    },
+    {
+      "route": "/case-studies/ai-mlops-automation",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months."
+    },
+    {
+      "route": "/case-studies/ai-mlops-automation",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "An enterprise team needed to connect an AI assistant to its existing tools and data."
+    },
+    {
+      "route": "/case-studies/ai-mlops-automation",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I owned the assistant’s architecture and production delivery through my consulting work at Vriksh."
+    },
+    {
+      "route": "/case-studies/ai-mlops-automation",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "I also built AI platform components and supported them in production."
+    },
+    {
+      "route": "/case-studies/ai-mlops-automation",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I connected models to approved tools and data, added deployment controls and supported production debugging."
+    },
+    {
+      "route": "/case-studies/regulated-integrations",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "I built data pipelines for forensic and regulatory work."
+    },
+    {
+      "route": "/case-studies/regulated-integrations",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "The pipelines processed restricted datasets for analysis, with access controls and records for review."
+    },
+    {
+      "route": "/case-studies/regulated-integrations",
+      "type": "description",
+      "words": 17,
+      "limit": 25,
+      "text": "I designed data processing and integrations with the teams responsible for the data and its access controls."
+    },
+    {
+      "route": "/case-studies/regulated-integrations",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "I built pipelines, documented data handling and supported validation and review."
+    },
+    {
+      "route": "/case-studies/executive-analytics",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "I connected source data to shared metric definitions and dashboards."
+    },
+    {
+      "route": "/case-studies/executive-analytics",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "Leadership and operational teams needed reports that used the same metric definitions across their source systems."
+    },
+    {
+      "route": "/case-studies/executive-analytics",
+      "type": "description",
+      "words": 10,
+      "limit": 25,
+      "text": "I integrated source data and built reporting models and dashboards."
+    },
+    {
+      "route": "/case-studies/executive-analytics",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "I also helped teams use the reports."
+    },
+    {
+      "route": "/case-studies/executive-analytics",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "I agreed metric definitions with the team, built reporting models and documented who maintained them."
+    },
+    {
+      "route": "/case-studies/engineering-enablement",
+      "type": "description",
+      "words": 11,
+      "limit": 25,
+      "text": "I taught data science and cloud engineering through courses and workshops."
+    },
+    {
+      "route": "/case-studies/engineering-enablement",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Learners needed instruction in data science and cloud engineering, with exercises they could work through."
+    },
+    {
+      "route": "/case-studies/engineering-enablement",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "I taught graduate courses and workforce programs, led workshops and mentored learners."
+    },
+    {
+      "route": "/case-studies/engineering-enablement",
+      "type": "description",
+      "words": 16,
+      "limit": 25,
+      "text": "I designed lessons, delivered live instruction, reviewed projects and adapted examples to learner and team needs."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 12,
+      "limit": 25,
+      "text": "A macOS menu-bar app that keeps your display awake using caffeinate -d."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 15,
+      "limit": 25,
+      "text": "Caffeinate-d starts and stops caffeinate -d from the menu bar to keep your display awake."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 1,
+      "limit": 25,
+      "text": "macOS"
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 2,
+      "limit": 25,
+      "text": "Native Swift"
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Source version 0.2.0"
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 1,
+      "limit": 25,
+      "text": "MIT"
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "instruction",
+      "words": 7,
+      "limit": 20,
+      "text": "Build the application from source with Xcode."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 4,
+      "limit": 25,
+      "text": "See the steps below."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 8,
+      "limit": 25,
+      "text": "The published source runs a local macOS command."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "It requires no account or remote service."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "instruction",
+      "words": 5,
+      "limit": 20,
+      "text": "Clone the repository on macOS."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "instruction",
+      "words": 4,
+      "limit": 20,
+      "text": "Open its Xcode project."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "instruction",
+      "words": 3,
+      "limit": 20,
+      "text": "Build the application."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "instruction",
+      "words": 3,
+      "limit": 20,
+      "text": "Run the application."
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "type": "instruction",
+      "words": 9,
+      "limit": 20,
+      "text": "Use the menu-bar toggle to keep your display awake."
+    },
+    {
+      "route": "/contact?engagement_type=Teaching%20%2F%20workshop",
+      "type": "instruction",
+      "words": 10,
+      "limit": 20,
+      "text": "Describe the audience, their experience and the topics they need."
+    },
+    {
+      "route": "/contact?engagement_type=Teaching%20%2F%20workshop",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I will tell you if I can help and what to do next."
+    },
+    {
+      "route": "/contact?engagement_type=Teaching%20%2F%20workshop",
+      "type": "instruction",
+      "words": 10,
+      "limit": 20,
+      "text": "Include cohort size, prerequisites and the work learners should practise."
+    },
+    {
+      "route": "/contact?engagement_type=Speaking%20engagement",
+      "type": "instruction",
+      "words": 9,
+      "limit": 20,
+      "text": "Tell me about the event, audience, format and timing."
+    },
+    {
+      "route": "/contact?engagement_type=Speaking%20engagement",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I will tell you if I can help and what to do next."
+    },
+    {
+      "route": "/contact?engagement_type=Speaking%20engagement",
+      "type": "instruction",
+      "words": 15,
+      "limit": 20,
+      "text": "Include the event theme, intended audience and whether the session is online or in person."
+    },
+    {
+      "route": "/contact?engagement_type=Hourly%20engineering",
+      "type": "instruction",
+      "words": 15,
+      "limit": 20,
+      "text": "Tell me what you have, what is not working and what you want to change."
+    },
+    {
+      "route": "/contact?engagement_type=Hourly%20engineering",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I will tell you if I can help and what to do next."
+    },
+    {
+      "route": "/contact?engagement_type=Hourly%20engineering",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I can examine an architecture, build a feature or help fix a production problem."
+    },
+    {
+      "route": "/copy-audit-missing-page",
+      "type": "instruction",
+      "words": 14,
+      "limit": 20,
+      "text": "Try the home page, or write to me if you followed a broken link."
+    },
+    {
+      "route": "source-state:contact-success",
+      "type": "description",
+      "words": 7,
+      "limit": 25,
+      "text": "I will read your message and reply."
+    },
+    {
+      "route": "source-state:server-error-template",
+      "type": "instruction",
+      "words": 2,
+      "limit": 20,
+      "text": "Try again."
+    },
+    {
+      "route": "source-state:server-error-template",
+      "type": "description",
+      "words": 9,
+      "limit": 25,
+      "text": "If the problem continues, send me the page address."
+    },
+    {
+      "route": "source-state:contact-verification-error",
+      "type": "instruction",
+      "words": 15,
+      "limit": 20,
+      "text": "Tell me what you have, what is not working and what you want to change."
+    },
+    {
+      "route": "source-state:contact-verification-error",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I will tell you if I can help and what to do next."
+    },
+    {
+      "route": "source-state:contact-verification-error",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I can examine an architecture, build a feature or help fix a production problem."
+    },
+    {
+      "route": "source-state:contact-verification-error",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "reCAPTCHA verification failed."
+    },
+    {
+      "route": "source-state:contact-verification-error",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Please try again."
+    },
+    {
+      "route": "source-state:contact-delivery-error",
+      "type": "instruction",
+      "words": 15,
+      "limit": 20,
+      "text": "Tell me what you have, what is not working and what you want to change."
+    },
+    {
+      "route": "source-state:contact-delivery-error",
+      "type": "description",
+      "words": 13,
+      "limit": 25,
+      "text": "I will tell you if I can help and what to do next."
+    },
+    {
+      "route": "source-state:contact-delivery-error",
+      "type": "description",
+      "words": 14,
+      "limit": 25,
+      "text": "I can examine an architecture, build a feature or help fix a production problem."
+    },
+    {
+      "route": "source-state:contact-delivery-error",
+      "type": "description",
+      "words": 6,
+      "limit": 25,
+      "text": "The message could not be sent."
+    },
+    {
+      "route": "source-state:contact-delivery-error",
+      "type": "description",
+      "words": 3,
+      "limit": 25,
+      "text": "Please try again."
+    }
+  ]
+}

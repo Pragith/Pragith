@@ -1,0 +1,23 @@
+{
+  "callrenard": {
+    "display_name": "CallRenard",
+    "ownership": "Vriksh owned product",
+    "maturity": "In development",
+    "public_access": "Demo by arrangement",
+    "purpose": "Collect caller responses and prepare a summary for the person following up.",
+    "capabilities": [
+      "Disclose the automated assistant and request recording consent",
+      "Collect keypad responses to a configured sequence of questions",
+      "Format the captured answers for follow-up"
+    ],
+    "limitations": "The example demonstrates the summary formatter. A live call, message delivery and customer integration require a separate demonstration. Contact Vriksh to arrange a demonstration.",
+    "supported_version": "backend source 0.1.0",
+    "last_verification": "2026-09-22",
+    "evidence": "backend/app/services/call_flow.py and backend/tests/test_call_flow.py; public artifact is formatter output",
+    "exclusions": [
+      "Live transfer",
+      "General speech transcription",
+      "Verified end-to-end telephone service"
+    ]
+  }
+}

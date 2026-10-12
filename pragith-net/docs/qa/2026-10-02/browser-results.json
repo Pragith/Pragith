@@ -1,0 +1,38 @@
+[
+  {
+    "viewport": [
+      320,
+      568
+    ],
+    "status": 200,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": [
+      844,
+      390
+    ],
+    "status": 200,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "status": 200,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "status": 200,
+    "overflow": false,
+    "errors": []
+  }
+]

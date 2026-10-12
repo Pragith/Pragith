@@ -1,0 +1,13 @@
+[
+  {
+    "name": "Road to Certification: Associate Cloud Engineer Session 1",
+    "startDate": "2022-10-01T09:00:00-06:00",
+    "endDate": "2022-10-01T12:00:00-06:00",
+    "performer": {
+      "@type": "Person",
+      "name": "Pragith Prakash",
+      "image": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/events/1620774644666.jpg"
+    },
+    "url": null
+  }
+]

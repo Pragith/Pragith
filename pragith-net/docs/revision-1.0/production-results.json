@@ -1,0 +1,226 @@
+{
+  "url": "https://pragith.net",
+  "revision": "d45ab49",
+  "version": "1.0.0",
+  "results": [
+    {
+      "path": "/",
+      "width": 390,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": [
+        {
+          "src": "https://pragith.net/static/work/pragith-640.webp",
+          "width": 160,
+          "natural": 640,
+          "loaded": true
+        },
+        {
+          "src": "https://pragith.net/static/work/fairway-v21-480.webp",
+          "width": 358,
+          "natural": 358,
+          "loaded": true
+        },
+        {
+          "src": "https://pragith.net/static/work/velvet-v22-480.webp",
+          "width": 358,
+          "natural": 358,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "path": "/experience",
+      "width": 390,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/resume",
+      "width": 390,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/projects",
+      "width": 390,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": [
+        {
+          "src": "https://pragith.net/static/work/fairway-v21-480.webp",
+          "width": 358,
+          "natural": 358,
+          "loaded": true
+        },
+        {
+          "src": "https://pragith.net/static/work/velvet-v22-480.webp",
+          "width": 358,
+          "natural": 358,
+          "loaded": true
+        },
+        {
+          "src": "https://pragith.net/static/work/agent-keyboard.webp",
+          "width": 358,
+          "natural": 1200,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "path": "/case-studies/fairway-frame-pipeline",
+      "width": 390,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": [
+        {
+          "src": "https://pragith.net/static/work/fairway-v21-480.webp",
+          "width": 358,
+          "natural": 351,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "path": "/case-studies/callrenard-call-states",
+      "width": 390,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/contact?engagement_type=Teaching%20%2F%20workshop",
+      "width": 390,
+      "ga": true,
+      "recaptcha": true,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/contact?engagement_type=Speaking%20engagement",
+      "width": 390,
+      "ga": true,
+      "recaptcha": true,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/",
+      "width": 1440,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": [
+        {
+          "src": "https://pragith.net/static/work/pragith-640.webp",
+          "width": 300,
+          "natural": 640,
+          "loaded": true
+        },
+        {
+          "src": "https://pragith.net/static/work/fairway-v21-960.webp",
+          "width": 552,
+          "natural": 500,
+          "loaded": true
+        },
+        {
+          "src": "https://pragith.net/static/work/velvet-v22-960.webp",
+          "width": 552,
+          "natural": 500,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "path": "/experience",
+      "width": 1440,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/resume",
+      "width": 1440,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/projects",
+      "width": 1440,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": [
+        {
+          "src": "https://pragith.net/static/work/fairway-v21-960.webp",
+          "width": 552,
+          "natural": 500,
+          "loaded": true
+        },
+        {
+          "src": "https://pragith.net/static/work/velvet-v22-960.webp",
+          "width": 552,
+          "natural": 500,
+          "loaded": true
+        },
+        {
+          "src": "https://pragith.net/static/work/agent-keyboard.webp",
+          "width": 552,
+          "natural": 1200,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "path": "/case-studies/fairway-frame-pipeline",
+      "width": 1440,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": [
+        {
+          "src": "https://pragith.net/static/work/fairway-v21-480.webp",
+          "width": 420,
+          "natural": 419,
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "path": "/case-studies/callrenard-call-states",
+      "width": 1440,
+      "ga": true,
+      "recaptcha": false,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/contact?engagement_type=Teaching%20%2F%20workshop",
+      "width": 1440,
+      "ga": true,
+      "recaptcha": true,
+      "revision": true,
+      "images": []
+    },
+    {
+      "path": "/contact?engagement_type=Speaking%20engagement",
+      "width": 1440,
+      "ga": true,
+      "recaptcha": true,
+      "revision": true,
+      "images": []
+    }
+  ],
+  "errors": []
+}

@@ -4,6 +4,12 @@
 
 # Changelog
 
+## 1.1.2 — 2026-10-12
+
+- Restore the portrait's original effective 20px rounded frame, soft shadow, subtle saturation/contrast treatment and 340px height limit at the owner's explicit request. This photograph is an intentional exception to square component styling.
+- Keep the responsive browser checker from treating the portrait as a square control.
+- Synchronize the manifest, lockfile, installed package and UI at 1.1.2. Published via the existing bind mount and container restart. `docker exec pragith-web uv run pytest -q`: 39 passed; Ruff and diff checks clean. Live browser checks at 390px and 1440px confirmed the original effective radius, shadow and filter; both screenshots were visually inspected.
+
 ## 1.1.1 — 2026-10-12
 
 - Consolidate the inline component styles and revision overrides into one readable `site.css`; remove obsolete homepage, carousel and decorative rules from the active frontend.

@@ -35,7 +35,7 @@ const routes = ['/', '/about', '/experience', '/teaching', '/contact', '/resume'
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `overflow ${width} ${route}`);
       assert.equal(await page.locator('.release-version').innerText(), `v${version}`);
       assert.equal(await page.evaluate(() => [...document.querySelectorAll('body, .btn, input, select, textarea')].every(el => getComputedStyle(el).fontFamily.includes('system-ui'))), true, `font fallback ${route}`);
-      assert.equal(await page.evaluate(() => [...document.querySelectorAll('.btn, .nav-toggle, .field input, .field select, .field textarea, .home-portrait, .project-visual img, .artifact')].every(el => getComputedStyle(el).borderRadius === '0px')), true, `square corners ${route}`);
+      assert.equal(await page.evaluate(() => [...document.querySelectorAll('.btn, .nav-toggle, .field input, .field select, .field textarea, .project-visual img, .artifact')].every(el => getComputedStyle(el).borderRadius === '0px')), true, `square corners ${route}`);
       assert.equal(await page.evaluate(() => [...document.querySelectorAll('.btn')].every(el => el.getBoundingClientRect().height >= 44)), true, `button target ${route}`);
       if ([390, 1440].includes(width) && ['/', '/contact', '/projects', '/experience', '/teaching', '/case-studies'].includes(route)) {
         await page.screenshot({ path: path.join(output, `${width}-${route === '/' ? 'home' : route.slice(1)}.png`), fullPage: true });

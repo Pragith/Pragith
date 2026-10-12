@@ -1,3 +1,9 @@
+## 2026-10-12 — Portrait restoration 1.1.2
+
+- [x] Restore the original effective portrait styling as explicitly requested.
+- [x] Verify desktop/mobile rendering, 39 application tests and live version metadata; commit and push the restoration.
+- [ ] Review every public page and its complete text for weak, generic or unsupported copy; report concrete revisions before changing copy.
+
 ## 2026-10-12 — Visual polish 1.1.1
 
 - [x] Inspect the active source and live desktop/mobile rendering.

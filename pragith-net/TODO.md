@@ -1,3 +1,14 @@
+## 2026-10-12 — Visual polish 1.1.1
+
+- [x] Inspect the active source and live desktop/mobile rendering.
+- [x] Consolidate styling, remove decorative treatment, and refine typography, spacing, square controls, navigation and forms.
+- [x] Inspect generated screenshots, correct the theme font fallback and refine secondary actions.
+- [x] Review and improve both pages of the printable Resume.
+- [x] Pass 39 application tests, Ruff and 126 preview responsive checks with 18 clean accessibility scans.
+- [x] Synchronize 1.1.1 product metadata and derive runtime versions from the manifest-generated package metadata.
+- [ ] Deploy through the existing bind mount and verify public rendering, asset version and installed package/API/UI metadata.
+- [ ] Commit and push the verified release to the existing remote branch.
+
 ## 2026-10-02 — Rajadharma support
 
 - [x] Create the requested product page and canonical URL.

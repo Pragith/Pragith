@@ -1,5 +1,6 @@
 from datetime import datetime
 from pathlib import Path
+from importlib.metadata import version
 
 import httpx
 
@@ -30,8 +31,10 @@ from app.services.mailer import mailer_service
 from app.services.sitemap import generate_sitemap
 from app.themes import ThemeService
 
+SITE_VERSION = version("pragith-net")
+
 app = FastAPI(
-    title=settings.PROJECT_NAME, version="1.1.0", docs_url=None, redoc_url=None
+    title=settings.PROJECT_NAME, version=SITE_VERSION, docs_url=None, redoc_url=None
 )
 limiter = Limiter(key_func=get_remote_address)
 app.state.limiter = limiter
@@ -82,7 +85,7 @@ templates.env.globals.update(
         "experience_label": EXPERIENCE_LABEL,
         "certifications": CERTIFICATIONS,
         "media": MEDIA,
-        "site_version": "1.1.0",
+        "site_version": SITE_VERSION,
     }
 )
 

@@ -7,7 +7,7 @@ The site is a server-rendered FastAPI application with a Jinja2 frontend, the Fr
 ## Tech Stack
 
 - **Backend**: Python 3.11+, FastAPI, Jinja2
-- **Frontend**: Tailwind CSS, HTML5
+- **Frontend**: HTML5, a shared CSS stylesheet and theme tokens
 - **Infrastructure**: Docker, Docker Compose
 - **Package Management**: [uv](https://github.com/astral-sh/uv)
 - **Security**: Uvicorn, security headers, rate limiting and Google reCAPTCHA v3
@@ -70,19 +70,26 @@ To run the backend locally without Docker:
     uvicorn app.main:app --reload
     ```
 
-### CSS Development
+### CSS development and visual verification
 
-If you are modifying styles:
+The active frontend loads `app/static/site.css` for layout and components, then
+`/theme.css` for the selected theme's tokens and font metadata. Edit those sources
+directly; this frontend does not need a Tailwind build. Legacy Tailwind sources
+remain for historical templates and are not loaded by the current portfolio.
 
-1.  **Install Node deps**:
-    ```bash
-    npm install
-    ```
+Run `uv run pytest -q`, `ruff check app tests`, and start a preview with
+`uv run uvicorn app.main:app --host 127.0.0.1 --port 4784`.
 
-2.  **Run Tailwind Watcher**:
-    ```bash
-    npx tailwindcss -i ./app/static/css/input.css -o ./app/static/css/style.min.css --watch
-    ```
+Run `node tests/visual-polish.cjs` for responsive checks, accessibility scans,
+keyboard/form interactions, text enlargement and printable Resume verification.
+The script uses the fleet host's Playwright and axe-core installations. Override
+`SITE_URL` to verify the public deployment and `AUDIT_DIR` to choose the output
+folder. Screenshots, a Resume PDF and results are saved outside the repository.
+Inspect the screenshots as well as the automated results.
+
+Product version comes from the installed package metadata generated from
+`pyproject.toml`. Keep `VERSION` and `uv.lock` synchronized with that manifest.
+The footer and stylesheet URLs use the same runtime version.
 
 ## deployment
 

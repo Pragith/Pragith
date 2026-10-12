@@ -5,6 +5,7 @@ import yaml
 import bleach
 from slugify import slugify
 from datetime import date, datetime
+from pathlib import Path
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel
 
@@ -187,6 +188,5 @@ class BlogService:
         return sorted(self._all_tags.values(), key=lambda t: t.count, reverse=True)
 
 # Singleton instance (use absolute path so it works from any CWD)
-from pathlib import Path as _Path
-_CONTENT_DIR = str(_Path(__file__).parent.parent / "content" / "blog")
+_CONTENT_DIR = str(Path(__file__).parent.parent / "content" / "blog")
 blog_service = BlogService(content_dir=_CONTENT_DIR)

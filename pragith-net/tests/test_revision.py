@@ -1,4 +1,6 @@
 import re
+import tomllib
+from pathlib import Path
 from unittest.mock import patch
 import pytest
 from fastapi.testclient import TestClient
@@ -79,7 +81,7 @@ def test_navigation_and_unhidden_work():
     assert "data-carousel" not in html
     projects = client.get("/projects").text
     assert 'role="tab"' not in projects
-    assert projects.count('id="project-') == 5
+    assert projects.count('id="project-') == 4
     resume = client.get("/resume").text
     assert re.search(r'href="/resume"\s+aria-current="page"', resume)
 
@@ -123,3 +125,16 @@ def test_analytics_and_recaptcha_bindings():
             assert "gtag/js?id=G-TEST" in html and "clarity-test" in html
     with patch("app.main.settings.RECAPTCHA_SITE_KEY", "site-key"):
         assert "recaptcha/api.js?render=site-key" in client.get("/contact").text
+
+
+def test_release_metadata_comes_from_manifest():
+    root = Path(__file__).resolve().parents[1]
+    with (root / "pyproject.toml").open("rb") as manifest:
+        version = tomllib.load(manifest)["project"]["version"]
+    assert app.version == version == (root / "VERSION").read_text().strip()
+    assert templates.env.globals["site_version"] == version
+    html = client.get("/").text
+    assert f"/static/site.css?v={version}" in html
+    assert f"/theme.css?v={version}" in html
+    assert f"v{version}</span>" in html
+    assert "revision.css" not in html

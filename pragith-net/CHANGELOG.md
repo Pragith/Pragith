@@ -4,6 +4,19 @@
 
 # Changelog
 
+## 1.1.1 — 2026-10-12
+
+- Consolidate the inline component styles and revision overrides into one readable `site.css`; remove obsolete homepage, carousel and decorative rules from the active frontend.
+- Replace the Fruit theme's unused palette, radius and display-size tokens with a compact semantic palette and a complete system-font stack. Remove the portrait shadow/filter and use square component frames while preserving product artwork.
+- Establish consistent typography, reading widths, section spacing, responsive layouts, primary/secondary actions and 44px minimum button targets.
+- Unify exact-page and parent-section navigation indicators; make the skip link focus the main content. Improve text enlargement and reduced-motion behavior.
+- Give form fields consistent square borders, padding and keyboard focus. Keep social links secondary to the enquiry form, and retain message content when enquiry intent changes.
+- Improve Resume print margins, heading spacing and section pagination so teaching entries stay together.
+- Derive API/UI/asset versions from installed package metadata generated from `pyproject.toml`; synchronize manifest, lockfile and `VERSION` at 1.1.1.
+- Correct stale tests that still expected the retired Agent Keyboard listing, and resolve two existing import lint errors.
+- Preview validation: `uv run pytest -q` (39 passed), `ruff check app tests` (zero errors), `ruff format --check app/main.py tests/test_revision.py tests/test_site.py`, and `git diff --check` passed. `node tests/visual-polish.cjs` passed 126 route/viewport checks, 18 accessibility scans and keyboard, form, print, reduced-motion and 200% text flows; zero accessibility violations, horizontal overflow, console errors or page exceptions. Desktop/mobile screenshots and both Resume PDF pages were visually reviewed and refined.
+- Deployment verification is tracked in `TODO.md` and recorded after the live release check.
+
 ## 1.1.0 — 2026-10-02
 
 - Add the missing Rajadharma product page with developer credit, accurate game descriptions and feedback/privacy information. Keep the canonical URL stable when app visits carry UTM attribution.

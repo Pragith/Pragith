@@ -152,8 +152,11 @@ def test_projects_are_honest_about_maturity():
     assert "https://velvet.plus" in projects
     assert "Headmaster" not in projects
     assert "Caffeinate-d" in projects and "Source version 0.2.0" in projects
-    assert "Agent Keyboard" in projects and "Prototype" in projects
-    assert "The CLI bridge is not implemented" in projects
+    assert "Agent Keyboard" not in projects
+    assert (
+        client.get("/projects/agent-keyboard", follow_redirects=False).status_code
+        == 404
+    )
     caffeinate = client.get("/projects/caffeinate-d").text
     assert '<meta name="robots" content="noindex,follow">' in caffeinate
     assert "matching packaged release" in caffeinate

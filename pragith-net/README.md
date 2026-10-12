@@ -85,7 +85,11 @@ keyboard/form interactions, text enlargement and printable Resume verification.
 The script uses the fleet host's Playwright and axe-core installations. Override
 `SITE_URL` to verify the public deployment and `AUDIT_DIR` to choose the output
 folder. Screenshots, a Resume PDF and results are saved outside the repository.
-Inspect the screenshots as well as the automated results.
+Inspect the screenshots as well as the automated results. The public test keeps
+its console gate strict: Google's reCAPTCHA iframe currently emits storage-access
+denial messages in Chromium, so the public run fails that gate even when all
+layout, accessibility and interaction checks pass. See the 1.1.1 changelog for
+the reproduced limitation; production contact delivery is not tested by this script.
 
 Product version comes from the installed package metadata generated from
 `pyproject.toml`. Keep `VERSION` and `uv.lock` synchronized with that manifest.

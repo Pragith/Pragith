@@ -16,7 +16,15 @@ const routes = ['/', '/about', '/experience', '/teaching', '/contact', '/resume'
   const scans = [];
   const checks = [];
   page.on('pageerror', error => errors.push(error.message));
-  page.on('console', message => { if (message.type() === 'error') errors.push(message.text()); });
+  page.on('console', message => {
+    if (message.type() !== 'error') return;
+    const source = message.location().url;
+    errors.push({
+      message: message.text(),
+      source: source ? new URL(source).origin + new URL(source).pathname : 'browser',
+      route: new URL(page.url()).pathname,
+    });
+  });
   for (const width of [360, 390, 690, 701, 900, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
     for (const route of routes) {

@@ -15,7 +15,8 @@
 - Derive API/UI/asset versions from installed package metadata generated from `pyproject.toml`; synchronize manifest, lockfile and `VERSION` at 1.1.1.
 - Correct stale tests that still expected the retired Agent Keyboard listing, and resolve two existing import lint errors.
 - Preview validation: `uv run pytest -q` (39 passed), `ruff check app tests` (zero errors), `ruff format --check app/main.py tests/test_revision.py tests/test_site.py`, and `git diff --check` passed. `node tests/visual-polish.cjs` passed 126 route/viewport checks, 18 accessibility scans and keyboard, form, print, reduced-motion and 200% text flows; zero accessibility violations, horizontal overflow, console errors or page exceptions. Desktop/mobile screenshots and both Resume PDF pages were visually reviewed and refined.
-- Deployment verification is tracked in `TODO.md` and recorded after the live release check.
+- Published application revision `ce0299b` through the existing bind mount and `docker restart pragith-web`. The manifest, installed package, API, footer and asset URLs agree on 1.1.1; this deployment uses the source commit as its revision, with no separate build counter.
+- Live verification: `docker exec pragith-web uv run pytest -q` passed 39 tests. `SITE_URL=https://pragith.net AUDIT_DIR=/tmp/pragith-polish-live node tests/visual-polish.cjs` completed 126 responsive checks, 18 accessibility scans and all interaction flows with no overflow, accessibility violations or page exceptions. Live desktop/mobile screenshots were inspected. Its strict console gate failed on ten Google reCAPTCHA iframe messages (`requestStorageAccess: Permission denied`); reproduction in both isolated and normal Chromium profiles confirmed the source is Google's `/recaptcha/api2/anchor`. This external console issue remains unresolved; it is not suppressed by the test, and contact delivery was not exercised against production SMTP.
 
 ## 1.1.0 — 2026-10-02
 

@@ -6,7 +6,9 @@
 - [x] Review and improve both pages of the printable Resume.
 - [x] Pass 39 application tests, Ruff and 126 preview responsive checks with 18 clean accessibility scans.
 - [x] Synchronize 1.1.1 product metadata and derive runtime versions from the manifest-generated package metadata.
-- [ ] Deploy through the existing bind mount and verify public rendering, asset version and installed package/API/UI metadata.
+- [x] Deploy through the existing bind mount and verify public rendering, asset version and installed package/API/UI metadata (1.1.1; application revision ce0299b).
+- [x] Inspect live screenshots; pass 126 responsive checks, 18 accessibility scans and interaction flows. No horizontal overflow, page exceptions or accessibility violations.
+- [ ] External console gate: Google reCAPTCHA's iframe logs storage-access denials in Chromium. The strict public browser test reports these and fails its console gate; retain anti-spam verification and track the external issue without suppressing it.
 - [ ] Commit and push the verified release to the existing remote branch.
 
 ## 2026-10-02 — Rajadharma support

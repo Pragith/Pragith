@@ -6,8 +6,8 @@
 - [x] Scan all 61 unchanged rules across 962 surfaces: zero scored/unresolved matches; retain and report the one Claude credential separator false positive. Pass 280 STE-derived sentence checks; preserve the portrait treatment.
 - [x] Pass 39 application tests, Ruff, 161 responsive checks and 23 accessibility scans; inspect every public page at desktop/mobile widths, plus menu and Resume print pages.
 - [x] Add all six supplied certifications; remove duplicate dividers, footer underlines and visible website version labels.
-- [ ] Publish the dated website update; verify asset hashes and rerun both copy analyses on public text.
-- [ ] Commit and push final release evidence and tracking.
+- [x] Publish revision 0824b2a; verify public asset de6b32fe9579, all six certifications and UI corrections. Public analysis: 962 surfaces, zero scored/unresolved matches, one recorded credential separator false positive; 280 STE-derived checks clean.
+- [x] Commit and push the website update and final public evidence.
 - [ ] Obtain publishable concrete examples for the preserved Sofvie, Dentsu and Wipro responsibility summaries; keep existing factual summaries until then.
 
 ## 2026-10-12 — Portrait restoration 1.1.2

@@ -1,0 +1,1391 @@
+{
+  "date": "2026-10-12",
+  "application_revision": "0824b2a",
+  "website_version_label": false,
+  "asset_revision": "de6b32fe9579",
+  "detector_revision": "ba39ed51c951d4e743c6b3318aae8c7ceb386c7f",
+  "coverage": {
+    "public_routes_and_contact_variants": 27,
+    "source_only_states": 4,
+    "text_surfaces": 962,
+    "rendered_blocks": 486
+  },
+  "detector": {
+    "rules": 61,
+    "before_raw_matches": 36,
+    "after_raw_matches": 1,
+    "after_scored_matches": 0,
+    "reviewed_proper_name_matches": 1,
+    "unresolved_matches": 0,
+    "exception": "The one raw dash match is inside the exact owner-supplied Claude Certified Architect – Foundations title. The shipped density rule gives it no score. It remains in the raw output, explicitly reviewed; no rule or threshold changed."
+  },
+  "ste": {
+    "reference": "https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf",
+    "sentence_checks": 280,
+    "issues": 0,
+    "max_instruction_words": 15,
+    "max_description_words": 23,
+    "qualification": "STE-derived structural and selected-word checks; whitespace counts conservatively include all names. Manual editing handles voice, meaning, steps and terminology. This is not complete dictionary/part-of-speech conformity certification."
+  },
+  "verification": {
+    "application_tests": "docker exec pragith-web uv run pytest -q: 39 passed",
+    "detector_tests": "npm test -- --run tests/core tests/rules/defaultRules.test.ts: 267 passed",
+    "lint": "ruff check app tests scripts/render_copy_states.py: clean",
+    "browser": "161 responsive checks; 23 accessibility scans; zero overflow, violations or application page exceptions. Footer/no-version/first-row-border checks pass. Every public desktop/mobile screenshot was inspected. Strict live console gate still fails on 10 Google reCAPTCHA iframe storage-access denial messages; no suppression.",
+    "print": "Two-page A4 Resume visually inspected; all six certificates on page 2.",
+    "public_assets": "Public CSS bytes match source; source hash de6b32fe9579 governs asset URLs."
+  },
+  "changed": [
+    "Direct task-based copy and metadata",
+    "Accurate labels instead of removed exercises/blank certification promises",
+    "All six owner-supplied Resume certifications, without dates/status inventions",
+    "Separated install/feedback instructions and simpler sentences",
+    "Preserved rounded, shadowed portrait",
+    "Removed visible website SemVer and footer-link underlines",
+    "Removed redundant first-row borders on timeline, editorial and product grids"
+  ],
+  "remaining_evidence_requests": [
+    "One concrete publishable example for Sofvie, Dentsu and Wipro responsibilities; current owner-supplied summaries remain.",
+    "Issuer URLs/earned dates are not supplied; no validity/expiry claims were added.",
+    "Production SMTP delivery was not tested; source-only success/error fixtures are labelled."
+  ],
+  "review_outcomes": [
+    {
+      "id": "C01",
+      "match": "I take AI and data systems from architecture into production.",
+      "priority": "low",
+      "issue": "Clear positioning, but repeats architecture/production language immediately below. This is a refinement, not a bad headline.",
+      "proposed": "I build and operate AI and data systems.",
+      "source": "app/templates/index.html:2",
+      "action": "rewrite",
+      "pages": [
+        "/"
+      ],
+      "original_phrase_still_present": true,
+      "outcome": "Retained clear owner positioning; no detector match."
+    },
+    {
+      "id": "C02",
+      "match": "My data and software career began in 2012;",
+      "priority": "medium",
+      "issue": "The hero mixes the offer with a career chronology and a long qualification. Move the evidence to Professional experience rather than saying it twice.",
+      "proposed": "Hero: I connect AI tools to existing systems, build data pipelines and troubleshoot production failures. Keep the 2012 date and eighteen-month assistant ownership in the experience section.",
+      "source": "app/templates/index.html:2",
+      "action": "restructure",
+      "pages": [
+        "/"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C03",
+      "match": "Eighteen months owning architecture and production delivery, within my consulting work at Vriksh from November 2021 onward.",
+      "priority": "medium",
+      "issue": "A noun fragment followed by administrative context makes a strong fact awkward to read.",
+      "proposed": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months through Vriksh.",
+      "source": "app/templates/index.html:3",
+      "action": "rewrite",
+      "pages": [
+        "/"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C04",
+      "match": "support in estates with multi-terabyte datasets",
+      "priority": "medium",
+      "issue": "Estates is internal consulting language. The scale is useful and should stay attached to the systems, not become an invented outcome.",
+      "proposed": "I investigated pipeline failures, automated releases and supported data platforms with multi-terabyte datasets and hundreds of pipelines.",
+      "source": "app/templates/index.html:3",
+      "action": "rewrite",
+      "pages": [
+        "/"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C05",
+      "match": "implement a defined workflow",
+      "priority": "medium",
+      "issue": "Defined workflow is generic where the actual work can be named.",
+      "proposed": "I can troubleshoot an integration, build a workflow or join your team for implementation and production support.",
+      "source": "app/templates/index.html:4",
+      "action": "rewrite",
+      "pages": [
+        "/"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C06",
+      "match": "Responsibilities and scope",
+      "priority": "low",
+      "issue": "A bureaucratic link label adds no information about the destination.",
+      "proposed": "Enterprise AI work",
+      "source": "app/templates/index.html:3",
+      "action": "rewrite",
+      "pages": [
+        "/"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C07",
+      "match": "Employers, roles and dates",
+      "priority": "low",
+      "issue": "Literal but unusually administrative navigation wording.",
+      "proposed": "Career timeline",
+      "source": "app/templates/index.html:3",
+      "action": "rewrite",
+      "pages": [
+        "/"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C08",
+      "match": "Appointments, subjects and workshops",
+      "priority": "low",
+      "issue": "Administrative phrasing for a link to teaching work.",
+      "proposed": "Teaching experience",
+      "source": "app/templates/index.html:6",
+      "action": "rewrite",
+      "pages": [
+        "/"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C09",
+      "match": "I build, operate and explain complex technical systems.",
+      "priority": "low",
+      "issue": "Build/operate/explain is useful; complex technical systems is a broad object. Do not replace this with a grander claim.",
+      "proposed": "I build and support AI and data systems, and teach data and cloud engineering.",
+      "source": "app/templates/about.html:3",
+      "action": "rewrite",
+      "pages": [
+        "/about"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C10",
+      "match": "The job has expanded with each role.",
+      "priority": "low",
+      "issue": "A generic bridge sentence; the concrete examples after it do the work.",
+      "proposed": "Cut this sentence and retain the examples of Python/SQL, pipeline investigation, releases and explaining decisions.",
+      "source": "app/templates/about.html:4",
+      "action": "cut",
+      "pages": [
+        "/about"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C11",
+      "match": "I work independently when a problem needs concentrated ownership.",
+      "priority": "medium",
+      "issue": "Concentrated ownership and the list of stakeholder functions sound like consulting boilerplate. Preserve the collaboration point.",
+      "proposed": "I work independently or alongside a client team. I involve security and domain specialists when their decisions affect the system.",
+      "source": "app/templates/about.html:4",
+      "action": "rewrite",
+      "pages": [
+        "/about"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C12",
+      "match": "A classroom exposes weak explanations quickly.",
+      "priority": "low",
+      "issue": "A polished aphorism that sounds generic despite a credible teaching background. Optional edit; the personal teaching connection is worth keeping.",
+      "proposed": "Teaching made me more careful about explaining decisions and leaving documentation another engineer can use.",
+      "source": "app/templates/about.html:5",
+      "action": "rewrite",
+      "pages": [
+        "/about"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C13",
+      "match": "This website remains my personal professional record.",
+      "priority": "low",
+      "issue": "An editorial explanation of the website rather than useful information about hiring the owner.",
+      "proposed": "Keep: I provide consulting through Vriksh Consulting Services Inc. Cut the second sentence.",
+      "source": "app/templates/about.html:8",
+      "action": "cut",
+      "pages": [
+        "/about"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C14",
+      "match": "certifications and engineering approach",
+      "priority": "high",
+      "issue": "The About search description promises certifications, but the page lists none and CERTIFICATIONS is empty.",
+      "proposed": "Pragith Prakash’s background in AI and data engineering, teaching and consulting.",
+      "source": "app/main.py:about description",
+      "action": "rewrite",
+      "pages": [
+        "/about"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C15",
+      "match": "that scale describes the estates I worked on, rather than a measured improvement from my contribution.",
+      "priority": "medium",
+      "issue": "This is an internal evidence qualification made public. Preserve truthful attribution, but make it part of the claim rather than a defensive aside.",
+      "proposed": "The platforms I supported handled multi-terabyte datasets and hundreds of automated pipelines.",
+      "source": "app/content/site.py:210",
+      "action": "rewrite",
+      "pages": [
+        "/experience",
+        "/resume"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C16",
+      "match": "Consulting entity",
+      "priority": "low",
+      "issue": "A classification label, not a useful description of the relationship.",
+      "proposed": "Vriksh Consulting Services Inc. · Consulting",
+      "source": "app/content/site.py:209",
+      "action": "rewrite",
+      "pages": [
+        "/experience",
+        "/resume"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C17",
+      "match": "Grouped early-career period",
+      "priority": "low",
+      "issue": "Editorial data-organization terminology leaks into the résumé.",
+      "proposed": "SMART FBO, Hibu and Sigmoid",
+      "source": "app/content/site.py:239",
+      "action": "rewrite",
+      "pages": [
+        "/experience",
+        "/resume"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C18",
+      "match": "This grouped period covers several roles.",
+      "priority": "low",
+      "issue": "Repeats what the heading and three employer names already show.",
+      "proposed": "Cut this sentence. Keep all employer names and the date range; do not invent individual dates.",
+      "source": "app/content/site.py:240",
+      "action": "cut",
+      "pages": [
+        "/experience",
+        "/resume"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C19",
+      "match": "I led technical quality and applied data research, including cloud data workflows and delivery automation.",
+      "priority": "medium",
+      "issue": "The official job title is specific but its description is broad. A prose rewrite alone cannot supply a genuine project.",
+      "proposed": "Retain the verified responsibility until one concrete example of the data research or quality work is available. Do not invent an outcome.",
+      "source": "app/content/site.py:216",
+      "action": "needs evidence",
+      "pages": [
+        "/experience",
+        "/resume"
+      ],
+      "original_phrase_still_present": true,
+      "outcome": "Retained factual responsibility summary. A publishable example is still needed; no result was invented."
+    },
+    {
+      "id": "C20",
+      "match": "My work covered enterprise analytics and cloud data consulting.",
+      "priority": "medium",
+      "issue": "This gives a category rather than showing the work behind the promotion.",
+      "proposed": "Keep the promotion and dates. Add one owner-approved analytical system or responsibility if available.",
+      "source": "app/content/site.py:222",
+      "action": "needs evidence",
+      "pages": [
+        "/experience",
+        "/resume"
+      ],
+      "original_phrase_still_present": true,
+      "outcome": "Retained factual responsibility summary. A publishable example is still needed; no result was invented."
+    },
+    {
+      "id": "C21",
+      "match": "I built analytical systems over operational and log data, working on modelling, implementation and performance investigation.",
+      "priority": "medium",
+      "issue": "Broad but plausible. Needs a specific analytical problem to become convincing; changing adjectives will not fix it.",
+      "proposed": "Keep the factual summary until a publishable example is supplied.",
+      "source": "app/content/site.py:234",
+      "action": "needs evidence",
+      "pages": [
+        "/experience",
+        "/resume"
+      ],
+      "original_phrase_still_present": true,
+      "outcome": "Retained factual responsibility summary. A publishable example is still needed; no result was invented."
+    },
+    {
+      "id": "C22",
+      "match": "Operating and improving a multi-cloud analytics estate",
+      "priority": "medium",
+      "issue": "Gerund opening and estate hide who did what. Improvement remains vague.",
+      "proposed": "I investigated failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines.",
+      "source": "app/content/site.py:43",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies",
+        "/case-studies/enterprise-data-platform"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C23",
+      "match": "A large enterprise analytics environment supported high-volume reporting, modelling and downstream decision systems.",
+      "priority": "medium",
+      "issue": "Large, enterprise, high-volume and downstream decision systems repeat category words without identifying a task.",
+      "proposed": "The data platform supplied reporting and analytical models through hundreds of automated pipelines.",
+      "source": "app/content/site.py:44",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/enterprise-data-platform"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C24",
+      "match": "strengthened monitoring around critical processing paths.",
+      "priority": "medium",
+      "issue": "Critical processing paths is vague. It is reasonable to retain monitoring work without implying a measured improvement.",
+      "proposed": "I automated deployments, investigated pipeline failures and improved monitoring for data processing.",
+      "source": "app/content/site.py:48",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/enterprise-data-platform"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C25",
+      "match": "where freshness, resilience and traceability mattered.",
+      "priority": "medium",
+      "issue": "Three abstract quality nouns describe almost any data system.",
+      "proposed": "I designed event-driven data flows between operational applications and cloud services.",
+      "source": "app/content/site.py:64",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies",
+        "/case-studies/event-driven-data-systems"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C26",
+      "match": "Operational applications needed timely data movement",
+      "priority": "medium",
+      "issue": "Timely data movement repeats the title. It does not identify the source, destination or useful latency.",
+      "proposed": "Retain the source-to-cloud relationship; request a publishable source/destination example before adding latency or a success claim.",
+      "source": "app/content/site.py:65",
+      "action": "needs evidence",
+      "pages": [
+        "/case-studies/event-driven-data-systems"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C27",
+      "match": "processing boundaries, retry behaviour, deployment automation and operational checks",
+      "priority": "medium",
+      "issue": "Retry behaviour is concrete; the surrounding abstractions obscure it.",
+      "proposed": "I defined retries, automated deployments and added checks for data delivery.",
+      "source": "app/content/site.py:69",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/event-driven-data-systems"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C28",
+      "match": "Moving AI capabilities from internal prototypes into observable, controlled engineering workflows.",
+      "priority": "high",
+      "issue": "AI capabilities and observable, controlled engineering workflows make the strongest professional example sound generic.",
+      "proposed": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months.",
+      "source": "app/content/site.py:85",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies",
+        "/case-studies/ai-mlops-automation"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C29",
+      "match": "An enterprise team was introducing AI-assisted capabilities into existing analytics and engineering workflows.",
+      "priority": "medium",
+      "issue": "Repeats the abstract preview and withholds the actual assistant already named in the next paragraph.",
+      "proposed": "An enterprise team needed to connect an AI assistant to its existing tools and data.",
+      "source": "app/content/site.py:86",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/ai-mlops-automation"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C30",
+      "match": "within my Vriksh consulting tenure.",
+      "priority": "low",
+      "issue": "A formal phrase in a sentence with a strong factual detail.",
+      "proposed": "through my consulting work at Vriksh.",
+      "source": "app/content/site.py:88",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/ai-mlops-automation"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C31",
+      "match": "helped define reliable operating boundaries.",
+      "priority": "medium",
+      "issue": "Reliable operating boundaries does not name a control or a boundary. Avoid adding permissions or evaluation work beyond evidence.",
+      "proposed": "I connected models to approved tools and data, added deployment controls and supported production debugging.",
+      "source": "app/content/site.py:90",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/ai-mlops-automation"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C32",
+      "match": "Governance-sensitive data integrations",
+      "priority": "medium",
+      "issue": "Governance-sensitive is awkward and the title says little about the work.",
+      "proposed": "Data pipelines for restricted datasets",
+      "source": "app/content/site.py:105",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies",
+        "/case-studies/regulated-integrations"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C33",
+      "match": "healthcare-adjacent workloads.",
+      "priority": "high",
+      "issue": "Healthcare-adjacent is both evasive wording and a domain claim without a publishable example in the supplied claim record. Not proven false; needs support.",
+      "proposed": "Use the supported forensic and regulatory experience; retain healthcare wording only if the owner confirms a specific relevant engagement.",
+      "source": "app/content/site.py:106",
+      "action": "needs evidence",
+      "pages": [
+        "/case-studies",
+        "/case-studies/regulated-integrations"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C34",
+      "match": "while preserving auditability and controlled access.",
+      "priority": "medium",
+      "issue": "Abstract qualities; an actual logging, validation or access mechanism would be stronger.",
+      "proposed": "I built data pipelines with access controls and processing records for review. Confirm the mechanism before elaborating.",
+      "source": "app/content/site.py:107",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/regulated-integrations"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C35",
+      "match": "in collaboration with domain, security and governance stakeholders.",
+      "priority": "low",
+      "issue": "A stakeholder roll-call where a direct statement about collaboration would suffice.",
+      "proposed": "with the teams responsible for the data and its access controls.",
+      "source": "app/content/site.py:109",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/regulated-integrations"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C36",
+      "match": "worked with cross-functional reviewers on operational controls.",
+      "priority": "medium",
+      "issue": "Cross-functional reviewers and operational controls conceal the task.",
+      "proposed": "I documented data handling and supported validation and review.",
+      "source": "app/content/site.py:111",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/regulated-integrations"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C37",
+      "match": "Executive analytics and semantic reporting",
+      "priority": "low",
+      "issue": "Valid technical terminology, but too abstract for a general buyer-facing title.",
+      "proposed": "Reporting and metric definitions",
+      "source": "app/content/site.py:125",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies",
+        "/case-studies/executive-analytics"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C38",
+      "match": "governed models and decision-focused dashboards.",
+      "priority": "medium",
+      "issue": "Governed and decision-focused are generic modifiers. Name the metric-definition problem.",
+      "proposed": "I connected source data to shared metric definitions and dashboards.",
+      "source": "app/content/site.py:126",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies",
+        "/case-studies/executive-analytics"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C39",
+      "match": "stakeholder enablement.",
+      "priority": "medium",
+      "issue": "Enablement does not explain what the reader receives.",
+      "proposed": "helping teams use the reports.",
+      "source": "app/content/site.py:129 and app/templates/executive_bi.html",
+      "action": "rewrite",
+      "pages": [
+        "/services/executive-bi",
+        "/case-studies/executive-analytics"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C40",
+      "match": "I aligned measures with decision needs, built reusable models and documented ownership from source through presentation.",
+      "priority": "medium",
+      "issue": "Measures with decision needs and source through presentation are vague phrases around useful work.",
+      "proposed": "I agreed metric definitions with the team, built reporting models and documented who maintained them.",
+      "source": "app/content/site.py:131",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/executive-analytics"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C41",
+      "match": "Engineering education and enablement",
+      "priority": "medium",
+      "issue": "Enablement adds abstraction to an otherwise clear teaching offer.",
+      "proposed": "Teaching data and cloud engineering",
+      "source": "app/content/site.py:145",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies",
+        "/case-studies/engineering-enablement"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C42",
+      "match": "practical instruction that connected concepts to deployable systems.",
+      "priority": "medium",
+      "issue": "Generic course-marketing language; actual named programs and topics are stronger.",
+      "proposed": "Retain the named subjects. Link to Cambrian College, Correlation One and GDG appointments instead of promising unspecified deployable systems.",
+      "source": "app/content/site.py:147",
+      "action": "restructure",
+      "pages": [
+        "/case-studies/engineering-enablement"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C43",
+      "match": "Hands-on AI, data platform, cloud, MLOps, analytics and engineering enablement services.",
+      "priority": "medium",
+      "issue": "The Services metadata is a stack of categories, wider than the concrete four offers visible on the page.",
+      "proposed": "AI integrations, data-pipeline troubleshooting, reporting and technical teaching from Pragith Prakash.",
+      "source": "app/main.py:services description",
+      "action": "rewrite",
+      "pages": [
+        "/services"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C44",
+      "match": "Deliverable: a defined workflow with data access, tool boundaries and task-specific checks.",
+      "priority": "medium",
+      "issue": "Defined workflow and tool boundaries feel like a contract summary rather than an explanation.",
+      "proposed": "I connect the assistant to the agreed records and tools, and test it against the task it needs to perform.",
+      "source": "app/templates/services.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C45",
+      "match": "Deliverable: a diagnosed failure path, an implemented correction and checks for the affected workflow.",
+      "priority": "medium",
+      "issue": "A diagnosed failure path and an implemented correction turn direct engineering work into nouns.",
+      "proposed": "I trace the failure, fix it and add checks for the affected pipeline.",
+      "source": "app/templates/services.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C46",
+      "match": "Deliverable: documented definitions, reconciled source transformations and a reporting view with agreed refresh and access.",
+      "priority": "medium",
+      "issue": "Reconciled source transformations is difficult buyer-facing language.",
+      "proposed": "I reconcile the reports, document what each metric counts and configure refresh and access.",
+      "source": "app/templates/services.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C47",
+      "match": "Appointments and sample exercise",
+      "priority": "high",
+      "issue": "This link promises a sample exercise that was removed in release 1.0.1. The destination lists appointments and an event.",
+      "proposed": "Teaching experience and workshops",
+      "source": "app/templates/services.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C48",
+      "match": "A focused architecture session can establish the work.",
+      "priority": "medium",
+      "issue": "Establish the work and operational handover are vague; explain the first conversation and what is agreed.",
+      "proposed": "We start by agreeing the problem, access and deliverables. I work hourly or against agreed milestones and document the handover.",
+      "source": "app/templates/services.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C49",
+      "match": "Controlled AI orchestration, evaluation, observability, access, approval gates, failure handling and cost management.",
+      "priority": "medium",
+      "issue": "An eight-item noun list in search metadata; the page does not explain cost management.",
+      "proposed": "Connect an AI assistant to existing records and tools, with agreed access, testing and review.",
+      "source": "app/main.py:ai_systems description",
+      "action": "rewrite",
+      "pages": [
+        "/services/ai-systems"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C50",
+      "match": "Connect an assistant to a defined workflow",
+      "priority": "low",
+      "issue": "Defined is unnecessary; a concrete connection is clearer.",
+      "proposed": "Connect an AI assistant to your existing tools",
+      "source": "app/templates/ai_systems.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services/ai-systems"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C51",
+      "match": "representative evaluation cases.",
+      "priority": "medium",
+      "issue": "Accurate engineering terminology, but the buyer needs to know what is tested.",
+      "proposed": "tests based on the tasks your team needs the assistant to perform.",
+      "source": "app/templates/ai_systems.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services/ai-systems"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C52",
+      "match": "Vendor-neutral source integration, semantic modelling, governance, dashboards, access control and reporting operations.",
+      "priority": "medium",
+      "issue": "The search description is a consulting keyword list rather than the page’s real report-reconciliation offer.",
+      "proposed": "Resolve conflicting reports, agree metric definitions and build dashboards your team can maintain.",
+      "source": "app/main.py:executive_bi description",
+      "action": "rewrite",
+      "pages": [
+        "/services/executive-bi"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C53",
+      "match": "Agree what a metric counts",
+      "priority": "low",
+      "issue": "Specific and worth retaining, but the missing preposition makes the heading awkward.",
+      "proposed": "Agree on what a metric counts",
+      "source": "app/templates/executive_bi.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services/executive-bi"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C54",
+      "match": "I work from source records and definitions through to a reporting view that a team can maintain.",
+      "priority": "medium",
+      "issue": "Work from...through to is a roundabout description of the work.",
+      "proposed": "I trace the source data, agree metric definitions and build reports your team can maintain.",
+      "source": "app/templates/executive_bi.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/services/executive-bi"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C55",
+      "match": "Graduate instruction, workforce programs, workshops and team enablement",
+      "priority": "medium",
+      "issue": "The visible teaching page is stronger than the abstract metadata. Name the supported appointments instead.",
+      "proposed": "Teaching experience at Cambrian College and Correlation One, plus cloud and data workshops through Google Developer Groups.",
+      "source": "app/main.py:teaching description",
+      "action": "rewrite",
+      "pages": [
+        "/teaching"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C56",
+      "match": "Appointments and teaching",
+      "priority": "low",
+      "issue": "Appointments is administrative, particularly beside a practical workshop action.",
+      "proposed": "Teaching experience",
+      "source": "app/templates/case_study.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/engineering-enablement"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C57",
+      "match": "Continuous face-on camera practice",
+      "priority": "medium",
+      "issue": "A noun-heavy product description starts with camera placement instead of the action.",
+      "proposed": "Practise your golf swing with live 2D body tracking, saved swing summaries and skeleton replay. Use a face-on camera; left- and right-handed golfers are supported.",
+      "source": "app/content/site.py:180",
+      "action": "rewrite",
+      "pages": [
+        "/",
+        "/projects"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C58",
+      "match": "pose inference runs locally in the browser.",
+      "priority": "low",
+      "issue": "Technically correct but inaccessible to many golfers. Preserve the distinction between local tracking and server storage.",
+      "proposed": "Body tracking runs in your browser.",
+      "source": "app/content/site.py:180",
+      "action": "rewrite",
+      "pages": [
+        "/",
+        "/projects"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C59",
+      "match": "remain under real-world evaluation.",
+      "priority": "medium",
+      "issue": "Keep the experimental limitation; simplify the vague phrasing without claiming accuracy.",
+      "proposed": "Swing detection and timing estimates are experimental. Summaries and skeleton clips are saved on a self-hosted server.",
+      "source": "app/content/site.py:181",
+      "action": "rewrite",
+      "pages": [
+        "/",
+        "/projects"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C60",
+      "match": "IPTV and STB media player",
+      "priority": "low",
+      "issue": "IPTV, STB, Stalker and Ministra are relevant to buyers, but four terms in the first sentence overwhelm general portfolio readers.",
+      "proposed": "An IPTV player for Stalker and Ministra portals. Explain set-top-box support in the product detail rather than removing the technical names.",
+      "source": "app/content/site.py:171",
+      "action": "rewrite",
+      "pages": [
+        "/",
+        "/projects"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C61",
+      "match": "My role: product development through Vriksh.",
+      "priority": "medium",
+      "issue": "Repeated generic ownership copy adds little across three products. Do not invent sole authorship or a team size.",
+      "proposed": "Use one shared ownership statement for the product section, or give a supported contribution for each product.",
+      "source": "app/templates/project_entries.html:1",
+      "action": "restructure",
+      "pages": [
+        "/",
+        "/projects"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C62",
+      "match": "A live call, message delivery and customer integration require a separate demonstration.",
+      "priority": "medium",
+      "issue": "The limitation is important; the three consecutive mentions of demonstration are repetitive.",
+      "proposed": "This example shows the summary formatter. Contact Vriksh to see the calling and integration workflow.",
+      "source": "app/content/product-facts.json:limitations",
+      "action": "rewrite",
+      "pages": [
+        "/projects"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C63",
+      "match": "Open-source tools and clearly labelled experiments by Pragith Prakash.",
+      "priority": "high",
+      "issue": "Projects metadata does not match the catalogue: it includes owned commercial products as well as experiments. Open-source must not be generalized.",
+      "proposed": "Products and experiments by Pragith Prakash, including Fairway, Velvet, CallRenard and Caffeinate-d.",
+      "source": "app/main.py:projects description",
+      "action": "rewrite",
+      "pages": [
+        "/projects"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C64",
+      "match": "Projects and Labs | Pragith Prakash",
+      "priority": "low",
+      "issue": "The title uses Labs, while the heading says Products and experiments.",
+      "proposed": "Products and experiments | Pragith Prakash",
+      "source": "app/main.py:projects title",
+      "action": "rewrite",
+      "pages": [
+        "/projects"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C65",
+      "match": "A small native macOS menu-bar wrapper",
+      "priority": "low",
+      "issue": "Wrapper describes implementation more than the user benefit. The command is meaningful and should stay in the details.",
+      "proposed": "A macOS menu-bar app that keeps your display awake.",
+      "source": "app/templates/caffeinate_d.html and app/content/site.py:198",
+      "action": "rewrite",
+      "pages": [
+        "/projects",
+        "/projects/caffeinate-d"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C66",
+      "match": "does not claim broader power-management control.",
+      "priority": "medium",
+      "issue": "A defensive non-claim about capabilities nobody asked about. The positive capability already establishes the limit.",
+      "proposed": "It starts and stops caffeinate -d from the menu bar to keep your display awake.",
+      "source": "app/templates/caffeinate_d.html:2",
+      "action": "rewrite",
+      "pages": [
+        "/projects/caffeinate-d"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C67",
+      "match": "the repository declares source version 0.2.0.",
+      "priority": "medium",
+      "issue": "Retain the release caveat, but write it for someone trying to install the app.",
+      "proposed": "Source version 0.2.0. Build it in Xcode; a matching signed app download is not available.",
+      "source": "app/templates/caffeinate_d.html:2",
+      "action": "rewrite",
+      "pages": [
+        "/projects/caffeinate-d"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C68",
+      "match": "This statement applies to the published source and should be reviewed again for every packaged release.",
+      "priority": "medium",
+      "issue": "An internal publication checklist has leaked into the privacy copy.",
+      "proposed": "Cut the editorial instruction. Keep the source-specific statement that the app uses a local command and needs no account or remote service, subject to source verification.",
+      "source": "app/templates/caffeinate_d.html:2",
+      "action": "cut",
+      "pages": [
+        "/projects/caffeinate-d"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C69",
+      "match": "Selected technical writing, talks and appearances",
+      "priority": "medium",
+      "issue": "The metadata suggests a curated collection; the page has one dated talk and a generic LinkedIn activity link.",
+      "proposed": "A cloud-certification talk from GDG Cloud Edmonton and links to Pragith Prakash’s LinkedIn posts.",
+      "source": "app/main.py:writing description",
+      "action": "rewrite",
+      "pages": [
+        "/writing"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C70",
+      "match": "Event details and speaker listing",
+      "priority": "low",
+      "issue": "A literal evidence label; readers simply need the event page.",
+      "proposed": "View the event",
+      "source": "app/templates/writing.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/writing"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C71",
+      "match": "I will reply about fit and the next conversation.",
+      "priority": "medium",
+      "issue": "Awkward administrative wording repeated across project, teaching and speaking enquiries.",
+      "proposed": "I’ll let you know whether I can help and suggest a next step.",
+      "source": "app/templates/contact.html:9 and JS variants",
+      "action": "rewrite",
+      "pages": [
+        "/contact",
+        "/contact?engagement_type=Teaching%20%2F%20workshop",
+        "/contact?engagement_type=Speaking%20engagement",
+        "/contact?engagement_type=Hourly%20engineering"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C72",
+      "match": "I use the details you send to assess the request and suggest a next step.",
+      "priority": "medium",
+      "issue": "Repeats the introduction without helping someone fill the form.",
+      "proposed": "Cut this paragraph; keep the context-specific information request.",
+      "source": "app/templates/contact.html:18",
+      "action": "cut",
+      "pages": [
+        "/contact",
+        "/contact?engagement_type=Teaching%20%2F%20workshop",
+        "/contact?engagement_type=Speaking%20engagement",
+        "/contact?engagement_type=Hourly%20engineering"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C73",
+      "match": "What kind of conversation?",
+      "priority": "low",
+      "issue": "The field records an engagement type, not how people will communicate.",
+      "proposed": "What do you need?",
+      "source": "app/templates/contact.html:51",
+      "action": "rewrite",
+      "pages": [
+        "/contact",
+        "/contact?engagement_type=Teaching%20%2F%20workshop",
+        "/contact?engagement_type=Speaking%20engagement",
+        "/contact?engagement_type=Hourly%20engineering"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C74",
+      "match": "Initial fit assessment",
+      "priority": "medium",
+      "issue": "Sounds like an internal sales qualification stage.",
+      "proposed": "Project enquiry",
+      "source": "app/templates/contact.html:53",
+      "action": "rewrite",
+      "pages": [
+        "/contact",
+        "/contact?engagement_type=Teaching%20%2F%20workshop",
+        "/contact?engagement_type=Speaking%20engagement",
+        "/contact?engagement_type=Hourly%20engineering"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C75",
+      "match": "Context, constraints and desired outcome",
+      "priority": "medium",
+      "issue": "A formal triplet on the field where the reader needs a plain question.",
+      "proposed": "What are you building or trying to fix?",
+      "source": "app/templates/contact.html:66 and JS variants",
+      "action": "rewrite",
+      "pages": [
+        "/contact",
+        "/contact?engagement_type=Hourly%20engineering"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C76",
+      "match": "Current system, primary constraint and intended outcome.",
+      "priority": "medium",
+      "issue": "Abstract placeholder duplicates the label.",
+      "proposed": "Tell me what you have, what isn’t working and what you want to change.",
+      "source": "app/templates/contact.html:67",
+      "action": "rewrite",
+      "pages": [],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C77",
+      "match": "Defined technical engagements for smaller organizations",
+      "priority": "high",
+      "issue": "A bureaucratic headline hides the actual engineering offer.",
+      "proposed": "Data reporting, automation and training for smaller teams",
+      "source": "app/templates/business.html:4",
+      "action": "rewrite",
+      "pages": [
+        "/business"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C78",
+      "match": "delivers bounded analytics, workflow automation and team training work.",
+      "priority": "medium",
+      "issue": "Bounded and engagements describe contracting process rather than the service.",
+      "proposed": "Vriksh Consulting Services Inc. builds reporting and automation systems and provides technical training.",
+      "source": "app/templates/business.html:4",
+      "action": "rewrite",
+      "pages": [
+        "/business"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C79",
+      "match": "build a reporting foundation for one operational area.",
+      "priority": "medium",
+      "issue": "Foundation and operational area are broad placeholders.",
+      "proposed": "We connect the agreed data sources, define the metrics and build reports for your team.",
+      "source": "app/templates/business.html:4",
+      "action": "rewrite",
+      "pages": [
+        "/business"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C80",
+      "match": "We implement a scoped workflow with named integrations, approval points, error handling and operational documentation.",
+      "priority": "medium",
+      "issue": "Dense scope terminology obscures the offer, despite legitimate details.",
+      "proposed": "We connect the systems involved in your workflow, add approvals and error handling, and document how to run it.",
+      "source": "app/templates/business.html:4",
+      "action": "rewrite",
+      "pages": [
+        "/business"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C81",
+      "match": "Team enablement",
+      "priority": "medium",
+      "issue": "Use the actual service name.",
+      "proposed": "Technical training",
+      "source": "app/templates/business.html:4",
+      "action": "rewrite",
+      "pages": [
+        "/teaching",
+        "/business"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C82",
+      "match": "Packaged analytics, automation and technical enablement services",
+      "priority": "high",
+      "issue": "Packaged promises productized offerings the page does not identify, price or define.",
+      "proposed": "Reporting, workflow automation and technical training through Vriksh Consulting Services Inc.",
+      "source": "app/main.py:business description",
+      "action": "rewrite",
+      "pages": [
+        "/business"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C83",
+      "match": "configured analytics",
+      "priority": "low",
+      "issue": "Configuration terminology is irrelevant to a visitor.",
+      "proposed": "analytics",
+      "source": "app/templates/privacy.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/privacy"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C84",
+      "match": "Google Analytics and Microsoft Clarity may collect traffic and interaction data.",
+      "priority": "medium",
+      "issue": "The implementation loads both when configured; may is less informative than naming what is active. This is a clarity review, not legal certification.",
+      "proposed": "Describe the analytics actually enabled on the site and their documented collection. Do not invent retention periods, consent rules or legal compliance.",
+      "source": "app/templates/privacy.html:1; app/templates/base.html:analytics blocks",
+      "action": "needs evidence",
+      "pages": [
+        "/privacy"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C85",
+      "match": "Project descriptions state their access and development limits.",
+      "priority": "low",
+      "issue": "Editorial meta-commentary. Product pages already carry their own status.",
+      "proposed": "Cut this sentence and keep the direct identification of the website and service provider.",
+      "source": "app/templates/legal.html:1",
+      "action": "cut",
+      "pages": [
+        "/legal"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C86",
+      "match": "Personal writing and project records remain separate.",
+      "priority": "low",
+      "issue": "Separate from what is not explained. The actual distinction is between Pragith’s portfolio and Vriksh’s services.",
+      "proposed": "This is Pragith Prakash’s personal portfolio. Vriksh Consulting Services Inc. provides the company services described here.",
+      "source": "app/templates/legal.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/legal"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C87",
+      "match": "through consequential choices.",
+      "priority": "low",
+      "issue": "Generic dramatic adjective in the Rajadharma search description. The visible game copy is more specific.",
+      "proposed": "Balance duty, treasury, strength and public welfare as you respond to requests at court.",
+      "source": "app/main.py:rajadharma description",
+      "action": "rewrite",
+      "pages": [
+        "/apps/rajadharma"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C88",
+      "match": "A mythic court strategy game",
+      "priority": "low",
+      "issue": "Distinctive and appropriate to the game, but court may mean either tribunal or royal court.",
+      "proposed": "A strategy game set in a mythic royal court",
+      "source": "app/templates/apps/rajadharma.html:5",
+      "action": "rewrite",
+      "pages": [
+        "/apps/rajadharma"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C89",
+      "match": "Your message is on its way.",
+      "priority": "low",
+      "issue": "Reasonable success wording, but the page only confirms successful handoff, not delivery to the recipient.",
+      "proposed": "Thank you. Your message has been sent.",
+      "source": "app/templates/contact_success.html:1",
+      "action": "rewrite",
+      "pages": [],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C90",
+      "match": "reply with a useful next step.",
+      "priority": "low",
+      "issue": "Useful is an empty promise; do not invent a response-time guarantee.",
+      "proposed": "I’ll read your message and reply.",
+      "source": "app/templates/contact_success.html:1",
+      "action": "rewrite",
+      "pages": [],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C91",
+      "match": "Dated experience",
+      "priority": "low",
+      "issue": "An unnatural label for a normal career-history link, repeated on five work pages.",
+      "proposed": "Career timeline",
+      "source": "app/templates/case_study.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies/enterprise-data-platform",
+        "/case-studies/event-driven-data-systems",
+        "/case-studies/ai-mlops-automation",
+        "/case-studies/regulated-integrations",
+        "/case-studies/executive-analytics"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C92",
+      "match": "Read the scope",
+      "priority": "low",
+      "issue": "Repeated scope language keeps sending the reader into a contract-like frame.",
+      "proposed": "View the work summary",
+      "source": "app/templates/case_studies.html:1",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies",
+        "/services/ai-systems"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    },
+    {
+      "id": "C93",
+      "match": "Case Studies | Pragith Prakash",
+      "priority": "medium",
+      "issue": "The public entries describe responsibilities and scope, not complete case studies with a concrete incident, decision and supported outcome. Match the title to what the reader receives.",
+      "proposed": "Work and experience | Pragith Prakash",
+      "source": "app/main.py:case_studies title",
+      "action": "rewrite",
+      "pages": [
+        "/case-studies"
+      ],
+      "original_phrase_still_present": false,
+      "outcome": "Original problematic phrase replaced or removed. See full current page capture."
+    }
+  ]
+}

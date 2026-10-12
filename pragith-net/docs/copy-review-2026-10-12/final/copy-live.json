@@ -1,0 +1,5443 @@
+{
+  "captured": "2026-10-12T16:54:46.566Z",
+  "snapshots": [
+    {
+      "route": "/",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Pragith Prakash | AI Forward Deployed Engineer",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Pragith Prakash designs and delivers AI systems, data platforms and cloud automation across AWS, Google Cloud, Azure and Databricks."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Pragith Prakash | AI Forward Deployed Engineer"
+        },
+        {
+          "name": "og:description",
+          "content": "Pragith Prakash designs and delivers AI systems, data platforms and cloud automation across AWS, Google Cloud, Azure and Databricks."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Pragith Prakash | AI Forward Deployed Engineer"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Pragith Prakash designs and delivers AI systems, data platforms and cloud automation across AWS, Google Cloud, Azure and Databricks."
+        }
+      ],
+      "text": "Hello, I am Pragith.\n\nI take AI and data systems from architecture into production.\n\nI connect AI tools to existing systems, build data pipelines and help fix production problems.\n\nExplore my work\nDiscuss a project\nProfessional experience\nEnterprise AI assistant\n\nI owned architecture and production delivery for an enterprise AI assistant for eighteen months through my consulting work at Vriksh.\n\nEnterprise AI work →\nData-platform operations\n\nI examined pipeline failures, automated releases and supported data platforms with multi-terabyte datasets and hundreds of automated pipelines.\n\nPlatform experience →\n\nCareer timeline →\n\nWork with me\n\nI can connect applications, build a workflow or join your team for development and production support.\n\nProblems I work on\nDiscuss a project\nOwned products\nAll products and experiments →\n\nSaved skeleton replay from a test clip. Timing disabled.\n\nExperimental\nFairway: Golf Swing Analyzer\n\nPractise your golf swing with live 2D body tracking, saved swing summaries and skeleton replay. Use a face-on camera; left- and right-handed golfers are supported. Body tracking runs in your browser.\n\nLive app · Swing detection and timing estimates are experimental. The app saves summaries and skeleton clips on a self-hosted server.\n\nI develop this product through Vriksh.\n\nOpen Golf Swing Analyzer ↗\n\nFilm selection with demonstration content. Artwork: Big Buck Bunny, © Blender Foundation, CC BY 3.0; cropped in the player.\n\nActive development\nVelvet IPTV Player\n\nA cross-platform IPTV player for Stalker and Ministra portals, with set-top-box support.\n\nProduct website & setup\n\nI develop this product through Vriksh.\n\nVisit Velvet ↗\nTeaching\n\nI taught at Cambrian College from 2020 to 2024 and with Correlation One from 2021 to 2024. These included the Walmart Data Science Bootcamp and DS4A programs.\n\nTeaching experience →",
+      "units": [
+        {
+          "tag": "P",
+          "text": "Hello, I am Pragith.",
+          "procedural": false
+        },
+        {
+          "tag": "H1",
+          "text": "I take AI and data systems from architecture into production.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I connect AI tools to existing systems, build data pipelines and help fix production problems.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Professional experience",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Enterprise AI assistant",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months through my consulting work at Vriksh.",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Data-platform operations",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I examined pipeline failures, automated releases and supported data platforms with multi-terabyte datasets and hundreds of automated pipelines.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Career timeline →",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Work with me",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I can connect applications, build a workflow or join your team for development and production support.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Owned products",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Saved skeleton replay from a test clip. Timing disabled.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Experimental",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Fairway: Golf Swing Analyzer",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Practise your golf swing with live 2D body tracking, saved swing summaries and skeleton replay. Use a face-on camera; left- and right-handed golfers are supported. Body tracking runs in your browser.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Live app · Swing detection and timing estimates are experimental. The app saves summaries and skeleton clips on a self-hosted server.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I develop this product through Vriksh.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Film selection with demonstration content. Artwork: Big Buck Bunny, © Blender Foundation, CC BY 3.0; cropped in the player.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Active development",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Velvet IPTV Player",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "A cross-platform IPTV player for Stalker and Ministra portals, with set-top-box support.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Product website & setup",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I develop this product through Vriksh.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Teaching",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I taught at Cambrian College from 2020 to 2024 and with Correlation One from 2021 to 2024. These included the Walmart Data Science Bootcamp and DS4A programs.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Explore my work",
+          "href": "/case-studies",
+          "label": null
+        },
+        {
+          "text": "Discuss a project",
+          "href": "/contact?ref_page=home&cta_id=discuss-a-project&tag1=home&tag2=discuss-a-project&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-a-project",
+          "label": null
+        },
+        {
+          "text": "Enterprise AI work →",
+          "href": "/case-studies/ai-mlops-automation",
+          "label": null
+        },
+        {
+          "text": "Platform experience →",
+          "href": "/case-studies/enterprise-data-platform",
+          "label": null
+        },
+        {
+          "text": "Career timeline →",
+          "href": "/experience",
+          "label": null
+        },
+        {
+          "text": "Problems I work on",
+          "href": "/services",
+          "label": null
+        },
+        {
+          "text": "Discuss a project",
+          "href": "/contact?ref_page=home&cta_id=discuss-a-project&tag1=home&tag2=discuss-a-project&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-a-project",
+          "label": null
+        },
+        {
+          "text": "All products and experiments →",
+          "href": "/projects",
+          "label": null
+        },
+        {
+          "text": "",
+          "href": "/static/work/fairway-v21-1170.webp",
+          "label": "View Fairway: Golf Swing Analyzer screenshot"
+        },
+        {
+          "text": "Open Golf Swing Analyzer ↗",
+          "href": "https://golf.lab.pragith.net",
+          "label": null
+        },
+        {
+          "text": "",
+          "href": "/static/work/velvet-v22-2340.webp",
+          "label": "View Velvet IPTV Player screenshot"
+        },
+        {
+          "text": "Big Buck Bunny",
+          "href": "https://peach.blender.org/",
+          "label": null
+        },
+        {
+          "text": "CC BY 3.0",
+          "href": "https://creativecommons.org/licenses/by/3.0/",
+          "label": null
+        },
+        {
+          "text": "Visit Velvet ↗",
+          "href": "https://velvet.plus",
+          "label": null
+        },
+        {
+          "text": "Teaching experience →",
+          "href": "/teaching",
+          "label": null
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/work/pragith-640.webp",
+          "alt": "Pragith Prakash"
+        },
+        {
+          "src": "/static/work/fairway-v21-480.webp",
+          "alt": "Tracked body landmarks in the Fairway replay player"
+        },
+        {
+          "src": "/static/work/velvet-v22-480.webp",
+          "alt": "Big Buck Bunny film details and Play control in Velvet"
+        }
+      ],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "About Pragith Prakash | AI Forward Deployed Engineer",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Pragith Prakash’s background in AI and data engineering, teaching and consulting."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "About Pragith Prakash | AI Forward Deployed Engineer"
+        },
+        {
+          "name": "og:description",
+          "content": "Pragith Prakash’s background in AI and data engineering, teaching and consulting."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/about"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "About Pragith Prakash | AI Forward Deployed Engineer"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Pragith Prakash’s background in AI and data engineering, teaching and consulting."
+        }
+      ],
+      "text": "I build AI and data systems and teach data engineering.\n\nI am an AI Forward Deployed Engineer, consultant and educator with data and software experience since 2012. I build data platforms, integrate AI tools and support systems in production.\n\nHow I got here\n\nI began in data analysis and backend development in 2012. My later roles covered data science, analytics and cloud operations, followed by enterprise AI delivery.\n\nI work in Python and SQL, trace failing pipelines and repair release workflows. I also review data access and explain technical decisions to the people responsible for the system.\n\nI work independently or alongside a client team. I involve security and domain specialists when their decisions affect the system.\n\nRead the career timeline\n\nTeaching changed my engineering\n\nI taught graduate statistics, data visualization, dashboards and real-time Python APIs. I also led workforce programs in data science and data engineering, and organized developer workshops through Google Developer Groups.\n\nTeaching made me more careful about explaining decisions and leaving documentation another engineer can use.\n\nSee my teaching work\n\nHow I approach the work\nStart with the operational problem and the team that will own the result.\nChoose the simplest architecture that meets the actual constraints.\nDesign access control, monitoring and failure handling with the main workflow.\nEvaluate model output against representative tasks and known failure cases.\nDocument decisions so another engineer can operate the system.\nCurrent interests\n\nI started experimenting with software and web technology in 2004. I now study self-hosted models and developer tools, along with distributed systems and cloud costs. I also explore which automated actions need human approval.\n\nI provide consulting through Vriksh Consulting Services Inc.\n\nContact me",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "I build AI and data systems and teach data engineering.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I am an AI Forward Deployed Engineer, consultant and educator with data and software experience since 2012. I build data platforms, integrate AI tools and support systems in production.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "How I got here",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I began in data analysis and backend development in 2012. My later roles covered data science, analytics and cloud operations, followed by enterprise AI delivery.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I work in Python and SQL, trace failing pipelines and repair release workflows. I also review data access and explain technical decisions to the people responsible for the system.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I work independently or alongside a client team. I involve security and domain specialists when their decisions affect the system.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Read the career timeline",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Teaching changed my engineering",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I taught graduate statistics, data visualization, dashboards and real-time Python APIs. I also led workforce programs in data science and data engineering, and organized developer workshops through Google Developer Groups.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Teaching made me more careful about explaining decisions and leaving documentation another engineer can use.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "See my teaching work",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "How I approach the work",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Start with the operational problem and the team that will own the result.",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Choose the simplest architecture that meets the actual constraints.",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Design access control, monitoring and failure handling with the main workflow.",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Evaluate model output against representative tasks and known failure cases.",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Document decisions so another engineer can operate the system.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Current interests",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I started experimenting with software and web technology in 2004. I now study self-hosted models and developer tools, along with distributed systems and cloud costs. I also explore which automated actions need human approval.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I provide consulting through Vriksh Consulting Services Inc.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Contact me",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Read the career timeline",
+          "href": "/experience",
+          "label": null
+        },
+        {
+          "text": "See my teaching work",
+          "href": "/teaching",
+          "label": null
+        },
+        {
+          "text": "Contact me",
+          "href": "/contact?ref_page=about&cta_id=contact-me&tag1=about&tag2=contact-me&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=contact-me",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/experience",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Experience | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Dated roles at Vriksh, Sofvie, Dentsu / Merkle Cardinal Path, EY and Wipro, with grouped early-career experience."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Experience | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Dated roles at Vriksh, Sofvie, Dentsu / Merkle Cardinal Path, EY and Wipro, with grouped early-career experience."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/experience"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Experience | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Dated roles at Vriksh, Sofvie, Dentsu / Merkle Cardinal Path, EY and Wipro, with grouped early-career experience."
+        }
+      ],
+      "text": "Experience\n\n14+ years in data and software, beginning in 2012. My work has progressed through analytics, consulting and cloud operations into enterprise AI delivery.\n\nNovember 2021 to present\n\nAI and data engineering engagements\n\nVriksh Consulting Services Inc. · Consulting\n\nI design and build AI and data systems and support them in production. My work includes eighteen months owning architecture and production delivery for an enterprise AI assistant. The data platforms I supported handled multi-terabyte datasets and hundreds of automated pipelines.\n\nJanuary to November 2021\n\nQuality & Technical Services Manager / Lead R&D Data Scientist\n\nSofvie · Employment\n\nI led technical quality and applied data research, including cloud data workflows and delivery automation.\n\nJune 2018 to January 2021\n\nStaff Consultant → Senior Consultant\n\nDentsu / Merkle Cardinal Path · Employment\n\nStaff Consultant, June 2018 to January 2020; promoted to Senior Consultant, January 2020 to January 2021. My work covered enterprise analytics and cloud data consulting.\n\nMarch 2017 to June 2018\n\nConsultant, Data Science\n\nEY · Employment\n\nI worked on data science and analytical processing for forensic and regulatory work, with client and dataset details kept confidential.\n\nNovember 2015 to March 2017\n\nData Scientist\n\nWipro · Employment\n\nI built analytical systems over operational and log data, working on modelling, implementation and performance investigation.\n\nJune 2012 to November 2015\n\nEarly data and software roles\n\nSMART FBO, Hibu and Sigmoid\n\nMy early work spanned reporting, backend development and real-time analytics using Python, SQL, R and distributed processing.\n\nPrintable resume\nTeaching appointments",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Experience",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "14+ years in data and software, beginning in 2012. My work has progressed through analytics, consulting and cloud operations into enterprise AI delivery.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "November 2021 to present",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "AI and data engineering engagements",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Vriksh Consulting Services Inc. · Consulting",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I design and build AI and data systems and support them in production. My work includes eighteen months owning architecture and production delivery for an enterprise AI assistant. The data platforms I supported handled multi-terabyte datasets and hundreds of automated pipelines.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "January to November 2021",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Quality & Technical Services Manager / Lead R&D Data Scientist",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Sofvie · Employment",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I led technical quality and applied data research, including cloud data workflows and delivery automation.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "June 2018 to January 2021",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Staff Consultant → Senior Consultant",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Dentsu / Merkle Cardinal Path · Employment",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Staff Consultant, June 2018 to January 2020; promoted to Senior Consultant, January 2020 to January 2021. My work covered enterprise analytics and cloud data consulting.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "March 2017 to June 2018",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Consultant, Data Science",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "EY · Employment",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I worked on data science and analytical processing for forensic and regulatory work, with client and dataset details kept confidential.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "November 2015 to March 2017",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Data Scientist",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Wipro · Employment",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I built analytical systems over operational and log data, working on modelling, implementation and performance investigation.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "June 2012 to November 2015",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Early data and software roles",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "SMART FBO, Hibu and Sigmoid",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "My early work spanned reporting, backend development and real-time analytics using Python, SQL, R and distributed processing.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Printable resume",
+          "href": "/resume",
+          "label": null
+        },
+        {
+          "text": "Teaching appointments",
+          "href": "/teaching",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/case-studies",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Work and experience | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Work summaries covering enterprise AI assistants, data platforms, reporting and technical teaching."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Work and experience | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Work summaries covering enterprise AI assistants, data platforms, reporting and technical teaching."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/case-studies"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Work and experience | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Work summaries covering enterprise AI assistants, data platforms, reporting and technical teaching."
+        }
+      ],
+      "text": "Work\n\nMy work spans enterprise AI assistants, data platforms, analytics and technical teaching.\n\nProducts and experiments\nServices\nProfessional experience\nEnterprise data platform operations\n\nI examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines.\n\nView the work summary →\nNear-real-time and event-driven data systems\n\nI designed data flows between operational applications and cloud services.\n\nView the work summary →\nEnterprise AI assistant delivery\n\nI owned architecture and production delivery for an enterprise AI assistant for eighteen months.\n\nView the work summary →\nData pipelines for restricted datasets\n\nI built data pipelines for forensic and regulatory work.\n\nView the work summary →\nReporting and metric definitions\n\nI connected source data to shared metric definitions and dashboards.\n\nView the work summary →\nTeaching data and cloud engineering\n\nI taught data science and cloud engineering through courses and workshops.\n\nView the work summary →",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Work",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "My work spans enterprise AI assistants, data platforms, analytics and technical teaching.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Professional experience",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Enterprise data platform operations",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines.",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Near-real-time and event-driven data systems",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I designed data flows between operational applications and cloud services.",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Enterprise AI assistant delivery",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months.",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Data pipelines for restricted datasets",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I built data pipelines for forensic and regulatory work.",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Reporting and metric definitions",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I connected source data to shared metric definitions and dashboards.",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Teaching data and cloud engineering",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I taught data science and cloud engineering through courses and workshops.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Products and experiments",
+          "href": "/projects",
+          "label": null
+        },
+        {
+          "text": "Services",
+          "href": "/services",
+          "label": null
+        },
+        {
+          "text": "View the work summary →",
+          "href": "/case-studies/enterprise-data-platform",
+          "label": null
+        },
+        {
+          "text": "View the work summary →",
+          "href": "/case-studies/event-driven-data-systems",
+          "label": null
+        },
+        {
+          "text": "View the work summary →",
+          "href": "/case-studies/ai-mlops-automation",
+          "label": null
+        },
+        {
+          "text": "View the work summary →",
+          "href": "/case-studies/regulated-integrations",
+          "label": null
+        },
+        {
+          "text": "View the work summary →",
+          "href": "/case-studies/executive-analytics",
+          "label": null
+        },
+        {
+          "text": "View the work summary →",
+          "href": "/case-studies/engineering-enablement",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/services",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Services | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "AI integrations, data-pipeline troubleshooting, reporting and technical teaching from Pragith Prakash."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Services | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "AI integrations, data-pipeline troubleshooting, reporting and technical teaching from Pragith Prakash."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/services"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Services | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "AI integrations, data-pipeline troubleshooting, reporting and technical teaching from Pragith Prakash."
+        }
+      ],
+      "text": "Engineering help for an existing system\n\nI work on AI integrations, data pipelines and reporting when a team needs implementation or production support.\n\nAI workflow integration\n\nYour team has an assistant prototype and needs it to work with existing records and tools.\n\nI connect the assistant to the agreed records and tools, and test it against the task it needs to perform.\n\nAI integration and experience →\nData pipelines and production support\n\nFailed jobs or upstream changes leave consumers waiting for data and engineers tracing the failure.\n\nI trace the failure, fix it and add checks for the affected pipeline.\n\nData-platform experience →\nReporting and metric definitions\n\nTwo reports disagree because they count different events, time periods or records.\n\nI reconcile the reports, document what each metric counts and configure refresh and access.\n\nReporting services →\nTechnical teaching\n\nYour learners need practice with Python, data analysis or cloud systems.\n\nA course or workshop with exercises and assessment criteria.\n\nTeaching experience and workshops →\nEngagement options\n\nAn architecture session can establish the problem and the work needed. I agree access and deliverables with you, work hourly or against agreed milestones, and document the handover.\n\nDiscuss your system",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Engineering help for an existing system",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I work on AI integrations, data pipelines and reporting when a team needs implementation or production support.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "AI workflow integration",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Your team has an assistant prototype and needs it to work with existing records and tools.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I connect the assistant to the agreed records and tools, and test it against the task it needs to perform.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Data pipelines and production support",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Failed jobs or upstream changes leave consumers waiting for data and engineers tracing the failure.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I trace the failure, fix it and add checks for the affected pipeline.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Reporting and metric definitions",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Two reports disagree because they count different events, time periods or records.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I reconcile the reports, document what each metric counts and configure refresh and access.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Technical teaching",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Your learners need practice with Python, data analysis or cloud systems.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "A course or workshop with exercises and assessment criteria.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Engagement options",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "An architecture session can establish the problem and the work needed. I agree access and deliverables with you, work hourly or against agreed milestones, and document the handover.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "AI integration and experience →",
+          "href": "/services/ai-systems",
+          "label": null
+        },
+        {
+          "text": "Data-platform experience →",
+          "href": "/case-studies/enterprise-data-platform",
+          "label": null
+        },
+        {
+          "text": "Reporting services →",
+          "href": "/services/executive-bi",
+          "label": null
+        },
+        {
+          "text": "Teaching experience and workshops →",
+          "href": "/teaching",
+          "label": null
+        },
+        {
+          "text": "Discuss your system",
+          "href": "/contact?ref_page=services&cta_id=discuss-your-system&tag1=services&tag2=discuss-your-system&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-your-system",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/services/ai-systems",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "AI Systems and Automation | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Connect an AI assistant to existing records and tools, with agreed access, testing and review."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "AI Systems and Automation | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Connect an AI assistant to existing records and tools, with agreed access, testing and review."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/services/ai-systems"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "AI Systems and Automation | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Connect an AI assistant to existing records and tools, with agreed access, testing and review."
+        }
+      ],
+      "text": "← Services\nConnect an AI assistant to your existing tools\n\nI connect an assistant to the tools and data it needs for an agreed task. Access controls and review points limit what it can do.\n\nStarting problem\n\nYour team has a prototype but still copies records into it, checks its answers by hand or avoids letting it use business tools.\n\nWhat I deliver\n\nI add data access and tool inputs and outputs, with review points and failure handling. I test the integration against the tasks your team needs the assistant to perform.\n\nRelevant experience\n\nMy consulting work includes eighteen months owning architecture and production delivery for an enterprise AI assistant.\n\nEnterprise AI work →\nDiscuss an AI integration",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Connect an AI assistant to your existing tools",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I connect an assistant to the tools and data it needs for an agreed task. Access controls and review points limit what it can do.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Starting problem",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Your team has a prototype but still copies records into it, checks its answers by hand or avoids letting it use business tools.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "What I deliver",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I add data access and tool inputs and outputs, with review points and failure handling. I test the integration against the tasks your team needs the assistant to perform.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Relevant experience",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "My consulting work includes eighteen months owning architecture and production delivery for an enterprise AI assistant.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Services",
+          "href": "/services",
+          "label": null
+        },
+        {
+          "text": "Enterprise AI work →",
+          "href": "/case-studies/ai-mlops-automation",
+          "label": null
+        },
+        {
+          "text": "Discuss an AI integration",
+          "href": "/contact?ref_page=services-ai-systems&cta_id=ai-systems&tag1=services-ai-systems&tag2=ai-systems&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=ai-systems",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/services/executive-bi",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Analytics and Executive BI | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Resolve conflicting reports, agree metric definitions and build dashboards your team can maintain."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Analytics and Executive BI | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Resolve conflicting reports, agree metric definitions and build dashboards your team can maintain."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/services/executive-bi"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Analytics and Executive BI | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Resolve conflicting reports, agree metric definitions and build dashboards your team can maintain."
+        }
+      ],
+      "text": "← Services\nAgree on what a metric counts\n\nI trace the source data, agree metric definitions and build reports your team can maintain.\n\nStarting problem\n\nLeadership reports and operational reports disagree, or a dashboard’s totals change without a clear source explanation.\n\nWhat I deliver\n\nI trace how the source records become report totals, document what each metric counts and build the report. I also agree refresh schedules, access and who maintains it.\n\nRelevant experience\n\nI integrate source data and build reporting models and dashboards, then help teams use the reports.\n\nReporting experience →\nDiscuss a reporting problem",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Agree on what a metric counts",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I trace the source data, agree metric definitions and build reports your team can maintain.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Starting problem",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Leadership reports and operational reports disagree, or a dashboard’s totals change without a clear source explanation.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "What I deliver",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I trace how the source records become report totals, document what each metric counts and build the report. I also agree refresh schedules, access and who maintains it.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Relevant experience",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I integrate source data and build reporting models and dashboards, then help teams use the reports.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Services",
+          "href": "/services",
+          "label": null
+        },
+        {
+          "text": "Reporting experience →",
+          "href": "/case-studies/executive-analytics",
+          "label": null
+        },
+        {
+          "text": "Discuss a reporting problem",
+          "href": "/contact?ref_page=services-executive-bi&cta_id=analytics&tag1=services-executive-bi&tag2=analytics&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=analytics",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/teaching",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Teaching | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Teaching experience at Cambrian College and Correlation One, plus cloud and data workshops through Google Developer Groups."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Teaching | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Teaching experience at Cambrian College and Correlation One, plus cloud and data workshops through Google Developer Groups."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/teaching"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Teaching | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Teaching experience at Cambrian College and Correlation One, plus cloud and data workshops through Google Developer Groups."
+        }
+      ],
+      "text": "Teaching data, code and cloud systems\n\nI teach statistics, Python, machine learning, data engineering and cloud architecture to college and professional cohorts.\n\nCambrian College\n\n2020 to 2024 · Adjunct / Partial Load Professor\n\nGraduate-level statistical analysis, data visualization, dashboard development and real-time API development with Python.\n\nCorrelation One\n\n2021 to 2024 · Lead instructor\n\nWalmart Data Science Bootcamp and DS4A. I delivered instruction in data science and data engineering, reviewed projects and supported learners through technical problems.\n\nGoogle Developer Groups\n\n2020 to present · Chapter Lead\n\nDeveloper-community leadership and workshops on cloud, AI, machine learning and software engineering.\n\nAssociate Cloud Engineer session · GDG Cloud Edmonton · 1 October 2022 ↗\n\nPlan a course or workshop\n\nTell me who will attend, their current experience, the topics they need and the format.\n\nDiscuss a course or workshop\nInvite me to speak",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Teaching data, code and cloud systems",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I teach statistics, Python, machine learning, data engineering and cloud architecture to college and professional cohorts.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Cambrian College",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "2020 to 2024 · Adjunct / Partial Load Professor",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Graduate-level statistical analysis, data visualization, dashboard development and real-time API development with Python.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Correlation One",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "2021 to 2024 · Lead instructor",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Walmart Data Science Bootcamp and DS4A. I delivered instruction in data science and data engineering, reviewed projects and supported learners through technical problems.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Google Developer Groups",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "2020 to present · Chapter Lead",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Developer-community leadership and workshops on cloud, AI, machine learning and software engineering.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Associate Cloud Engineer session · GDG Cloud Edmonton · 1 October 2022 ↗",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Plan a course or workshop",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Tell me who will attend, their current experience, the topics they need and the format.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Associate Cloud Engineer session · GDG Cloud Edmonton · 1 October 2022 ↗",
+          "href": "https://gdg.community.dev/events/details/google-gdg-cloud-edmonton-presents-road-to-certification-associate-cloud-engineer-session-1/",
+          "label": null
+        },
+        {
+          "text": "Discuss a course or workshop",
+          "href": "/contact?engagement_type=Teaching+%2F+workshop&ref_page=teaching&cta_id=discuss-training&tag1=teaching&tag2=discuss-training&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-training",
+          "label": null
+        },
+        {
+          "text": "Invite me to speak",
+          "href": "/contact?engagement_type=Speaking+engagement&ref_page=teaching&cta_id=speaking&tag1=teaching&tag2=speaking&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=speaking",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/projects",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Products and experiments | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Products and experiments by Pragith Prakash, including Fairway, Velvet, CallRenard and Caffeinate-d."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Products and experiments | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Products and experiments by Pragith Prakash, including Fairway, Velvet, CallRenard and Caffeinate-d."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/projects"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Products and experiments | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Products and experiments by Pragith Prakash, including Fairway, Velvet, CallRenard and Caffeinate-d."
+        }
+      ],
+      "text": "← Work\nProducts and experiments\n\nCamera tracking, media playback, telephone intake and small tools. Each entry shows what is available today.\n\nSaved skeleton replay from a test clip. Timing disabled.\n\nExperimental\nFairway: Golf Swing Analyzer\n\nPractise your golf swing with live 2D body tracking, saved swing summaries and skeleton replay. Use a face-on camera; left- and right-handed golfers are supported. Body tracking runs in your browser.\n\nLive app · Swing detection and timing estimates are experimental. The app saves summaries and skeleton clips on a self-hosted server.\n\nI develop this product through Vriksh.\n\nOpen Golf Swing Analyzer ↗\n\nFilm selection with demonstration content. Artwork: Big Buck Bunny, © Blender Foundation, CC BY 3.0; cropped in the player.\n\nActive development\nVelvet IPTV Player\n\nA cross-platform IPTV player for Stalker and Ministra portals, with set-top-box support.\n\nProduct website & setup\n\nI develop this product through Vriksh.\n\nVisit Velvet ↗\nCallRenard summary for realtor call.\nintent: buyer\nbudget: 500k-1m\ntimeline: 1-3mo\n\nSummary formatter output from demonstration answers.\n\nIn development\nCallRenard\n\nCollect caller responses and prepare a summary for the person following up.\n\nDemo by arrangement\n\nI develop this product through Vriksh.\n\nDisclose the automated assistant and request recording consent\nCollect keypad responses to a configured sequence of questions\nFormat the captured answers for follow-up\n\nThis example shows the summary formatter. Contact Vriksh to see the calling and integration workflow.\n\nScope & demonstration ↗\n/usr/bin/caffeinate -d\n\nmacOS command controlled by the menu-bar app.\n\nBeta\nCaffeinate-d\n\nA macOS menu-bar app that keeps your display awake.\n\nSource version 0.2.0\n\nI develop this application.\n\nProject details →",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Products and experiments",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Camera tracking, media playback, telephone intake and small tools. Each entry shows what is available today.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Saved skeleton replay from a test clip. Timing disabled.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Experimental",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Fairway: Golf Swing Analyzer",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Practise your golf swing with live 2D body tracking, saved swing summaries and skeleton replay. Use a face-on camera; left- and right-handed golfers are supported. Body tracking runs in your browser.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Live app · Swing detection and timing estimates are experimental. The app saves summaries and skeleton clips on a self-hosted server.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I develop this product through Vriksh.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Film selection with demonstration content. Artwork: Big Buck Bunny, © Blender Foundation, CC BY 3.0; cropped in the player.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Active development",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Velvet IPTV Player",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "A cross-platform IPTV player for Stalker and Ministra portals, with set-top-box support.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Product website & setup",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I develop this product through Vriksh.",
+          "procedural": false
+        },
+        {
+          "tag": "PRE",
+          "text": "CallRenard summary for realtor call.\nintent: buyer\nbudget: 500k-1m\ntimeline: 1-3mo",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Summary formatter output from demonstration answers.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "In development",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "CallRenard",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Collect caller responses and prepare a summary for the person following up.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Demo by arrangement",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I develop this product through Vriksh.",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Disclose the automated assistant and request recording consent",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Collect keypad responses to a configured sequence of questions",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Format the captured answers for follow-up",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "This example shows the summary formatter. Contact Vriksh to see the calling and integration workflow.",
+          "procedural": false
+        },
+        {
+          "tag": "PRE",
+          "text": "/usr/bin/caffeinate -d",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "macOS command controlled by the menu-bar app.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Beta",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Caffeinate-d",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "A macOS menu-bar app that keeps your display awake.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Source version 0.2.0",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I develop this application.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Work",
+          "href": "/case-studies",
+          "label": null
+        },
+        {
+          "text": "",
+          "href": "/static/work/fairway-v21-1170.webp",
+          "label": "View Fairway: Golf Swing Analyzer screenshot"
+        },
+        {
+          "text": "Open Golf Swing Analyzer ↗",
+          "href": "https://golf.lab.pragith.net",
+          "label": null
+        },
+        {
+          "text": "",
+          "href": "/static/work/velvet-v22-2340.webp",
+          "label": "View Velvet IPTV Player screenshot"
+        },
+        {
+          "text": "Big Buck Bunny",
+          "href": "https://peach.blender.org/",
+          "label": null
+        },
+        {
+          "text": "CC BY 3.0",
+          "href": "https://creativecommons.org/licenses/by/3.0/",
+          "label": null
+        },
+        {
+          "text": "Visit Velvet ↗",
+          "href": "https://velvet.plus",
+          "label": null
+        },
+        {
+          "text": "Scope & demonstration ↗",
+          "href": "https://vriksh.ca/ventures/callrenard",
+          "label": null
+        },
+        {
+          "text": "Project details →",
+          "href": "/projects/caffeinate-d",
+          "label": null
+        }
+      ],
+      "images": [
+        {
+          "src": "/static/work/fairway-v21-480.webp",
+          "alt": "Tracked body landmarks in the Fairway replay player"
+        },
+        {
+          "src": "/static/work/velvet-v22-480.webp",
+          "alt": "Big Buck Bunny film details and Play control in Velvet"
+        }
+      ],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/apps/rajadharma",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Rajadharma | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "A strategy game set in a mythic royal court, by Pragith Prakash. Balance duty, treasury, strength and public welfare as you respond to requests at court."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Rajadharma | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "A strategy game set in a mythic royal court, by Pragith Prakash. Balance duty, treasury, strength and public welfare as you respond to requests at court."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/apps/rajadharma"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Rajadharma | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "A strategy game set in a mythic royal court, by Pragith Prakash. Balance duty, treasury, strength and public welfare as you respond to requests at court."
+        }
+      ],
+      "text": "A strategy game set in a mythic royal court\nRajadharma\n\nYou rule a kingdom where every choice has a cost. Each choice affects Dharma, Artha, Shakti and Praja: your duty, treasury, strength and people's welfare.\n\nCreated by Pragith Prakash.\n\nChoose with care\n\nYou hear requests from sages, royal advisers and mythic visitors. Your answers change the kingdom's resources and the time that passes. Pressure grows throughout your reign; neglect and excess can both bring it to an end.\n\nYou discover characters, earn deeds and collect relics. Your local dynasty records let you compare your reigns.\n\nIn your court\nLanguages\nEnglish, Hindi, Tamil, Telugu, Kannada and Sanskrit\nProgress\nSaved on your device\nDeveloper\nPragith Prakash\nFeedback\nrajadharma@vriksh.ca\nHelp shape Rajadharma\nOpen Settings in the game.\nOpen About to see the game version.\nUse the feedback form to report a bug or suggest a change.\n\nYou can send feedback about balance, artwork, accessibility, translations and future features.\n\nThe feedback form sends your message, its category, the app version and device platform to the developer. A reply email is optional. Gameplay progress stays on your device.\n\n← All projects",
+      "units": [
+        {
+          "tag": "SPAN",
+          "text": "A strategy game set in a mythic royal court",
+          "procedural": false
+        },
+        {
+          "tag": "H1",
+          "text": "Rajadharma",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "You rule a kingdom where every choice has a cost. Each choice affects Dharma, Artha, Shakti and Praja: your duty, treasury, strength and people's welfare.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Created by Pragith Prakash.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Choose with care",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "You hear requests from sages, royal advisers and mythic visitors. Your answers change the kingdom's resources and the time that passes. Pressure grows throughout your reign; neglect and excess can both bring it to an end.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "You discover characters, earn deeds and collect relics. Your local dynasty records let you compare your reigns.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "In your court",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Languages",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "English, Hindi, Tamil, Telugu, Kannada and Sanskrit",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Progress",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "Saved on your device",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Developer",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "Pragith Prakash",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Feedback",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "rajadharma@vriksh.ca",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Help shape Rajadharma",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Open Settings in the game.",
+          "procedural": true
+        },
+        {
+          "tag": "LI",
+          "text": "Open About to see the game version.",
+          "procedural": true
+        },
+        {
+          "tag": "LI",
+          "text": "Use the feedback form to report a bug or suggest a change.",
+          "procedural": true
+        },
+        {
+          "tag": "P",
+          "text": "You can send feedback about balance, artwork, accessibility, translations and future features.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "The feedback form sends your message, its category, the app version and device platform to the developer. A reply email is optional. Gameplay progress stays on your device.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Pragith Prakash",
+          "href": "/about",
+          "label": null
+        },
+        {
+          "text": "rajadharma@vriksh.ca",
+          "href": "mailto:rajadharma@vriksh.ca",
+          "label": null
+        },
+        {
+          "text": "← All projects",
+          "href": "/projects",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/resume",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Resume | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Printable professional resume for Pragith Prakash, AI Forward Deployed Engineer, consultant and educator."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Resume | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Printable professional resume for Pragith Prakash, AI Forward Deployed Engineer, consultant and educator."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/resume"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Resume | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Printable professional resume for Pragith Prakash, AI Forward Deployed Engineer, consultant and educator."
+        }
+      ],
+      "text": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator\n\nData and software experience since 2012. Recent work includes eighteen months owning architecture and production delivery for an enterprise AI assistant.\n\nPrint or save as PDF\nContact\nProfessional experience\n\nNovember 2021 to present\n\nAI and data engineering engagements\n\nVriksh Consulting Services Inc. · Consulting\n\nI design and build AI and data systems and support them in production. My work includes eighteen months owning architecture and production delivery for an enterprise AI assistant. The data platforms I supported handled multi-terabyte datasets and hundreds of automated pipelines.\n\nJanuary to November 2021\n\nQuality & Technical Services Manager / Lead R&D Data Scientist\n\nSofvie · Employment\n\nI led technical quality and applied data research, including cloud data workflows and delivery automation.\n\nJune 2018 to January 2021\n\nStaff Consultant → Senior Consultant\n\nDentsu / Merkle Cardinal Path · Employment\n\nStaff Consultant, June 2018 to January 2020; promoted to Senior Consultant, January 2020 to January 2021. My work covered enterprise analytics and cloud data consulting.\n\nMarch 2017 to June 2018\n\nConsultant, Data Science\n\nEY · Employment\n\nI worked on data science and analytical processing for forensic and regulatory work, with client and dataset details kept confidential.\n\nNovember 2015 to March 2017\n\nData Scientist\n\nWipro · Employment\n\nI built analytical systems over operational and log data, working on modelling, implementation and performance investigation.\n\nJune 2012 to November 2015\n\nEarly data and software roles\n\nSMART FBO, Hibu and Sigmoid\n\nMy early work spanned reporting, backend development and real-time analytics using Python, SQL, R and distributed processing.\n\nTeaching and community\nCorrelation One · 2021 to 2024 · Lead instructor, Walmart Data Science Bootcamp and DS4A.\nCambrian College · 2020 to 2024 · Adjunct / Partial Load Professor.\nGoogle Developer Groups · 2020 to present · Chapter Lead.\nSelected skills\n\nPython, SQL and R; data pipelines and cloud analytics; AWS, Google Cloud, Azure and Databricks; AI integration, release automation and production support.\n\nCertifications\nClaude Certified Architect – Foundations\nGoogle Cloud Professional Data Engineer\nGoogle Cloud Professional Cloud Architect\nDatabricks Certified Data Engineer Associate\nDatabricks Certified Generative AI Associate\nAWS Certified Cloud Practitioner\nEducation\n\nMBA, International Business · ICFAI, Bangalore · 2013 to 2015.\n\nBE, Information Technology · CMR Institute of Technology, Bangalore · 2007 to 2012.",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Pragith Prakash",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "AI Forward Deployed Engineer, consultant and educator",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Data and software experience since 2012. Recent work includes eighteen months owning architecture and production delivery for an enterprise AI assistant.",
+          "procedural": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Print or save as PDF",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Professional experience",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "November 2021 to present",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "AI and data engineering engagements",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Vriksh Consulting Services Inc. · Consulting",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I design and build AI and data systems and support them in production. My work includes eighteen months owning architecture and production delivery for an enterprise AI assistant. The data platforms I supported handled multi-terabyte datasets and hundreds of automated pipelines.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "January to November 2021",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Quality & Technical Services Manager / Lead R&D Data Scientist",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Sofvie · Employment",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I led technical quality and applied data research, including cloud data workflows and delivery automation.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "June 2018 to January 2021",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Staff Consultant → Senior Consultant",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Dentsu / Merkle Cardinal Path · Employment",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Staff Consultant, June 2018 to January 2020; promoted to Senior Consultant, January 2020 to January 2021. My work covered enterprise analytics and cloud data consulting.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "March 2017 to June 2018",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Consultant, Data Science",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "EY · Employment",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I worked on data science and analytical processing for forensic and regulatory work, with client and dataset details kept confidential.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "November 2015 to March 2017",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Data Scientist",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Wipro · Employment",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I built analytical systems over operational and log data, working on modelling, implementation and performance investigation.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "June 2012 to November 2015",
+          "procedural": false
+        },
+        {
+          "tag": "H3",
+          "text": "Early data and software roles",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "SMART FBO, Hibu and Sigmoid",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "My early work spanned reporting, backend development and real-time analytics using Python, SQL, R and distributed processing.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Teaching and community",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Correlation One · 2021 to 2024 · Lead instructor, Walmart Data Science Bootcamp and DS4A.",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Cambrian College · 2020 to 2024 · Adjunct / Partial Load Professor.",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Google Developer Groups · 2020 to present · Chapter Lead.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Selected skills",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Python, SQL and R; data pipelines and cloud analytics; AWS, Google Cloud, Azure and Databricks; AI integration, release automation and production support.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Certifications",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Claude Certified Architect – Foundations",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Google Cloud Professional Data Engineer",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Google Cloud Professional Cloud Architect",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Databricks Certified Data Engineer Associate",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Databricks Certified Generative AI Associate",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "AWS Certified Cloud Practitioner",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Education",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "MBA, International Business · ICFAI, Bangalore · 2013 to 2015.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "BE, Information Technology · CMR Institute of Technology, Bangalore · 2007 to 2012.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Contact",
+          "href": "/contact?ref_page=resume&cta_id=contact&tag1=resume&tag2=contact&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=contact",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/writing",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Writing and speaking | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "A cloud-certification talk from GDG Cloud Edmonton and links to Pragith Prakash’s LinkedIn posts."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Writing and speaking | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "A cloud-certification talk from GDG Cloud Edmonton and links to Pragith Prakash’s LinkedIn posts."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/writing"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Writing and speaking | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "A cloud-certification talk from GDG Cloud Edmonton and links to Pragith Prakash’s LinkedIn posts."
+        }
+      ],
+      "text": "Writing and speaking\n\nPublic events and technical posts.\n\nRoad to Certification: Associate Cloud Engineer, Session 1\n\n1 October 2022 · GDG Cloud Edmonton · Speaker\n\nA session in a six-part series covering Associate Cloud Engineer certification content and exam questions.\n\nView the event ↗\nPosts\nMy LinkedIn posts ↗\nSpeaking enquiry",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Writing and speaking",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Public events and technical posts.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Road to Certification: Associate Cloud Engineer, Session 1",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "1 October 2022 · GDG Cloud Edmonton · Speaker",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "A session in a six-part series covering Associate Cloud Engineer certification content and exam questions.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Posts",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "View the event ↗",
+          "href": "https://gdg.community.dev/events/details/google-gdg-cloud-edmonton-presents-road-to-certification-associate-cloud-engineer-session-1/",
+          "label": null
+        },
+        {
+          "text": "My LinkedIn posts ↗",
+          "href": "https://www.linkedin.com/in/pragith/recent-activity/all/",
+          "label": null
+        },
+        {
+          "text": "Speaking enquiry",
+          "href": "/contact?engagement_type=Speaking+engagement&ref_page=writing&cta_id=speaking&tag1=writing&tag2=speaking&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=speaking",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/contact",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Contact Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/contact"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        }
+      ],
+      "text": "Tell me about the system and where it is stuck.\n\nTell me what you have, what is not working and what you want to change. I will tell you if I can help and what to do next.\n\nStarting the conversation\n\nI can examine an architecture, build a feature or help fix a production problem.\n\nLinkedIn\nGitHub\nProject enquiry\nName\nEmail\nOrganization (optional)\nWhat do you need?\nProject enquiry\nPaid architecture / discovery session\nHourly engineering\nMilestone delivery\nTeaching / workshop\nSpeaking engagement\nOther\nTimeline (optional)\nWhat do you need to build or fix?\nWebsite \nSend enquiry",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Tell me about the system and where it is stuck.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Tell me what you have, what is not working and what you want to change. I will tell you if I can help and what to do next.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Starting the conversation",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I can examine an architecture, build a feature or help fix a production problem.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Name",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Email",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Organization (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need?",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Paid architecture / discovery session",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Hourly engineering",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Milestone delivery",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Teaching / workshop",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Speaking engagement",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Other",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Timeline (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need to build or fix?",
+          "procedural": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Send enquiry",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/in/pragith/",
+          "label": null
+        },
+        {
+          "text": "GitHub",
+          "href": "https://github.com/Pragith",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": {
+        "placeholder": "Tell me what you have, what is not working and what you want to change.",
+        "value": ""
+      }
+    },
+    {
+      "route": "/business",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Business Services | Vriksh Consulting Services Inc.",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          "name": "Vriksh Consulting Services Inc.",
+          "url": "https://pragith.net/business",
+          "founder": {
+            "@type": "Person",
+            "name": "Pragith Prakash"
+          }
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Reporting, workflow automation and technical training through Vriksh Consulting Services Inc."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Business Services | Vriksh Consulting Services Inc."
+        },
+        {
+          "name": "og:description",
+          "content": "Reporting, workflow automation and technical training through Vriksh Consulting Services Inc."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/business"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Business Services | Vriksh Consulting Services Inc."
+        },
+        {
+          "name": "twitter:description",
+          "content": "Reporting, workflow automation and technical training through Vriksh Consulting Services Inc."
+        }
+      ],
+      "text": "Data reporting, automation and training for smaller teams\n\nVriksh Consulting Services Inc. builds reporting and automation systems and provides technical training. We agree the systems involved and deliverables before starting, including ownership and handover.\n\nReporting\n\nWe connect the agreed data sources, define the metrics and build reports for your team.\n\nWorkflow automation\n\nWe connect the systems involved in your workflow, add approvals and error handling, and document how to run it.\n\nTechnical training\n\nWe prepare a workshop around the systems your team uses and the skills they need.\n\nDiscuss a project",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Data reporting, automation and training for smaller teams",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Vriksh Consulting Services Inc. builds reporting and automation systems and provides technical training. We agree the systems involved and deliverables before starting, including ownership and handover.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Reporting",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "We connect the agreed data sources, define the metrics and build reports for your team.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Workflow automation",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "We connect the systems involved in your workflow, add approvals and error handling, and document how to run it.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Technical training",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "We prepare a workshop around the systems your team uses and the skills they need.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Discuss a project",
+          "href": "/contact?ref_page=business&cta_id=discuss-a-project&tag1=business&tag2=discuss-a-project&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-a-project",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/privacy",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Privacy | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Privacy information for pragith.net."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Privacy | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Privacy information for pragith.net."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/privacy"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Privacy | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Privacy information for pragith.net."
+        }
+      ],
+      "text": "Privacy on pragith.net\n\nThis site uses contact details to respond to enquiries and analytics to understand site traffic.\n\nWhen you submit the contact form, I receive the name, email, organization and message you provide. Do not submit credentials, regulated records or other sensitive personal data.\n\nThis site uses Google Analytics and Microsoft Clarity for traffic and interaction analytics. The contact form uses rate limiting and Google reCAPTCHA. The site does not sell personal information.\n\nGitHub, LinkedIn and other external sites apply their own privacy practices after you follow a link.",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Privacy on pragith.net",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "This site uses contact details to respond to enquiries and analytics to understand site traffic.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "When you submit the contact form, I receive the name, email, organization and message you provide. Do not submit credentials, regulated records or other sensitive personal data.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "This site uses Google Analytics and Microsoft Clarity for traffic and interaction analytics. The contact form uses rate limiting and Google reCAPTCHA. The site does not sell personal information.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "GitHub, LinkedIn and other external sites apply their own privacy practices after you follow a link.",
+          "procedural": false
+        }
+      ],
+      "links": [],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/legal",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Legal | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Legal information for pragith.net."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Legal | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Legal information for pragith.net."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/legal"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Legal | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Legal information for pragith.net."
+        }
+      ],
+      "text": "About this website\n\nPragith.net is the personal professional website of Pragith Prakash.\n\nThe content describes professional experience, projects and opinions for general information.\n\nVriksh Consulting Services Inc. provides the company services described on this website.\n\nThird-party names and trademarks belong to their respective owners.",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "About this website",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Pragith.net is the personal professional website of Pragith Prakash.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "The content describes professional experience, projects and opinions for general information.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Vriksh Consulting Services Inc. provides the company services described on this website.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Third-party names and trademarks belong to their respective owners.",
+          "procedural": false
+        }
+      ],
+      "links": [],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/case-studies/enterprise-data-platform",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Enterprise data platform operations | Experience summary",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "I examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Enterprise data platform operations | Experience summary"
+        },
+        {
+          "name": "og:description",
+          "content": "I examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/case-studies/enterprise-data-platform"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Enterprise data platform operations | Experience summary"
+        },
+        {
+          "name": "twitter:description",
+          "content": "I examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines."
+        }
+      ],
+      "text": "← Work\nEnterprise data platform operations\n\nI examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines.\n\nSystem context\n\nThe data platform supplied reports and analytical models through hundreds of automated pipelines.\n\nMy responsibilities\n\nI supported platform operations and data engineering, including releases and production incidents.\n\nI automated deployments, examined pipeline failures and improved monitoring for data processing. I also supported the teams using the data.\n\nPython\nSQL\nGoogle Cloud\nAWS\nAirflow\nDatabricks\nCI/CD\nDiscuss a project\nCareer timeline →",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Enterprise data platform operations",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I examined failures and automated releases on enterprise data platforms handling multi-terabyte workloads and hundreds of pipelines.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "System context",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "The data platform supplied reports and analytical models through hundreds of automated pipelines.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "My responsibilities",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I supported platform operations and data engineering, including releases and production incidents.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I automated deployments, examined pipeline failures and improved monitoring for data processing. I also supported the teams using the data.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Python",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "SQL",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Google Cloud",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "AWS",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Airflow",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Databricks",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "CI/CD",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Work",
+          "href": "/case-studies",
+          "label": null
+        },
+        {
+          "text": "Discuss a project",
+          "href": "/contact?ref_page=case-studies-enterprise-data-platform&cta_id=discuss-a-project&tag1=case-studies-enterprise-data-platform&tag2=discuss-a-project&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-a-project",
+          "label": null
+        },
+        {
+          "text": "Career timeline →",
+          "href": "/experience",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/case-studies/event-driven-data-systems",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Near-real-time and event-driven data systems | Experience summary",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "I designed data flows between operational applications and cloud services."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Near-real-time and event-driven data systems | Experience summary"
+        },
+        {
+          "name": "og:description",
+          "content": "I designed data flows between operational applications and cloud services."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/case-studies/event-driven-data-systems"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Near-real-time and event-driven data systems | Experience summary"
+        },
+        {
+          "name": "twitter:description",
+          "content": "I designed data flows between operational applications and cloud services."
+        }
+      ],
+      "text": "← Work\nNear-real-time and event-driven data systems\n\nI designed data flows between operational applications and cloud services.\n\nSystem context\n\nOperational applications needed to send data from source systems to cloud services and the teams using it.\n\nMy responsibilities\n\nI led the work on data ingestion and processing, including deployment and failure handling.\n\nI defined retries, automated deployments and added checks for data delivery.\n\nPython\nKafka\nPub/Sub\nCloud Run\nDataflow\nAPIs\nDocker\nDiscuss a project\nCareer timeline →",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Near-real-time and event-driven data systems",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I designed data flows between operational applications and cloud services.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "System context",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Operational applications needed to send data from source systems to cloud services and the teams using it.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "My responsibilities",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I led the work on data ingestion and processing, including deployment and failure handling.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I defined retries, automated deployments and added checks for data delivery.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Python",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Kafka",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Pub/Sub",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Cloud Run",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Dataflow",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "APIs",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Docker",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Work",
+          "href": "/case-studies",
+          "label": null
+        },
+        {
+          "text": "Discuss a project",
+          "href": "/contact?ref_page=case-studies-event-driven-data-systems&cta_id=discuss-a-project&tag1=case-studies-event-driven-data-systems&tag2=discuss-a-project&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-a-project",
+          "label": null
+        },
+        {
+          "text": "Career timeline →",
+          "href": "/experience",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/case-studies/ai-mlops-automation",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Enterprise AI assistant delivery | Experience summary",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Enterprise AI assistant delivery | Experience summary"
+        },
+        {
+          "name": "og:description",
+          "content": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/case-studies/ai-mlops-automation"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Enterprise AI assistant delivery | Experience summary"
+        },
+        {
+          "name": "twitter:description",
+          "content": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months."
+        }
+      ],
+      "text": "← Work\nEnterprise AI assistant delivery\n\nI owned architecture and production delivery for an enterprise AI assistant for eighteen months.\n\nSystem context\n\nAn enterprise team needed to connect an AI assistant to its existing tools and data.\n\nMy responsibilities\n\nI owned the assistant’s architecture and production delivery through my consulting work at Vriksh. I also built AI platform components and supported them in production.\n\nI connected models to approved tools and data, added deployment controls and supported production debugging.\n\nPython\nFastAPI\nLLMs\nMLflow\nDocker\nKubernetes\nCI/CD\nDiscuss a project\nCareer timeline →",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Enterprise AI assistant delivery",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I owned architecture and production delivery for an enterprise AI assistant for eighteen months.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "System context",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "An enterprise team needed to connect an AI assistant to its existing tools and data.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "My responsibilities",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I owned the assistant’s architecture and production delivery through my consulting work at Vriksh. I also built AI platform components and supported them in production.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I connected models to approved tools and data, added deployment controls and supported production debugging.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Python",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "FastAPI",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "LLMs",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "MLflow",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Docker",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Kubernetes",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "CI/CD",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Work",
+          "href": "/case-studies",
+          "label": null
+        },
+        {
+          "text": "Discuss a project",
+          "href": "/contact?ref_page=case-studies-ai-mlops-automation&cta_id=discuss-a-project&tag1=case-studies-ai-mlops-automation&tag2=discuss-a-project&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-a-project",
+          "label": null
+        },
+        {
+          "text": "Career timeline →",
+          "href": "/experience",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/case-studies/regulated-integrations",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Data pipelines for restricted datasets | Experience summary",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "I built data pipelines for forensic and regulatory work."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Data pipelines for restricted datasets | Experience summary"
+        },
+        {
+          "name": "og:description",
+          "content": "I built data pipelines for forensic and regulatory work."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/case-studies/regulated-integrations"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Data pipelines for restricted datasets | Experience summary"
+        },
+        {
+          "name": "twitter:description",
+          "content": "I built data pipelines for forensic and regulatory work."
+        }
+      ],
+      "text": "← Work\nData pipelines for restricted datasets\n\nI built data pipelines for forensic and regulatory work.\n\nSystem context\n\nThe pipelines processed restricted datasets for analysis, with access controls and records for review.\n\nMy responsibilities\n\nI designed data processing and integrations with the teams responsible for the data and its access controls.\n\nI built pipelines, documented data handling and supported validation and review.\n\nPython\nSQL\nCloud storage\nETL\nData validation\nAccess controls\nDiscuss a project\nCareer timeline →",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Data pipelines for restricted datasets",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I built data pipelines for forensic and regulatory work.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "System context",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "The pipelines processed restricted datasets for analysis, with access controls and records for review.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "My responsibilities",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I designed data processing and integrations with the teams responsible for the data and its access controls.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I built pipelines, documented data handling and supported validation and review.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Python",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "SQL",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Cloud storage",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "ETL",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Data validation",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Access controls",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Work",
+          "href": "/case-studies",
+          "label": null
+        },
+        {
+          "text": "Discuss a project",
+          "href": "/contact?ref_page=case-studies-regulated-integrations&cta_id=discuss-a-project&tag1=case-studies-regulated-integrations&tag2=discuss-a-project&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-a-project",
+          "label": null
+        },
+        {
+          "text": "Career timeline →",
+          "href": "/experience",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/case-studies/executive-analytics",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Reporting and metric definitions | Experience summary",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "I connected source data to shared metric definitions and dashboards."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Reporting and metric definitions | Experience summary"
+        },
+        {
+          "name": "og:description",
+          "content": "I connected source data to shared metric definitions and dashboards."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/case-studies/executive-analytics"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Reporting and metric definitions | Experience summary"
+        },
+        {
+          "name": "twitter:description",
+          "content": "I connected source data to shared metric definitions and dashboards."
+        }
+      ],
+      "text": "← Work\nReporting and metric definitions\n\nI connected source data to shared metric definitions and dashboards.\n\nSystem context\n\nLeadership and operational teams needed reports that used the same metric definitions across their source systems.\n\nMy responsibilities\n\nI integrated source data and built reporting models and dashboards. I also helped teams use the reports.\n\nI agreed metric definitions with the team, built reporting models and documented who maintained them.\n\nSQL\nPython\nLooker\nApache Superset\nCloud warehouses\nSemantic modelling\nDiscuss a project\nCareer timeline →",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Reporting and metric definitions",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I connected source data to shared metric definitions and dashboards.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "System context",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Leadership and operational teams needed reports that used the same metric definitions across their source systems.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "My responsibilities",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I integrated source data and built reporting models and dashboards. I also helped teams use the reports.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I agreed metric definitions with the team, built reporting models and documented who maintained them.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "SQL",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Python",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Looker",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Apache Superset",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Cloud warehouses",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Semantic modelling",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Work",
+          "href": "/case-studies",
+          "label": null
+        },
+        {
+          "text": "Discuss a project",
+          "href": "/contact?ref_page=case-studies-executive-analytics&cta_id=discuss-a-project&tag1=case-studies-executive-analytics&tag2=discuss-a-project&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=discuss-a-project",
+          "label": null
+        },
+        {
+          "text": "Career timeline →",
+          "href": "/experience",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/case-studies/engineering-enablement",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Teaching data and cloud engineering | Experience summary",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "I taught data science and cloud engineering through courses and workshops."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Teaching data and cloud engineering | Experience summary"
+        },
+        {
+          "name": "og:description",
+          "content": "I taught data science and cloud engineering through courses and workshops."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/case-studies/engineering-enablement"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Teaching data and cloud engineering | Experience summary"
+        },
+        {
+          "name": "twitter:description",
+          "content": "I taught data science and cloud engineering through courses and workshops."
+        }
+      ],
+      "text": "← Work\nTeaching data and cloud engineering\n\nI taught data science and cloud engineering through courses and workshops.\n\nTeaching context\n\nLearners needed instruction in data science and cloud engineering, with exercises they could work through.\n\nMy responsibilities\n\nI taught graduate courses and workforce programs, led workshops and mentored learners.\n\nI designed lessons, delivered live instruction, reviewed projects and adapted examples to learner and team needs.\n\nPython\nSQL\nR\nMachine learning\nCloud platforms\nAPIs\nBI\nDiscuss a course or workshop\nTeaching experience →",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Teaching data and cloud engineering",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I taught data science and cloud engineering through courses and workshops.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Teaching context",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Learners needed instruction in data science and cloud engineering, with exercises they could work through.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "My responsibilities",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I taught graduate courses and workforce programs, led workshops and mentored learners.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I designed lessons, delivered live instruction, reviewed projects and adapted examples to learner and team needs.",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Python",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "SQL",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "R",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Machine learning",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "Cloud platforms",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "APIs",
+          "procedural": false
+        },
+        {
+          "tag": "SPAN",
+          "text": "BI",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "← Work",
+          "href": "/case-studies",
+          "label": null
+        },
+        {
+          "text": "Discuss a course or workshop",
+          "href": "/contact?engagement_type=Teaching+%2F+workshop&ref_page=case-studies-engineering-enablement&cta_id=teaching-enquiry&tag1=case-studies-engineering-enablement&tag2=teaching-enquiry&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=teaching-enquiry",
+          "label": null
+        },
+        {
+          "text": "Teaching experience →",
+          "href": "/teaching",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/projects/caffeinate-d",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Caffeinate-d | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "A macOS menu-bar app that keeps your display awake."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Caffeinate-d | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "A macOS menu-bar app that keeps your display awake."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/projects/caffeinate-d"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Caffeinate-d | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "A macOS menu-bar app that keeps your display awake."
+        }
+      ],
+      "text": "Beta\nCaffeinate-d\n\nA macOS menu-bar app that keeps your display awake using caffeinate -d.\n\nGet the source code\nScope\n\nCaffeinate-d starts and stops caffeinate -d from the menu bar to keep your display awake.\n\nRelease state: Source version 0.2.0. Build it in Xcode; a matching packaged release or signed app download is not available.\nProject facts\nPlatform\nmacOS\nImplementation\nNative Swift\nVersion\nSource version 0.2.0\nLicence\nMIT\nInstall\nBuild the application from source with Xcode. See the steps below.\nPrivacy\n\nThe published source runs a local macOS command. It requires no account or remote service.\n\nBuild from source\nClone the repository on macOS.\nOpen its Xcode project.\nBuild the application.\nRun the application.\nUse the menu-bar toggle to keep your display awake.\ngit clone https://github.com/Pragith/caffeinated.git\n← All projects",
+      "units": [
+        {
+          "tag": "SPAN",
+          "text": "Beta",
+          "procedural": false
+        },
+        {
+          "tag": "H1",
+          "text": "Caffeinate-d",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "A macOS menu-bar app that keeps your display awake using caffeinate -d.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Scope",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Caffeinate-d starts and stops caffeinate -d from the menu bar to keep your display awake.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Project facts",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Platform",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "macOS",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Implementation",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "Native Swift",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Version",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "Source version 0.2.0",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Licence",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "MIT",
+          "procedural": false
+        },
+        {
+          "tag": "DT",
+          "text": "Install",
+          "procedural": false
+        },
+        {
+          "tag": "DD",
+          "text": "Build the application from source with Xcode. See the steps below.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Privacy",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "The published source runs a local macOS command. It requires no account or remote service.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Build from source",
+          "procedural": false
+        },
+        {
+          "tag": "LI",
+          "text": "Clone the repository on macOS.",
+          "procedural": true
+        },
+        {
+          "tag": "LI",
+          "text": "Open its Xcode project.",
+          "procedural": true
+        },
+        {
+          "tag": "LI",
+          "text": "Build the application.",
+          "procedural": true
+        },
+        {
+          "tag": "LI",
+          "text": "Run the application.",
+          "procedural": true
+        },
+        {
+          "tag": "LI",
+          "text": "Use the menu-bar toggle to keep your display awake.",
+          "procedural": true
+        },
+        {
+          "tag": "PRE",
+          "text": "git clone https://github.com/Pragith/caffeinated.git",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Get the source code",
+          "href": "https://github.com/Pragith/caffeinated",
+          "label": null
+        },
+        {
+          "text": "← All projects",
+          "href": "/projects",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "/contact?engagement_type=Teaching%20%2F%20workshop",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Contact Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/contact"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        }
+      ],
+      "text": "Plan a course or workshop.\n\nDescribe the audience, their experience and the topics they need. I will tell you if I can help and what to do next.\n\nStarting the conversation\n\nInclude cohort size, prerequisites and the work learners should practise.\n\nLinkedIn\nGitHub\nTeaching enquiry\nName\nEmail\nOrganization (optional)\nWhat do you need?\nProject enquiry\nPaid architecture / discovery session\nHourly engineering\nMilestone delivery\nTeaching / workshop\nSpeaking engagement\nOther\nTimeline (optional)\nAudience, topics and learning goals\nWebsite \nSend enquiry",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Plan a course or workshop.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Describe the audience, their experience and the topics they need. I will tell you if I can help and what to do next.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Starting the conversation",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Include cohort size, prerequisites and the work learners should practise.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Teaching enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Name",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Email",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Organization (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need?",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Paid architecture / discovery session",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Hourly engineering",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Milestone delivery",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Teaching / workshop",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Speaking engagement",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Other",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Timeline (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Audience, topics and learning goals",
+          "procedural": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Send enquiry",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/in/pragith/",
+          "label": null
+        },
+        {
+          "text": "GitHub",
+          "href": "https://github.com/Pragith",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": {
+        "placeholder": "Audience experience, topics, format and preferred timing.",
+        "value": "I would like to discuss technical training or a workshop.\n\nAudience and current experience:\nTopics or systems involved:\nPreferred timing and learning goals:"
+      }
+    },
+    {
+      "route": "/contact?engagement_type=Speaking%20engagement",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Contact Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/contact"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        }
+      ],
+      "text": "Invite me to speak.\n\nTell me about the event, audience, format and timing. I will tell you if I can help and what to do next.\n\nStarting the conversation\n\nInclude the event theme, intended audience and whether the session is online or in person.\n\nLinkedIn\nGitHub\nSpeaking enquiry\nName\nEmail\nOrganization (optional)\nWhat do you need?\nProject enquiry\nPaid architecture / discovery session\nHourly engineering\nMilestone delivery\nTeaching / workshop\nSpeaking engagement\nOther\nTimeline (optional)\nEvent, audience and session format\nWebsite \nSend enquiry",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Invite me to speak.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Tell me about the event, audience, format and timing. I will tell you if I can help and what to do next.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Starting the conversation",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Include the event theme, intended audience and whether the session is online or in person.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Speaking enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Name",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Email",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Organization (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need?",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Paid architecture / discovery session",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Hourly engineering",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Milestone delivery",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Teaching / workshop",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Speaking engagement",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Other",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Timeline (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Event, audience and session format",
+          "procedural": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Send enquiry",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/in/pragith/",
+          "label": null
+        },
+        {
+          "text": "GitHub",
+          "href": "https://github.com/Pragith",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": {
+        "placeholder": "Event theme, audience, format and date.",
+        "value": "I would like to discuss a speaking engagement.\n\nEvent and audience:\nPreferred format and date:\nWhat would you like to change:"
+      }
+    },
+    {
+      "route": "/contact?engagement_type=Hourly%20engineering",
+      "status": 200,
+      "sourceOnly": false,
+      "title": "Contact Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/contact"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Discuss an AI, data platform, cloud architecture, analytics or technical education engagement with Pragith Prakash."
+        }
+      ],
+      "text": "Tell me about the system and where it is stuck.\n\nTell me what you have, what is not working and what you want to change. I will tell you if I can help and what to do next.\n\nStarting the conversation\n\nI can examine an architecture, build a feature or help fix a production problem.\n\nLinkedIn\nGitHub\nProject enquiry\nName\nEmail\nOrganization (optional)\nWhat do you need?\nProject enquiry\nPaid architecture / discovery session\nHourly engineering\nMilestone delivery\nTeaching / workshop\nSpeaking engagement\nOther\nTimeline (optional)\nWhat do you need to build or fix?\nWebsite \nSend enquiry",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Tell me about the system and where it is stuck.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Tell me what you have, what is not working and what you want to change. I will tell you if I can help and what to do next.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Starting the conversation",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I can examine an architecture, build a feature or help fix a production problem.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Name",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Email",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Organization (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need?",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Paid architecture / discovery session",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Hourly engineering",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Milestone delivery",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Teaching / workshop",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Speaking engagement",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Other",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Timeline (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need to build or fix?",
+          "procedural": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Send enquiry",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/in/pragith/",
+          "label": null
+        },
+        {
+          "text": "GitHub",
+          "href": "https://github.com/Pragith",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": {
+        "placeholder": "Tell me what you have, what is not working and what you want to change.",
+        "value": ""
+      }
+    },
+    {
+      "route": "/copy-audit-missing-page",
+      "status": 404,
+      "sourceOnly": false,
+      "title": "Page not found | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "The requested page could not be found."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Page not found | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "The requested page could not be found."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/copy-audit-missing-page"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Page not found | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "The requested page could not be found."
+        }
+      ],
+      "text": "That page is not here.\n\nTry the home page, or write to me if you followed a broken link.\n\nHome\nContact",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "That page is not here.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Try the home page, or write to me if you followed a broken link.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Home",
+          "href": "/",
+          "label": null
+        },
+        {
+          "text": "Contact",
+          "href": "/contact?ref_page=copy-audit-missing-page&cta_id=contact&tag1=copy-audit-missing-page&tag2=contact&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=contact",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "source-state:contact-success",
+      "status": 200,
+      "sourceOnly": true,
+      "title": "Message received | Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Your message has been received."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Message received | Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Your message has been received."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/contact"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Message received | Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Your message has been received."
+        }
+      ],
+      "text": "Thank you. Your message has been sent.\n\nI will read your message and reply.\n\nReturn home",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Thank you. Your message has been sent.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I will read your message and reply.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Return home",
+          "href": "/",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "source-state:server-error-template",
+      "status": 200,
+      "sourceOnly": true,
+      "title": "Contact Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Contact Pragith Prakash."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Contact Pragith Prakash."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/contact"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Contact Pragith Prakash."
+        }
+      ],
+      "text": "The page could not be loaded.\n\nTry again. If the problem continues, send me the page address.\n\nHome\nContact",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "The page could not be loaded.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Try again. If the problem continues, send me the page address.",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "Home",
+          "href": "/",
+          "label": null
+        },
+        {
+          "text": "Contact",
+          "href": "/contact?ref_page=__copy_fixture-1&cta_id=contact&tag1=__copy_fixture-1&tag2=contact&utm_source=pragith_net&utm_medium=internal_cta&utm_campaign=contact&utm_content=contact",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": null
+    },
+    {
+      "route": "source-state:contact-verification-error",
+      "status": 200,
+      "sourceOnly": true,
+      "title": "Contact Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Contact Pragith Prakash."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Contact Pragith Prakash."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/contact"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Contact Pragith Prakash."
+        }
+      ],
+      "text": "Tell me about the system and where it is stuck.\n\nTell me what you have, what is not working and what you want to change. I will tell you if I can help and what to do next.\n\nStarting the conversation\n\nI can examine an architecture, build a feature or help fix a production problem.\n\nLinkedIn\nGitHub\nProject enquiry\n\nreCAPTCHA verification failed. Please try again.\n\nName\nEmail\nOrganization (optional)\nWhat do you need?\nProject enquiry\nPaid architecture / discovery session\nHourly engineering\nMilestone delivery\nTeaching / workshop\nSpeaking engagement\nOther\nTimeline (optional)\nWhat do you need to build or fix?\nWebsite \nSend enquiry",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Tell me about the system and where it is stuck.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Tell me what you have, what is not working and what you want to change. I will tell you if I can help and what to do next.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Starting the conversation",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I can examine an architecture, build a feature or help fix a production problem.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "reCAPTCHA verification failed. Please try again.",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Name",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Email",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Organization (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need?",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Paid architecture / discovery session",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Hourly engineering",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Milestone delivery",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Teaching / workshop",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Speaking engagement",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Other",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Timeline (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need to build or fix?",
+          "procedural": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Send enquiry",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/in/pragith/",
+          "label": null
+        },
+        {
+          "text": "GitHub",
+          "href": "https://github.com/Pragith",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": {
+        "placeholder": "Tell me what you have, what is not working and what you want to change.",
+        "value": ""
+      }
+    },
+    {
+      "route": "source-state:contact-delivery-error",
+      "status": 200,
+      "sourceOnly": true,
+      "title": "Contact Pragith Prakash",
+      "structuredData": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Pragith Prakash",
+          "url": "https://pragith.net",
+          "jobTitle": "AI Forward Deployed Engineer",
+          "image": "https://vriksh.cloud/icons/pragith.jpg",
+          "sameAs": [
+            "https://www.linkedin.com/in/pragith/",
+            "https://github.com/Pragith"
+          ],
+          "knowsAbout": [
+            "AI systems",
+            "Data platforms",
+            "MLOps",
+            "DevOps",
+            "Cloud architecture",
+            "Executive analytics",
+            "Technical education"
+          ]
+        }
+      ],
+      "metadata": [
+        {
+          "name": "description",
+          "content": "Contact Pragith Prakash."
+        },
+        {
+          "name": "og:type",
+          "content": "website"
+        },
+        {
+          "name": "og:site_name",
+          "content": "Pragith Prakash"
+        },
+        {
+          "name": "og:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "og:description",
+          "content": "Contact Pragith Prakash."
+        },
+        {
+          "name": "og:url",
+          "content": "https://pragith.net/contact"
+        },
+        {
+          "name": "og:image",
+          "content": "https://vriksh.cloud/icons/pragith.jpg"
+        },
+        {
+          "name": "twitter:card",
+          "content": "summary_large_image"
+        },
+        {
+          "name": "twitter:title",
+          "content": "Contact Pragith Prakash"
+        },
+        {
+          "name": "twitter:description",
+          "content": "Contact Pragith Prakash."
+        }
+      ],
+      "text": "Tell me about the system and where it is stuck.\n\nTell me what you have, what is not working and what you want to change. I will tell you if I can help and what to do next.\n\nStarting the conversation\n\nI can examine an architecture, build a feature or help fix a production problem.\n\nLinkedIn\nGitHub\nProject enquiry\n\nThe message could not be sent. Please try again.\n\nName\nEmail\nOrganization (optional)\nWhat do you need?\nProject enquiry\nPaid architecture / discovery session\nHourly engineering\nMilestone delivery\nTeaching / workshop\nSpeaking engagement\nOther\nTimeline (optional)\nWhat do you need to build or fix?\nWebsite \nSend enquiry",
+      "units": [
+        {
+          "tag": "H1",
+          "text": "Tell me about the system and where it is stuck.",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "Tell me what you have, what is not working and what you want to change. I will tell you if I can help and what to do next.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Starting the conversation",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "I can examine an architecture, build a feature or help fix a production problem.",
+          "procedural": false
+        },
+        {
+          "tag": "H2",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "P",
+          "text": "The message could not be sent. Please try again.",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Name",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Email",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Organization (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need?",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Project enquiry",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Paid architecture / discovery session",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Hourly engineering",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Milestone delivery",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Teaching / workshop",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Speaking engagement",
+          "procedural": false
+        },
+        {
+          "tag": "OPTION",
+          "text": "Other",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "Timeline (optional)",
+          "procedural": false
+        },
+        {
+          "tag": "LABEL",
+          "text": "What do you need to build or fix?",
+          "procedural": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Send enquiry",
+          "procedural": false
+        }
+      ],
+      "links": [
+        {
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/in/pragith/",
+          "label": null
+        },
+        {
+          "text": "GitHub",
+          "href": "https://github.com/Pragith",
+          "label": null
+        }
+      ],
+      "images": [],
+      "nav": "Pragith Prakash\nWork\nExperience\nTeaching\nAbout\nContact\nResume",
+      "footer": "Pragith Prakash\n\nAI Forward Deployed Engineer, consultant and educator.\n\nLinkedIn\nGitHub\nProjects\nServices\nWriting & speaking\nPrivacy\nLegal",
+      "form": {
+        "placeholder": "Tell me what you have, what is not working and what you want to change.",
+        "value": ""
+      }
+    }
+  ]
+}

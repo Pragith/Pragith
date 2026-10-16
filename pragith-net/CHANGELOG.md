@@ -2,7 +2,7 @@
 
 - Replace the repetitive homepage greeting, architecture headline and two service descriptions with one personal heading and one sentence linking Pragith’s work to Vriksh, the studio he founded and runs.
 - Preserve the prominent studio link, product showcase, simulator description and current navigation. Synchronize product metadata at 1.2.2 without dependency changes.
-- Validation and publication evidence: docs/releases/1.2.2.md.
+- Validation: 44 server tests and Ruff passed. Five review and five public viewport/accessibility checks passed with zero console errors, overflow or accessibility violations. Published source 1af3406; runtime/About version agree on 1.2.2. Evidence: docs/releases/1.2.2.md.
 
 ## 1.2.1 — 2026-10-16
 

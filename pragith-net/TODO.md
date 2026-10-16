@@ -5,7 +5,7 @@
 - [x] Update screenshots, contributions, maturity notes, public links and Teaching course access.
 - [x] Pass 43 server tests, Ruff, 25 browser route/viewport accessibility checks, mobile navigation and 200% text reflow.
 - [x] Verify twelve public destinations and preserve existing detail routes and attribution.
-- [ ] Publish 1.2.0 and verify public UI, package/version metadata and asset hashes.
+- [x] Publish 1.2.0 and verify public UI, package/version metadata and asset hashes. Public browser checks passed at five widths with zero console errors or accessibility violations.
 
 ## 2026-10-12 — Copy cleanup and STE pass
 

@@ -6,7 +6,7 @@
 - Add Quantum Lab to Teaching with a direct Quantum Foundations course link. Replace oversized code snippets with compact supporting entries; retain Caffeinate-d’s existing detail page and source instructions.
 - Publish fresh, proportional product screenshots with source provenance and preserve Velvet’s artwork attribution. Keep square panels and controls and the existing portrait treatment.
 - Synchronize pyproject.toml, uv.lock and VERSION at 1.2.0; derive the About-page version from installed manifest metadata. Keep cache revisions derived from stylesheet content.
-- Validation: 43 server tests, Ruff, 25 browser route/viewport checks, accessibility scans, image links, catalogue navigation, mobile menu and enlarged-text checks passed. Zero browser console errors or page exceptions in review. Twelve public product destinations returned HTTP 200. Deployment evidence is recorded in docs/releases/1.2.0.md.
+- Validation: 43 server tests, Ruff, 25 browser route/viewport checks, accessibility scans, image links, catalogue navigation, mobile menu and enlarged-text checks passed. Zero browser console errors or page exceptions in review. Twelve public product destinations returned HTTP 200. Published source 99f685f; all 25 public browser checks passed with zero errors or accessibility violations. Public image/CSS hashes and runtime/About metadata agree on 1.2.0. Deployment evidence is recorded in docs/releases/1.2.0.md.
 
 # Retirement — 2026-10-05
 

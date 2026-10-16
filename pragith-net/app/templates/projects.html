@@ -1,1 +1,7 @@
-{% extends "base.html" %}{% block content %}<section class="hero compact"><div class="container"><a href="/case-studies">← Work</a><h1>Products and experiments</h1><p class="lede">Camera tracking, media playback, telephone intake and small tools. Each entry shows what is available today.</p></div></section><section class="section"><div class="container">{% include "project_entries.html" %}</div></section>{% endblock %}
+{% extends "base.html" %}{% block content %}
+<section class="hero compact"><div class="container"><a href="/case-studies">← Work</a><h1>Products and experiments</h1><p class="lede">Interactive learning, camera software, media tools and games. Explore what I built and try the public apps.</p></div></section>
+{% for project_group, heading, introduction in [('products','Selected products','Learning and software products I develop through Vriksh.'),('games','Games','Explore puzzle and gameplay systems in the browser.'),('experiments','Experiments','Work in development, with access and demonstration limits stated.'),('tools','Small tools','Focused utilities, with source and build instructions.')] %}
+<section class="section{% if loop.index is even %} surface{% endif %}" aria-labelledby="{{ project_group }}-heading"><div class="container"><h2 id="{{ project_group }}-heading">{{ heading }}</h2><p class="section-intro">{{ introduction }}</p>{% set small_projects = project_group in ['experiments','tools'] %}{% include "project_entries.html" %}</div></section>
+{% endfor %}
+<section class="section"><div class="container"><h2>More from Vriksh</h2><p>Explore Card Stacks, TriviaX Club and the full studio catalogue.</p><a href="https://vriksh.ca/apps">Browse all Vriksh apps ↗</a></div></section>
+{% endblock %}

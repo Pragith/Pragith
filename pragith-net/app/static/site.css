@@ -310,3 +310,21 @@ caption { text-align: left; font-weight: 600; margin-bottom: 12px; }
   .plain-list li + li { margin-top: 6px; }
   .surface { background: #fff; }
 }
+
+/* Curated homepage selection and compact supporting projects. */
+.project-entries h3 { font-size: 1.625rem; }
+.compact-projects { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-4); }
+.compact-projects > article { display: flex; flex-direction: column; gap: var(--space-3); border-top: 0; padding-block: 0; }
+.compact-projects .project-visual { height: 220px; }
+.compact-projects .project-visual a { height: 100%; }
+.compact-projects .project-visual img { height: 100%; width: 100%; object-fit: contain; object-position: center; }
+.compact-projects h3 { font-size: 1.375rem; }
+.compact-projects .contribution { font-size: .875rem; }
+.small-projects > article { display: block; max-width: 760px; }
+.lab-example { padding: var(--space-3); background: var(--paper-deep); border: 1px solid var(--rule); }
+.lab-example ol { padding-left: 24px; }
+@media (max-width: 700px) {
+  .compact-projects { grid-template-columns: 1fr; }
+  .compact-projects > article { padding-block: var(--space-3); }
+  .compact-projects .project-visual { height: 240px; }
+}

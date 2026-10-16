@@ -1,3 +1,13 @@
+## 1.2.0 — 2026-10-16
+
+- Curate the homepage around Quantum Lab, Aperture Golf and Jasoos, after the existing professional case studies. Remove Velvet from the homepage while retaining it in Projects.
+- Add Quantum Lab, Jasoos and Vriksh Cloud to selected products. Group Rajadharma and Bar None under Games, CallRenard under Experiments and Caffeinate-d under Small tools. Keep Card Stacks and TriviaX discoverable through the full Vriksh catalogue.
+- Replace Fairway branding, old golf links and generic contribution statements with the current product name, destinations and specific engineering work. Keep experimental timing, provider, demo and build-from-source limitations clear. Update CallRenard’s canonical destination.
+- Add Quantum Lab to Teaching with a direct Quantum Foundations course link. Replace oversized code snippets with compact supporting entries; retain Caffeinate-d’s existing detail page and source instructions.
+- Publish fresh, proportional product screenshots with source provenance and preserve Velvet’s artwork attribution. Keep square panels and controls and the existing portrait treatment.
+- Synchronize pyproject.toml, uv.lock and VERSION at 1.2.0; derive the About-page version from installed manifest metadata. Keep cache revisions derived from stylesheet content.
+- Validation: 43 server tests, Ruff, 25 browser route/viewport checks, accessibility scans, image links, catalogue navigation, mobile menu and enlarged-text checks passed. Zero browser console errors or page exceptions in review. Twelve public product destinations returned HTTP 200. Deployment evidence is recorded in docs/releases/1.2.0.md.
+
 # Retirement — 2026-10-05
 
 - Remove retired Agent Keyboard demo route, project listing and source symlink. Remove host deployment mount and verify home 200/demo 404.

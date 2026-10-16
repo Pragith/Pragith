@@ -1,0 +1,57 @@
+[
+  {
+    "name": "quantum-lab",
+    "url": "https://learnquantum.science/learn/quantum-foundations/spin/measurement-directions/detector-direction",
+    "finalUrl": "https://learnquantum.science/learn/quantum-foundations/spin/measurement-directions/detector-direction",
+    "status": 200,
+    "title": "Detector direction \u00b7 Quantum Lab",
+    "width": 1440,
+    "height": 900,
+    "source_file": "/tmp/pragith-quantum-lab-20261016.png",
+    "source_sha256": "158a9990029a94fd512692ef6c6634bd10234127c35d600bb4c12b96700c8b53"
+  },
+  {
+    "name": "aperture",
+    "url": "https://analyze.aperture.golf",
+    "finalUrl": "https://analyze.aperture.golf/",
+    "status": 200,
+    "title": "Aperture Golf | Swing analyzer",
+    "width": 390,
+    "height": 844,
+    "source_file": "/tmp/pragith-aperture-20261016.png",
+    "source_sha256": "b35de2725425160e963a826a88a20a454f74c956ccccdf7098bd5d2a1e1467ab"
+  },
+  {
+    "name": "jasoos",
+    "url": "https://jasoos.me",
+    "finalUrl": "https://jasoos.me/",
+    "status": 200,
+    "title": "Jasoos Samachar \u2014 Today's Case \u00b7 Jasoos",
+    "width": 1440,
+    "height": 1000,
+    "source_file": "/tmp/pragith-jasoos-20261016.png",
+    "source_sha256": "baeb0786c742855000a92033e17bc45a8edfe14cab8acc4a964735c2d09f364d"
+  },
+  {
+    "name": "barnone",
+    "url": "https://barnone.lab.pragith.net",
+    "finalUrl": "https://barnone.lab.pragith.net/",
+    "status": 200,
+    "title": "BarNone",
+    "width": 1440,
+    "height": 900,
+    "source_file": "/tmp/pragith-barnone-20261016.png",
+    "source_sha256": "8cd9a2ae7f1733bcd19064fcb7bb6890012dd3d6536ba52c3d7bf660177ef668"
+  },
+  {
+    "name": "rajadharma",
+    "url": "https://play.rajadharma.in",
+    "finalUrl": "https://play.rajadharma.in/",
+    "status": 200,
+    "title": "Rajadharma",
+    "width": 390,
+    "height": 844,
+    "source_file": "/srv/docker/labs/agent-fleet/apps/rajadharma/landing/assets/screen-home-b600547dabaa2dab.webp",
+    "source_sha256": "2f544e2f3c66e3f1f338ec08ee4b09dc6f17b6a6cbb1aa13bb67f695f961ec66"
+  }
+]

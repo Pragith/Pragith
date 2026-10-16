@@ -86,6 +86,7 @@ templates.env.globals.update(
         "experience_label": EXPERIENCE_LABEL,
         "certifications": CERTIFICATIONS,
         "media": MEDIA,
+        "site_version": PACKAGE_VERSION,
         "asset_revision": sha256(
             (_APP_DIR / "static" / "site.css").read_bytes() + theme_service.css.encode()
         ).hexdigest()[:12],
@@ -279,7 +280,7 @@ async def projects(request: Request):
         request,
         "projects.html",
         title="Products and experiments | Pragith Prakash",
-        description="Products and experiments by Pragith Prakash, including Fairway, Velvet, CallRenard and Caffeinate-d.",
+        description="Explore Quantum Lab, Aperture Golf, Jasoos and other products by Pragith Prakash, with games, experiments and small tools.",
         canonical_path="/projects",
         projects=PROJECTS,
     )

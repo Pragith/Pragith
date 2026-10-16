@@ -81,7 +81,7 @@ def test_navigation_and_unhidden_work():
     assert "data-carousel" not in html
     projects = client.get("/projects").text
     assert 'role="tab"' not in projects
-    assert projects.count('id="project-') == 4
+    assert projects.count('<article id="project-') == 9
     resume = client.get("/resume").text
     assert re.search(r'href="/resume"\s+aria-current="page"', resume)
 

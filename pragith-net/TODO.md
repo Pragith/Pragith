@@ -1,3 +1,12 @@
+## 2026-10-16 — Product showcase, 1.2.0
+
+- [x] Feature Quantum Lab, Aperture Golf and Jasoos on the homepage.
+- [x] Organize nine projects into products, games, experiments and tools; keep secondary apps linked through Vriksh.
+- [x] Update screenshots, contributions, maturity notes, public links and Teaching course access.
+- [x] Pass 43 server tests, Ruff, 25 browser route/viewport accessibility checks, mobile navigation and 200% text reflow.
+- [x] Verify twelve public destinations and preserve existing detail routes and attribution.
+- [ ] Publish 1.2.0 and verify public UI, package/version metadata and asset hashes.
+
 ## 2026-10-12 — Copy cleanup and STE pass
 
 - [x] Clone and read the actual 61-signal detector; validate its core and shipped rules (267 tests).

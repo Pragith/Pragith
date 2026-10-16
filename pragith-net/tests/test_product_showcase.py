@@ -76,13 +76,14 @@ def test_teaching_exposes_live_course_and_about_derives_manifest_version():
     assert 'simulations and save your progress' in html
     assert 'Discuss a course or workshop' in html
     assert f'Website version {PACKAGE_VERSION}' in client.get('/about').text
-    assert PACKAGE_VERSION == '1.2.1'
+    assert PACKAGE_VERSION == '1.2.2'
 
 
 def test_studio_ownership_is_prominent_and_simulator_is_linked_with_context():
     home = client.get('/').text
-    assert home.index('I founded and run') < home.index('Professional experience')
-    for path in ['/', '/projects', '/about']:
+    assert home.index('studio I founded and run') < home.index('Professional experience')
+    assert 'through <a href="https://vriksh.ca/">Vriksh</a>, the Canadian software studio I founded and run.' in home
+    for path in ['/projects', '/about']:
         html = client.get(path).text
         assert 'I founded and run <a href="https://vriksh.ca/">Vriksh</a>' in html
         assert 'My studio: Vriksh' in html

@@ -1,0 +1,32 @@
+{
+  "base": "http://127.0.0.1:4784",
+  "results": [
+    {
+      "width": 320,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "accessibilityViolations": 0
+    }
+  ],
+  "errors": [],
+  "version": "1.2.2"
+}

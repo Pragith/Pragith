@@ -120,8 +120,8 @@ def test_public_pages_do_not_render_repeated_label_components():
 
 def test_homepage_uses_personal_editorial_language():
     html = client.get("/").text
-    assert "Hello, I am Pragith." in html
-    assert "I take AI and data systems from architecture into production." in html
+    assert "I’m Pragith, an engineer and educator." in html
+    assert "I build AI applications and data platforms through" in html
     assert "Professional experience" in html
     assert "What I can do for you" not in html
     assert 'aria-roledescription="carousel"' not in html

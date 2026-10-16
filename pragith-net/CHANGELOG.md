@@ -1,3 +1,9 @@
+## 1.2.2 — 2026-10-16
+
+- Replace the repetitive homepage greeting, architecture headline and two service descriptions with one personal heading and one sentence linking Pragith’s work to Vriksh, the studio he founded and runs.
+- Preserve the prominent studio link, product showcase, simulator description and current navigation. Synchronize product metadata at 1.2.2 without dependency changes.
+- Validation and publication evidence: docs/releases/1.2.2.md.
+
 ## 1.2.1 — 2026-10-16
 
 - State that Pragith founded and runs Vriksh in the homepage introduction, About introduction and Projects introduction, with direct links to vriksh.ca. Add a studio link to the shared footer.

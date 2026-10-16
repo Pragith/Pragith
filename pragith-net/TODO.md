@@ -1,3 +1,8 @@
+## 2026-10-16 — Concise homepage introduction, 1.2.2
+
+- [x] Remove repeated AI/data/service wording from the homepage introduction; retain identity, work and studio ownership.
+- [ ] Validate the page at desktop/mobile sizes and publish 1.2.2.
+
 ## 2026-10-16 — Studio ownership and Golf Simulator, 1.2.1
 
 - [x] Verify the Golf Simulator at sim.aperture.golf and write a short, factual description.

@@ -22,7 +22,7 @@ const out = process.env.EVIDENCE_DIR || '/tmp/pragith-showcase-review';
         if (['/', '/projects', '/about'].includes(path)) {
           const intro = page.locator('main').getByRole('link', {name: 'Vriksh', exact: true});
           assert.equal(await intro.getAttribute('href'), 'https://vriksh.ca/');
-          assert.ok((await page.locator('main').innerText()).includes('I founded and run Vriksh'));
+          assert.ok((await page.locator('main').innerText()).includes(path === '/' ? 'the Canadian software studio I founded and run.' : 'I founded and run Vriksh'));
         }
         if (['/', '/projects'].includes(path)) {
           const golf = page.getByTestId('project-golf-swing-analyzer');
@@ -55,7 +55,7 @@ const out = process.env.EVIDENCE_DIR || '/tmp/pragith-showcase-review';
         }
         await page.goto(base + path, {waitUntil: 'networkidle'});
         if (path === '/teaching') assert.equal(await page.getByRole('link', {name: 'Start Quantum Foundations', exact: false}).getAttribute('href'), 'https://learnquantum.science/');
-        if (path === '/about') assert.ok((await page.locator('main').innerText()).includes('Website version 1.2.1'));
+        if (path === '/about') assert.ok((await page.locator('main').innerText()).includes('Website version 1.2.2'));
         await page.addScriptTag({path: '/srv/docker/family/pragith/superset/superset-frontend/node_modules/axe-core/axe.min.js'});
         const violations = await page.evaluate(async () => (await axe.run(document, {runOnly: {type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa']}})).violations.map(v => ({id: v.id, targets: v.nodes.map(n => n.target)})));
         assert.deepEqual(violations, [], `${width} ${path}`);

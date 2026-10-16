@@ -76,4 +76,19 @@ def test_teaching_exposes_live_course_and_about_derives_manifest_version():
     assert 'simulations and save your progress' in html
     assert 'Discuss a course or workshop' in html
     assert f'Website version {PACKAGE_VERSION}' in client.get('/about').text
-    assert PACKAGE_VERSION == '1.2.0'
+    assert PACKAGE_VERSION == '1.2.1'
+
+
+def test_studio_ownership_is_prominent_and_simulator_is_linked_with_context():
+    home = client.get('/').text
+    assert home.index('I founded and run') < home.index('Professional experience')
+    for path in ['/', '/projects', '/about']:
+        html = client.get(path).text
+        assert 'I founded and run <a href="https://vriksh.ca/">Vriksh</a>' in html
+        assert 'My studio: Vriksh' in html
+    for path in ['/', '/projects']:
+        html = client.get(path).text
+        assert 'href="https://sim.aperture.golf/"' in html
+        assert 'aim, choose a club and set shot power' in html
+        assert 'href="https://analyze.aperture.golf/"' in html
+        assert 'href="https://aperture.golf/"' in html

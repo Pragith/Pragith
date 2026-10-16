@@ -1,3 +1,11 @@
+## 2026-10-16 — Studio ownership and Golf Simulator, 1.2.1
+
+- [x] Verify the Golf Simulator at sim.aperture.golf and write a short, factual description.
+- [x] Put founder/studio ownership and the vriksh.ca link in the homepage hero, About, Projects and shared footer.
+- [x] Link the simulator beside Aperture Golf on the homepage and Projects while keeping the swing analyzer.
+- [x] Pass 44 server tests and Ruff.
+- [ ] Verify review/public browser layouts, publish 1.2.1 and push release records.
+
 ## 2026-10-16 — Product showcase, 1.2.0
 
 - [x] Feature Quantum Lab, Aperture Golf and Jasoos on the homepage.

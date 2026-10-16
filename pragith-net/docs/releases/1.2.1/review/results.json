@@ -1,0 +1,140 @@
+{
+  "base": "http://127.0.0.1:4784",
+  "checks": [
+    {
+      "width": 320,
+      "path": "/",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 320,
+      "path": "/projects",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 320,
+      "path": "/teaching",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 320,
+      "path": "/about",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 320,
+      "path": "/projects/caffeinate-d",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "path": "/",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "path": "/projects",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "path": "/teaching",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "path": "/about",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "path": "/projects/caffeinate-d",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "path": "/",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "path": "/projects",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "path": "/teaching",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "path": "/about",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "path": "/projects/caffeinate-d",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "path": "/",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "path": "/projects",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "path": "/teaching",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "path": "/about",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "path": "/projects/caffeinate-d",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1440,
+      "path": "/",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1440,
+      "path": "/projects",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1440,
+      "path": "/teaching",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1440,
+      "path": "/about",
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1440,
+      "path": "/projects/caffeinate-d",
+      "accessibilityViolations": 0
+    }
+  ],
+  "errors": [],
+  "flows": [
+    "home-to-projects",
+    "nine-grouped-projects",
+    "screenshot-links",
+    "tools-build-instructions",
+    "teaching-course-link",
+    "mobile-menu",
+    "200%-text-reflow"
+  ]
+}

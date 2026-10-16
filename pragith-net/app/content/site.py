@@ -200,6 +200,8 @@ PROJECTS = [
         "limitations": "Swing detection and timing estimates remain experimental. Body tracking runs in your browser; the server stores summaries and skeleton clips.",
         "href": "https://aperture.golf/",
         "link_label": "Visit Aperture Golf",
+        "simulator_href": "https://sim.aperture.golf/",
+        "simulator_summary": "Play a 3D round in your browser: aim, choose a club and set shot power.",
         "demo_href": "https://analyze.aperture.golf/",
         "demo_label": "Open swing analyzer",
     },

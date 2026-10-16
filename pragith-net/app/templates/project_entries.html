@@ -10,6 +10,7 @@
     {% if not compact %}<p class="availability">{{ project.version }}</p>{% endif %}
     <p class="contribution">{{ project.contribution }}</p>
     {% if not compact %}{% if project.capabilities %}<ul>{% for capability in project.capabilities %}<li>{{ capability }}</li>{% endfor %}</ul>{% endif %}{% if project.limitations %}<p class="availability">{{ project.limitations }}</p>{% endif %}{% endif %}
+    {% if project.simulator_href %}<p class="simulator-intro">{{ project.simulator_summary }} <a href="{{ project.simulator_href }}">Open Golf Simulator ↗</a></p>{% endif %}
     <div class="actions"><a class="card-link" href="{{ project.href }}">{{ project.link_label }} {{ '↗' if project.href.startswith('https:') else '→' }}</a>{% if project.demo_href %}<a href="{{ project.demo_href }}">{{ project.demo_label }} ↗</a>{% endif %}</div>
   </div>
 </article>

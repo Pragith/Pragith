@@ -4,7 +4,7 @@
 - [x] Put founder/studio ownership and the vriksh.ca link in the homepage hero, About, Projects and shared footer.
 - [x] Link the simulator beside Aperture Golf on the homepage and Projects while keeping the swing analyzer.
 - [x] Pass 44 server tests and Ruff.
-- [ ] Verify review/public browser layouts, publish 1.2.1 and push release records.
+- [x] Verify review/public browser layouts, publish 1.2.1 and push release records. All 25 public checks passed; container healthy and runtime/About version verified.
 
 ## 2026-10-16 — Product showcase, 1.2.0
 

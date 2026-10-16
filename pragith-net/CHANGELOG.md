@@ -3,7 +3,7 @@
 - State that Pragith founded and runs Vriksh in the homepage introduction, About introduction and Projects introduction, with direct links to vriksh.ca. Add a studio link to the shared footer.
 - Add a Golf Simulator link beside Aperture Golf on the homepage and Projects, with a short description of browser play, aiming, club selection and shot power. Preserve the product-site and swing-analyzer links.
 - Verify the simulator’s live browser UI before describing it. Synchronize manifest, lockfile, VERSION and the generated About label at 1.2.1 without changing dependency versions.
-- Validation: 44 server tests and Ruff passed. Review and publication evidence is recorded in docs/releases/1.2.1.md.
+- Validation: 44 server tests, Ruff and 25 review plus 25 public browser checks passed with zero console errors or accessibility violations. Published source 8e62e25; runtime/About version verified as 1.2.1. Review and publication evidence is recorded in docs/releases/1.2.1.md.
 
 ## 1.2.0 — 2026-10-16
 
